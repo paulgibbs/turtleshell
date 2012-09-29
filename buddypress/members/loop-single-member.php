@@ -10,7 +10,6 @@
 <li id="bp-member-<?php bp_member_user_id(); ?>" <?php //@todo: bp_member_class(); ?>>
 	<?php do_action( 'bp_template_in_members_loop_early' ); ?>
 
-			<div class="member-single">
 				<div class="member-avatar avatar">
 					<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar(); ?></a>
 				</div>
@@ -29,7 +28,6 @@
 				<div class="member-action item-action">
 					<?php do_action( 'bp_directory_members_actions' ); ?>
 				</div>
-			</div>
 
 	<?php do_action( 'bp_template_in_members_loop_late' ); ?>
 </li>
