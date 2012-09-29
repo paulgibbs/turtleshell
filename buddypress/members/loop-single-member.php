@@ -25,9 +25,6 @@
 				</div>
 				<?php do_action( 'bp_directory_members_item' ); ?>
 				</div>
-				<div class="member-action item-action">
-					<?php do_action( 'bp_directory_members_actions' ); ?>
-				</div>
 
 	<?php do_action( 'bp_template_in_members_loop_late' ); ?>
 </li>
