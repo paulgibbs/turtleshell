@@ -1,0 +1,50 @@
+/*------------------------------------------------------------
+1.0 - Members Directory
+----------------------------------------------------------*/
+#buddypress ul.item-list{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#buddypress #members-list li.item-grid{
+	display: inline-block;
+	float: left;
+	list-style:none;
+	margin: 0 2% 1% 0;
+    vertical-align: top;
+	width: 48.65%;
+}
+#buddypress .member-avatar{
+	float: left;
+	margin: 0 3% 0 0;
+}
+#buddypress #members-list .member-single{
+	padding: 1rem;
+    overflow: hidden; /* temp fix */
+}
+#buddypress #members-list li.item-grid:nth-child(2n+2){
+	margin: 0 0 1% 0;
+}
+#buddypress .item-action{
+	float: right;
+}
+
+/*------------------------------------------------------------
+2.0 - Updates
+----------------------------------------------------------*/
+#buddypress span.activity,
+#buddypress div#message p {
+	margin-top: 3px;
+	text-decoration: none;
+}
+#buddypress span.activity {
+	display: inline-block;
+	padding: 1px 8px;
+}
+
+/*------------------------------------------------------------
+3.0 - Pagination
+----------------------------------------------------------*/
+#pag-bottom{	
+	clear: both;
+}

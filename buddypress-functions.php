@@ -3,7 +3,7 @@
  * The "turtleshell" template pack for BuddyPress.
  *
  * @package BuddyPress
- * @subpackage BP_Theme_Compat_TurtleShell
+ * @subpackage TurtleShell
  * @since BuddyPress (1.7)
  */
 
