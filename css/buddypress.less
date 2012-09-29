@@ -1,5 +1,5 @@
-@smallFontSize: 12px;
-@themeCompatMargin: 0.75rem;
+@import "variables.less";
+@import "mixins.less";
 
 
 /**
@@ -24,14 +24,11 @@
 /**
  * 1.0 - Members Directory
  */
-.bp-archive-members {
-	margin: 0;
-	padding: 0;
+#buddypress .bp-archive-members {
+	.box-sizing(border-box);
+	.clearfix();
+	margin: 0 0 @themeCompatMargin 0;
 	width: 100%;
-
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 #buddypress .bp-archive-members li {
@@ -48,17 +45,12 @@
 		float: left;  // @todo RTL
 		margin: 0 @themeCompatMargin 0 0;  // @todo RTL
 	}
-
-	.item-action {
-		float: right;  // @todo RTL
-	}
 }
 
 
 /**
  * 2.0 - Pagination
  */
-
 .bp-pagination-count {
 	float: left;  // @todo RTL
 }
