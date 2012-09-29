@@ -19,6 +19,7 @@
 .bp-archive-members {
 	margin: 0;
 	padding: 0;
+	width: 100%;
 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -58,9 +59,3 @@
 	width: 100%;
 }
 .bp-pagination a { text-decoration: none; }
-
-
-/**
- * Members archive
- */
-.bp-archive-members { width: 100%; }
