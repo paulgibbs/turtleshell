@@ -1,3 +1,58 @@
+/**
+ * This is the main wrapper ID for all BuddyPress.
+ */
+#buddypress { background: transparent; }
+#buddypress li {
+	list-style: none;
+	margin: 0;
+}
+#buddypress ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+/**
+ * Pagination
+ */
+
+.bp-pagination-count {
+	float: left;
+}
+
+.bp-pagination-links {
+	float: right;
+}
+
+.bp-pagination {
+	float: right;
+	font-size: 12px;
+	width: 100%;
+}
+.bp-pagination a { text-decoration: none; }
+
+
+/**
+ * Members archive
+ */
+.bp-archive-members { width: 100%; }
+
+
+
+
+
+
+
+
+
+
+
+/**
+There be dragons down here
+**/
+
+
 /*------------------------------------------------------------
 1.0 - Members Directory
 ----------------------------------------------------------*/

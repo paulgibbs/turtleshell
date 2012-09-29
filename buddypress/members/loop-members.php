@@ -9,7 +9,7 @@
 
 <?php do_action( 'bp_before_directory_members_list' ); ?>
 
-<ul id="bp-archive-members">
+<ul class="bp-archive-members">
 
 	<?php do_action( 'bp_template_before_members_loop' ); ?>
 
@@ -21,6 +21,6 @@
 
 	<?php do_action( 'bp_template_after_members_loop' ); ?>
 
-</ul><!-- #bp-archive-members -->
+</ul><!-- .bp-archive-members -->
 
 <?php do_action( 'bp_after_directory_members_list' ); ?>
