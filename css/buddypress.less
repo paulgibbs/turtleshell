@@ -34,7 +34,7 @@
 	box-sizing: border-box;
 }
 #buddypress .bp-archive-members li {
-	float: left;
+	float: left;  // @todo RTL
 	width: 50%;
 }
 .bp-archive-members li {
@@ -43,12 +43,12 @@
 	}
 
 	.member-avatar {
-		float: left;
-		margin: 0 @themeCompatMargin 0 0;
+		float: left;  // @todo RTL
+		margin: 0 @themeCompatMargin 0 0;  // @todo RTL
 	}
 
 	.item-action {
-		float: right;
+		float: right;  // @todo RTL
 	}
 }
 
@@ -58,16 +58,18 @@
  */
 
 .bp-pagination-count {
-	float: left;
+	float: left;  // @todo RTL
 }
 
 .bp-pagination-links {
-	float: right;
+	float: right;  // @todo RTL
 }
 
 .bp-pagination {
-	float: right;
+	float: right;  // @todo RTL
 	font-size: @smallFontSize;
+	margin-bottom: @themeCompatMargin;
 	width: 100%;
+
+	a { text-decoration: none; }
 }
-.bp-pagination a { text-decoration: none; }
