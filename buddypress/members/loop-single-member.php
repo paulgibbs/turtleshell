@@ -10,21 +10,39 @@
 <li id="bp-member-<?php bp_member_user_id(); ?>" <?php //@todo: bp_member_class(); ?>>
 	<?php do_action( 'bp_template_in_members_loop_early' ); ?>
 
-				<div class="member-avatar avatar">
-					<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar(); ?></a>
-				</div>
-				<div class="member-title item-title">
-					<a href="<?php bp_member_permalink(); ?>"><?php bp_member_name(); ?></a>
-				</div>
-				<div class="member-details item-details">
-					<?php if ( bp_get_member_latest_update() ) : ?>
-						<span class="member-update update"> <?php bp_member_latest_update(); ?></span>
-					<?php endif; ?>
-				<div class="member-meta item-meta">
-					<span class="-member-activity activity"><?php bp_member_last_active(); ?></span>
-				</div>
-				<?php do_action( 'bp_directory_members_item' ); ?>
-				</div>
+
+	<?php do_action( 'bp_template_before_member_avatar' ); ?>
+
+	<div class="member-avatar">
+		<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar(); ?></a>
+	</div>
+
+	<?php do_action( 'bp_template_after_member_avatar' ); ?>
+
+
+	<?php do_action( 'bp_template_before_member_title' ); ?>
+
+	<div class="member-title">
+		<a href="<?php bp_member_permalink(); ?>"><?php bp_member_name(); ?></a>
+	</div>
+
+	<?php do_action( 'bp_template_after_member_title' ); ?>
+
+
+	<?php do_action( 'bp_template_before_member_details' ); ?>
+
+	<div class="member-details">
+		<?php if ( bp_get_member_latest_update() ) : ?>
+			<span class="member-update update"> <?php bp_member_latest_update(); ?></span>
+		<?php endif; ?>
+
+		<div class="member-meta">
+			<span class="-member-activity activity"><?php bp_member_last_active(); ?></span>
+		</div>
+	</div>
+
+	<?php do_action( 'bp_template_after_member_details' ); ?>
+
 
 	<?php do_action( 'bp_template_in_members_loop_late' ); ?>
 </li>
