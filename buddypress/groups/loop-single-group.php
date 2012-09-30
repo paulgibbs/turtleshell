@@ -7,7 +7,7 @@
  */
 ?>
 
-<li id="bp-group-<?php bp_group_id(); ?>" <?php //@todo: bp_group_class(); ?>>
+<li id="bp-group-<?php bp_group_id(); ?>" <?php bp_group_class(); ?>>
 	<?php do_action( 'bp_template_in_groups_loop_early' ); ?>
 
 
