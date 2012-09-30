@@ -32,10 +32,6 @@
 	<?php do_action( 'bp_template_before_member_details' ); ?>
 
 	<div class="member-details">
-		<?php if ( bp_get_member_latest_update() ) : ?>
-			<span class="member-update update"> <?php bp_member_latest_update(); ?></span>
-		<?php endif; ?>
-
 		<div class="member-meta">
 			<span class="member-activity activity"><?php bp_member_last_active(); ?></span>
 		</div>
