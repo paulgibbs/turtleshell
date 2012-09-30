@@ -38,18 +38,17 @@
 
 	li {
 		float: left;  // @todo RTL
-		width: 50%;
+		margin: 0 @themeCompatMargin @themeCompatMargin 0;  // @todo RTL
 	}
 }
 
-.bp-archive-members li {
-	&:nth-child(2n+2) {
-		margin: 0 0 @themeCompatMargin 0;
+.bp-archive-members {
+	li {
+		text-align: center;
 	}
 
-	.member-avatar {
-		float: left;  // @todo RTL
-		margin: 0 @themeCompatMargin 0 0;  // @todo RTL
+	.member-meta {
+		font-size: @smallFontSize;
 	}
 }
 
@@ -64,18 +63,19 @@
 
 	li {
 		float: left;  // @todo RTL
-		width: 50%;
+		margin: 0 1% @themeCompatMargin 0;  // @todo RTL
+		width: 49%;
 	}
 }
 
-.bp-archive-groups li {
-	&:nth-child(2n+2) {
-		margin: 0 0 @themeCompatMargin 0;
-	}
-
+.bp-archive-groups {	
 	.group-avatar {
 		float: left;  // @todo RTL
 		margin: 0 @themeCompatMargin 0 0;  // @todo RTL
+	}
+
+	.group-meta {
+		font-size: @smallFontSize;
 	}
 }
 
