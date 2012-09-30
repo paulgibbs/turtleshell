@@ -37,7 +37,7 @@
 		<?php endif; ?>
 
 		<div class="member-meta">
-			<span class="-member-activity activity"><?php bp_member_last_active(); ?></span>
+			<span class="member-activity activity"><?php bp_member_last_active(); ?></span>
 		</div>
 	</div>
 
