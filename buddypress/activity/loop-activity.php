@@ -2,7 +2,7 @@
 <?php if ( bp_has_activities( bp_ajax_querystring( 'activity' ) ) ) : ?>
 	<?php bp_get_template_part( 'activity/pagination', 'activity'); ?>
 	<?php if ( empty( $_POST['page'] ) ) : ?>
-		<ul id="activity-view">
+		<ul id="bp-activity-view">
 	<?php endif; ?>
 	<?php while ( bp_activities() ) : bp_the_activity(); ?>
 		<?php bp_get_template_part( 'activity/activity', 'entry' ); ?>

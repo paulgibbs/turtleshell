@@ -4,6 +4,7 @@
 02. Members Directory
 03. Groups Directory
 04. Pagination
+05. Activity List
 */
 
 @import "variables.less";
@@ -97,4 +98,15 @@
 	width: 100%;
 
 	a { text-decoration: none; }
+}
+
+/* =05. Activity List
+--------------------------------------------------------------- */
+#bp-activity-view li{
+	overflow:hidden; /* needs better solution */
+}
+#buddypress .activity-avatar{
+	.box-sizing(border-box);
+	float: left; // @todo RTL
+	margin: 0 1% 0 0;
 }

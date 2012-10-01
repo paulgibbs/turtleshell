@@ -4,6 +4,7 @@
 02. Members Directory
 03. Groups Directory
 04. Pagination
+05. Activity List
 */
 .clearfix {
   *zoom: 1;
@@ -122,4 +123,18 @@
 }
 .bp-pagination a {
   text-decoration: none;
+}
+/* =05. Activity List
+--------------------------------------------------------------- */
+#bp-activity-view li {
+  overflow: hidden;
+  /* needs better solution */
+
+}
+#buddypress .activity-avatar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin: 0 1% 0 0;
 }
