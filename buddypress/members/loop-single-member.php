@@ -7,7 +7,7 @@
  */
 ?>
 
-<li id="bp-member-<?php bp_member_user_id(); ?>" <?php //@todo: bp_member_class(); ?>>
+<li id="bp-member-<?php bp_member_user_id(); ?>" <?php bp_member_class(); ?>>
 	<?php do_action( 'bp_template_in_members_loop_early' ); ?>
 
 
