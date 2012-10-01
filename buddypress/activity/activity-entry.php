@@ -11,7 +11,6 @@
 ?>
 
 <?php do_action( 'bp_before_activity_entry' ); ?>
-
 <li class="<?php bp_activity_css_class(); ?>" id="activity-<?php bp_activity_id(); ?>">
 	<div class="activity-avatar">
 		<a href="<?php bp_activity_user_link(); ?>">
@@ -51,7 +50,7 @@
 		<?php endif; ?>
 	</div>
 	<?php do_action( 'bp_before_activity_entry_comments' ); ?>
-	<?php if ( ( is_user_logged_in() && bp_activity_can_comment() ) || bp_activity_get_comment_count() ) : ?>
+	<!--<?php if ( ( is_user_logged_in() && bp_activity_can_comment() ) || bp_activity_get_comment_count() ) : ?>
 		<div class="activity-comments">
 			<?php bp_activity_comments(); ?>
 			<?php if ( is_user_logged_in() ) : ?>
@@ -69,7 +68,7 @@
 				</form>
 			<?php endif; ?>
 		</div>
-	<?php endif; ?>
+	<?php endif; ?>-->
 	<?php do_action( 'bp_after_activity_entry_comments' ); ?>
 </li>
 <?php do_action( 'bp_after_activity_entry' ); ?>
