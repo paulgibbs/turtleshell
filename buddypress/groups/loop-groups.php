@@ -11,7 +11,7 @@
 
 <ul class="bp-archive-groups">
 
-	<?php do_action( 'bp_template_before_groups_loop' ); ?>
+	<?php do_action( 'bp_before_groups_loop' ); ?>
 
 	<?php while ( bp_groups() ) : bp_the_group(); ?>
 
@@ -19,7 +19,7 @@
 
 	<?php endwhile; ?>
 
-	<?php do_action( 'bp_template_after_groups_loop' ); ?>
+	<?php do_action( 'bp_after_groups_loop' ); ?>
 
 </ul><!-- .bp-archive-groups -->
 

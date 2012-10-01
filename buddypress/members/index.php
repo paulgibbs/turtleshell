@@ -11,7 +11,7 @@
 
 <div id="buddypress">
 
-	<?php do_action( 'bp_before_directory_members' ); ?>
+	<?php do_action( 'bp_before_directory_members_content' ); ?>
 
 	<?php if ( bp_has_members() ) : ?>
 
@@ -27,7 +27,7 @@
 
 	<?php endif; ?>
 
-	<?php do_action( 'bp_after_directory_members' ); ?>
+	<?php do_action( 'bp_after_directory_members_content' ); ?>
 
 </div><!-- #buddypress -->
 
