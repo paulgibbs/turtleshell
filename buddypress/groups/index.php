@@ -11,7 +11,7 @@
 
 <div id="buddypress">
 
-	<?php do_action( 'bp_before_directory_groups' ); ?>
+	<?php do_action( 'bp_before_directory_groups_content' ); ?>
 
 	<?php if ( bp_has_groups() ) : ?>
 
@@ -27,7 +27,7 @@
 
 	<?php endif; ?>
 
-	<?php do_action( 'bp_after_directory_groups' ); ?>
+	<?php do_action( 'bp_after_directory_groups_content' ); ?>
 
 </div><!-- #buddypress -->
 

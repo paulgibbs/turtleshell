@@ -11,7 +11,7 @@
 
 <div id="buddypress">
 
-	<?php do_action( 'bp_before_directory_blogs' ); ?>
+	<?php do_action( 'bp_before_directory_blogs_content' ); ?>
 
 	<?php if ( bp_has_blogs() ) : ?>
 
@@ -27,7 +27,7 @@
 
 	<?php endif; ?>
 
-	<?php do_action( 'bp_after_directory_blogs' ); ?>
+	<?php do_action( 'bp_after_directory_blogs_content' ); ?>
 
 </div><!-- #buddypress -->
 
