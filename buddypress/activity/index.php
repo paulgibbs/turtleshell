@@ -6,16 +6,29 @@
  * @subpackage TurtleShell
  */
 ?>
-<?php do_action( 'bp_before_directory_activity' ); ?>
+
+<?php do_action( 'bp_before_directory_activity_page' ); ?>
+
 <div id="buddypress">
+
 	<?php do_action( 'bp_before_directory_activity_content' ); ?>
-	<?php do_action( 'template_notices' ); ?>
-	<?php do_action( 'bp_before_directory_activity_list' ); ?>
-	<div class="bp-activity">
+
+	<?php if ( bp_has_activities() ) : ?>
+
+		<?php bp_get_template_part( 'activity/pagination', 'activity' ); ?>
+
 		<?php bp_get_template_part( 'activity/loop', 'activity' ); ?>
-	</div>
-	<?php do_action( 'bp_after_directory_activity_list' ); ?>
-	<?php do_action( 'bp_directory_activity_content' ); ?>
+
+		<?php bp_get_template_part( 'activity/pagination', 'activity' ); ?>
+
+	<?php else : ?>
+
+		<?php bp_get_template_part( 'activity/feedback', 'no-activity' ); ?>
+
+	<?php endif; ?>
+
 	<?php do_action( 'bp_after_directory_activity_content' ); ?>
-	<?php do_action( 'bp_after_directory_activity' ); ?>
-</div>
+	
+</div><!-- #buddypress -->
+
+<?php do_action( 'bp_after_directory_activity_page' ); ?>
