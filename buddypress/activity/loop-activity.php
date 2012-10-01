@@ -5,7 +5,7 @@
 		<ul id="bp-activity-view">
 	<?php endif; ?>
 	<?php while ( bp_activities() ) : bp_the_activity(); ?>
-		<?php bp_get_template_part( 'activity/activity', 'entry' ); ?>
+		<?php bp_get_template_part( 'activity/loop', 'single-activity' ); ?>
 	<?php endwhile; ?>
 	<?php if ( bp_activity_has_more_items() ) : ?>
 		<li class="load-more">
