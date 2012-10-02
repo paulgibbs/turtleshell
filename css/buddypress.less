@@ -4,7 +4,8 @@
 02. Members Directory
 03. Groups Directory
 04. Pagination
-05. Activity List
+05. Activity Directory
+07. Sites Directory
 */
 
 @import "variables.less";
@@ -100,6 +101,7 @@
 	a { text-decoration: none; }
 }
 
+
 /* =05. Activity List
 --------------------------------------------------------------- */
 #bp-activity-view li{
@@ -108,4 +110,45 @@
 #buddypress .activity-avatar{
 	float: left; // @todo RTL
 	margin: 0 1% 0 0;
+}
+
+
+/* =06. Sites Directory
+--------------------------------------------------------------- */
+.bp-archive-blogs {
+	.clearfix();
+	width: 100%;
+
+	.blog-author-avatar {
+		float: left;  // @todo RTL
+		margin-right: 1rem;  // @todo RTL
+	}
+
+	.blog-content {
+		.clearfix();
+		float: left;  // @todo RTL
+		width: 80%;
+
+		.blog-title {
+			margin: 0;
+			padding: 0;
+
+			span a {
+				color: inherit;
+				font-size: @smallFontSize;
+				text-decoration: none;
+			}
+		}
+
+		.blog-image,
+		.blog-excerpt {
+			margin-top: @themeCompatMargin;
+		}
+	}
+
+	.blog-title {
+	}
+
+	.blog-name {
+	}
 }
