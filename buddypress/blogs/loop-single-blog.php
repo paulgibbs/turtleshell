@@ -5,8 +5,6 @@
  * @package BuddyPress
  * @subpackage TurtleShell
  */
-
-$image = bp_get_blog_latest_post_featured_image( 'post-thumbnail' );
 ?>
 
 <li id="bp-blog-<?php bp_blog_id(); ?>" <?php //@todo: bp_blog_class(); ?>>
@@ -23,9 +21,9 @@ $image = bp_get_blog_latest_post_featured_image( 'post-thumbnail' );
 			<span class="blog-name"><a href="<?php echo esc_url( bp_get_blog_permalink() ); ?>"><?php bp_blog_name(); ?></a></span>
 		</h3>
 
-		<?php if ( ! empty( $image ) ) : ?>
+		<?php if ( bp_blog_latest_post_has_featured_image( 'post-thumbnail' ) ) : ?>
 			<a href="<?php echo esc_url( bp_get_blog_latest_post_permalink() ); ?>">
-				<img class="blog-image" src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( bp_get_blog_latest_post_title() ); ?>" ?>
+				<img class="blog-image" src="<?php echo esc_url( bp_get_blog_latest_post_featured_image( 'post-thumbnail' ) ); ?>" alt="<?php echo esc_attr( bp_get_blog_latest_post_title() ); ?>" ?>
 			</a>
 		<?php endif; ?>
 
