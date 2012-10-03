@@ -11,15 +11,30 @@
 	<?php do_action( 'bp_template_in_blogs_loop_early' ); ?>
 
 
+	<?php do_action( 'bp_template_before_blog_avatar' ); ?>
+
 	<div class="blog-author-avatar">
 		<?php bp_blog_avatar( array( 'height' => BP_AVATAR_THUMB_HEIGHT/2, 'width' => BP_AVATAR_THUMB_WIDTH/2 ) ); ?>
 	</div>
 
+	<?php do_action( 'bp_template_after_blog_avatar' ); ?>
+
+
+	<?php do_action( 'bp_template_before_blog_content' ); ?>
+
 	<div class="blog-content">
+
+		<?php do_action( 'bp_template_before_blog_title' ); ?>
+
 		<h3 class="blog-title">
 			<a href="<?php echo esc_url( bp_get_blog_latest_post_permalink() ); ?>"><?php bp_blog_latest_post_title(); ?></a><br />
 			<span class="blog-name"><a href="<?php echo esc_url( bp_get_blog_permalink() ); ?>"><?php bp_blog_name(); ?></a></span>
 		</h3>
+
+		<?php do_action( 'bp_template_after_blog_title' ); ?>
+
+
+		<?php do_action( 'bp_template_before_blog_featured_image' ); ?>
 
 		<?php if ( bp_blog_latest_post_has_featured_image( 'post-thumbnail' ) ) : ?>
 			<a href="<?php echo esc_url( bp_get_blog_latest_post_permalink() ); ?>">
@@ -27,10 +42,20 @@
 			</a>
 		<?php endif; ?>
 
+		<?php do_action( 'bp_template_after_blog_featured_image' ); ?>
+
+
+		<?php do_action( 'bp_template_before_blog_excerpt' ); ?>
+
 		<p class="blog-excerpt">
 			<?php echo bp_create_excerpt( bp_get_blog_latest_post_content(), 500 ); ?>
 		</p>
+
+		<?php do_action( 'bp_template_after_blog_excerpt' ); ?>
+
 	</div>
+
+	<?php do_action( 'bp_template_after_blog_content' ); ?>
 
 
 	<?php do_action( 'bp_template_in_blogs_loop_late' ); ?>
