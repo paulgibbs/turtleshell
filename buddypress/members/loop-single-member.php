@@ -14,7 +14,7 @@
 	<?php do_action( 'bp_template_before_member_avatar' ); ?>
 
 	<div class="member-avatar">
-		<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar(); ?></a>
+		<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar( 'type=full' ); ?></a>
 	</div>
 
 	<?php do_action( 'bp_template_after_member_avatar' ); ?>

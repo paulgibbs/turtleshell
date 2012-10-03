@@ -16,6 +16,3 @@ function turtlepower_package_id( $package_id ) {
 	return 'turtleshell';
 }
 add_filter( 'pre_option__bp_theme_package_id', 'turtlepower_package_id' );
-
-define( 'BP_AVATAR_THUMB_WIDTH',  140 );
-define( 'BP_AVATAR_THUMB_HEIGHT', 140 );
