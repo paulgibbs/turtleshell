@@ -14,7 +14,7 @@
 	<?php do_action( 'bp_template_before_blog_avatar' ); ?>
 
 	<div class="blog-author-avatar">
-		<?php bp_blog_avatar( array( 'height' => BP_AVATAR_THUMB_HEIGHT/2, 'width' => BP_AVATAR_THUMB_WIDTH/2 ) ); ?>
+		<?php bp_blog_avatar( 'type=thumb' ); ?>
 	</div>
 
 	<?php do_action( 'bp_template_after_blog_avatar' ); ?>
