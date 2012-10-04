@@ -144,10 +144,8 @@
 #buddypress .bp-archive-activity li:after {
   clear: both;
 }
-#buddypress .bp-archive-activity li .activity-comment,
-#buddypress .bp-archive-activity li .activity-favorite,
-#buddypress .bp-archive-activity li .activity-unfavorite,
-#buddypress .bp-archive-activity li .activity-delete {
+#buddypress .bp-archive-activity li .bp-primary-action,
+#buddypress .bp-archive-activity li .bp-secondary-action {
   margin: 0 3% 0 0;
 }
 #buddypress .bp-archive-activity li .activity-content {
