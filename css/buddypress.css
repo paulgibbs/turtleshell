@@ -147,6 +147,7 @@
 #buddypress .bp-archive-activity li .bp-primary-action,
 #buddypress .bp-archive-activity li .bp-secondary-action {
   margin: 0 3% 0 0;
+  display: inline;
 }
 #buddypress .bp-archive-activity li .activity-content {
   margin: 0 0 0 12%;
