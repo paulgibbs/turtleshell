@@ -27,6 +27,11 @@
 		list-style: none;
 		margin: 0;
 	}
+
+	img{
+		height: auto;
+		max-width: 100%;
+	}
 }
 
 
@@ -104,13 +109,32 @@
 
 /* =05. Activity List
 --------------------------------------------------------------- */
-#bp-archive-activity li{
+#buddypress .bp-archive-activity li{
 	.clearfix();
 	margin: 0 0 3% 0;
-}
-#buddypress .activity-avatar{
-	float: left; // @todo RTL
-	margin: 0 1% 0 0;
+
+	.activity-comment, .activity-favorite, .activity-unfavorite, .activity-delete{
+		margin: 0 3% 0 0;
+	}
+
+	.activity-content{
+		margin: 0 0 0 12%;
+	}
+
+	.activity-avatar{
+		float: left; // @todo RTL
+		margin: 0 1% 0 0;
+		width: 10%;
+	}
+	
+	.activity-meta{
+		float: right;
+		font-size: @smallFontSize;
+	}
+
+	.activity-header p, .activity-body p{
+		margin: 0 0 5px 0;
+	}
 }
 
 

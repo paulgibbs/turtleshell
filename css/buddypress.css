@@ -48,6 +48,10 @@
   list-style: none;
   margin: 0;
 }
+#buddypress img {
+  height: auto;
+  max-width: 100%;
+}
 /* =02. Members Directory
 -------------------------------------------------------------- */
 #buddypress .bp-archive-members {
@@ -127,22 +131,40 @@
 }
 /* =05. Activity List
 --------------------------------------------------------------- */
-#bp-archive-activity li {
+#buddypress .bp-archive-activity li {
   *zoom: 1;
   margin: 0 0 3% 0;
 }
-#bp-archive-activity li:before,
-#bp-archive-activity li:after {
+#buddypress .bp-archive-activity li:before,
+#buddypress .bp-archive-activity li:after {
   display: table;
   content: "";
   line-height: 0;
 }
-#bp-archive-activity li:after {
+#buddypress .bp-archive-activity li:after {
   clear: both;
 }
-#buddypress .activity-avatar {
+#buddypress .bp-archive-activity li .activity-comment,
+#buddypress .bp-archive-activity li .activity-favorite,
+#buddypress .bp-archive-activity li .activity-unfavorite,
+#buddypress .bp-archive-activity li .activity-delete {
+  margin: 0 3% 0 0;
+}
+#buddypress .bp-archive-activity li .activity-content {
+  margin: 0 0 0 12%;
+}
+#buddypress .bp-archive-activity li .activity-avatar {
   float: left;
   margin: 0 1% 0 0;
+  width: 10%;
+}
+#buddypress .bp-archive-activity li .activity-meta {
+  float: right;
+  font-size: 0.85rem;
+}
+#buddypress .bp-archive-activity li .activity-header p,
+#buddypress .bp-archive-activity li .activity-body p {
+  margin: 0 0 5px 0;
 }
 /* =06. Sites Directory
 --------------------------------------------------------------- */
