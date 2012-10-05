@@ -7,7 +7,7 @@
  */
 ?>
 
-<li id="bp-activity-<?php bp_activity_id(); ?>" <?php bp_activity_css_class(); ?>>
+<li id="bp-activity-<?php bp_activity_id(); ?>" class="<?php echo esc_attr( bp_get_activity_css_class() ); ?>">
 	<?php do_action( 'bp_template_in_activity_loop_early' ); ?>
 
 	<div class="activity-avatar">
@@ -35,21 +35,29 @@
 		<?php endif; ?>
 
 		<?php if ( is_user_logged_in() ) : ?>
-			<div class="activity-meta">
+			<ul class="activity-meta">
+
 				<?php if ( bp_activity_can_comment() ) : ?>
-					<a href="<?php bp_get_activity_comment_link(); ?>" class="button activity-comment bp-primary-action" id="acomment-comment-<?php bp_activity_id(); ?>"><?php printf( __( 'Comment <span>%s</span>', 'buddypress' ), bp_activity_get_comment_count() ); ?></a>
+					<li><a href="<?php bp_get_activity_comment_link(); ?>" class="button activity-comment bp-primary-action" id="acomment-comment-<?php bp_activity_id(); ?>"><?php printf( __( 'Comment <span>%s</span>', 'buddypress' ), bp_activity_get_comment_count() ); ?></a></li>
 				<?php endif; ?>
+
 				<?php if ( bp_activity_can_favorite() ) : ?>
-					<?php if ( !bp_get_activity_is_favorite() ) : ?>
-						<a href="<?php bp_activity_favorite_link(); ?>" class="button activity-fav bp-secondary-action" title="<?php esc_attr_e( 'Mark as Favorite', 'buddypress' ); ?>"><?php _e( 'Favorite', 'buddypress' ); ?></a>
-					<?php else : ?>
-						<a href="<?php bp_activity_unfavorite_link(); ?>" class="button activity-unfav bp-secondary-action" title="<?php esc_attr_e( 'Remove Favorite', 'buddypress' ); ?>"><?php _e( 'Remove Favorite', 'buddypress' ); ?></a>
-					<?php endif; ?>
+					<li>
+
+						<?php if ( !bp_get_activity_is_favorite() ) : ?>
+							<a href="<?php bp_activity_favorite_link(); ?>" class="button activity-fav bp-secondary-action" title="<?php esc_attr_e( 'Mark as Favorite', 'buddypress' ); ?>"><?php _e( 'Favorite', 'buddypress' ); ?></a>
+						<?php else : ?>
+							<a href="<?php bp_activity_unfavorite_link(); ?>" class="button activity-unfav bp-secondary-action" title="<?php esc_attr_e( 'Remove Favorite', 'buddypress' ); ?>"><?php _e( 'Remove Favorite', 'buddypress' ); ?></a>
+						<?php endif; ?>
+
+					</li>
 				<?php endif; ?>
+
 				<?php if ( bp_activity_user_can_delete() ) : ?>
-					<?php bp_activity_delete_link(); ?>
+					<li><?php bp_activity_delete_link(); ?></li>
 				<?php endif; ?>
-			</div>
+
+			</ul>
 		<?php endif; ?>
 
 	</div><!-- .activity-content -->

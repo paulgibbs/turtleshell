@@ -109,14 +109,18 @@
 
 /* =05. Activity List
 --------------------------------------------------------------- */
-#buddypress .bp-archive-activity li{
-	.clearfix();
-	margin: 0 0 3% 0;
-
-	.bp-primary-action, .bp-secondary-action{
-		margin: 0 3% 0 0;
-		display: inline;
+#buddypress .bp-archive-activity {
+	li {
+		margin: 0 0 3% 0;
 	}
+
+	.activity-meta li {
+		margin: 0 0;
+	}
+}
+
+.bp-archive-activity {
+	.clearfix();
 
 	.activity-content{
 		margin: 0 0 0 12%;
@@ -131,10 +135,15 @@
 	.activity-meta{
 		float: right;
 		font-size: @smallFontSize;
+
+		li {
+			margin: 0 0;
+			display: inline-block;
+		}
 	}
 
 	.activity-header p, .activity-body p{
-		margin: 0 0 5px 0;
+		margin-bottom: 0;
 	}
 }
 
