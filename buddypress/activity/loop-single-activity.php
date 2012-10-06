@@ -35,34 +35,38 @@
 			</div>
 		<?php endif; ?>
 
-		<?php if ( is_user_logged_in() ) : ?>
-			<ul class="activity-meta">
+		<div class="activity-meta">
+			<div class="activity-timestamp">
+				<?php echo bp_core_time_since( bp_get_activity_date_recorded() ); ?>
+			</div>
 
-				<li><?php echo bp_core_time_since( bp_get_activity_date_recorded() ); ?></li>
+			<?php if ( is_user_logged_in() ) : ?>
+				<ul>
 
-				<?php if ( bp_activity_can_comment() ) : ?>
-					<li><a href="<?php bp_get_activity_comment_link(); ?>"><?php printf( __( 'Comment <span>%s</span>', 'buddypress' ), bp_activity_get_comment_count() ); ?></a></li>
-				<?php endif; ?>
+					<?php if ( bp_activity_can_comment() ) : ?>
+						<li><a href="<?php bp_get_activity_comment_link(); ?>"><?php printf( __( 'Comment <span>%s</span>', 'buddypress' ), bp_activity_get_comment_count() ); ?></a></li>
+					<?php endif; ?>
 
-				<?php if ( bp_activity_can_favorite() ) : ?>
-					<li>
+					<?php if ( bp_activity_can_favorite() ) : ?>
+						<li>
 
-						<?php if ( !bp_get_activity_is_favorite() ) : ?>
-							<a href="<?php bp_activity_favorite_link(); ?>" title="<?php esc_attr_e( 'Mark as Favorite', 'buddypress' ); ?>"><?php _e( 'Favorite', 'buddypress' ); ?></a>
-						<?php else : ?>
-							<a href="<?php bp_activity_unfavorite_link(); ?>" title="<?php esc_attr_e( 'Remove Favorite', 'buddypress' ); ?>"><?php _e( 'Remove Favorite', 'buddypress' ); ?></a>
-						<?php endif; ?>
+							<?php if ( !bp_get_activity_is_favorite() ) : ?>
+								<a href="<?php bp_activity_favorite_link(); ?>" title="<?php esc_attr_e( 'Mark as Favorite', 'buddypress' ); ?>"><?php _e( 'Favorite', 'buddypress' ); ?></a>
+							<?php else : ?>
+								<a href="<?php bp_activity_unfavorite_link(); ?>" title="<?php esc_attr_e( 'Remove Favorite', 'buddypress' ); ?>"><?php _e( 'Remove Favorite', 'buddypress' ); ?></a>
+							<?php endif; ?>
 
-					</li>
-				<?php endif; ?>
+						</li>
+					<?php endif; ?>
 
-				<?php if ( bp_activity_user_can_delete() ) : ?>
-					<li><?php bp_activity_delete_link(); ?></li>
-				<?php endif; ?>
+					<?php if ( bp_activity_user_can_delete() ) : ?>
+						<li><?php bp_activity_delete_link(); ?></li>
+					<?php endif; ?>
 
-			</ul>
-		<?php endif; ?>
+				</ul>
+			<?php endif; ?>
 
+		</div><!-- .activity-meta -->
 	</div><!-- .activity-content -->
 
 
