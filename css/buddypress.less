@@ -175,6 +175,16 @@
 			&:last-child {
 				padding-right: 0; // @todo RTL ?
 			}
+
+			> a {
+				text-decoration: none;
+
+				span {
+					.border-radius(3px);
+					background: @themeCompatSubtleBorder;
+					padding: 1px 6px;
+				}
+			}
 		}
 	}
 }
