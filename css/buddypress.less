@@ -111,10 +111,10 @@
 --------------------------------------------------------------- */
 #buddypress .bp-archive-activity {
 	li {
-		margin: 0 0 3% 0;
+		margin: 0 0 @themeCompatMargin*2 0;
 	}
 
-	.activity-meta li {
+	.activity-actions li {
 		margin: 0 0;
 	}
 }
@@ -122,38 +122,60 @@
 .bp-archive-activity {
 	.clearfix();
 
-	.activity-content{
-		margin: 0 0 0 12%;
-	}
-
-	.activity-avatar{
+	.activity-avatar {
 		float: left; // @todo RTL
-		margin: 0 1% 0 0;
+		margin-right: @themeCompatMargin; // @todo RTL
 		width: 10%;
 	}
 
+	.activity-content {
+		.clearfix();
+		margin: 0 0 0 12%; // @todo RTL
+	}
+
+	.activity-header {
+		border-bottom: 1px solid @themeCompatSubtleBorder;
+		padding-bottom: @themeCompatMargin;
+
+		p { margin-bottom: 0 0; }
+	}
+
+	.activity-body {
+		border-bottom: 1px solid @themeCompatSubtleBorder;
+		padding: @themeCompatMargin 0;
+
+		p { margin-bottom: 0 0; }
+	}
+
+	.activity-meta {
+		float: left; // @todo RTL
+		font-size: @smallFontSize;
+		margin-top: @themeCompatMargin;
+		width: 100%;
+	}
+
 	.activity-timestamp {
-		float: left;
+		float: left; // @todo RTL
 		font-size: @smallFontSize;
 	}
-	
-	.activity-meta {
-		float: left;
-		font-size: @smallFontSize;
-		width: 100%;
 
-		ul {
-			float: right;
-		}
+	.activity-actions {
+		float: right; // @todo RTL
 
 		li {
-			margin: 0 0;
+			border-left: 1px solid @themeCompatSubtleBorder; // @todo RTL
+			padding: 0 @themeCompatMargin; // @todo RTL
 			display: inline-block;
-		}
-	}
 
-	.activity-header p, .activity-body p{
-		margin-bottom: 0;
+			&:first-child {
+				border-left: 0;  // @todo RTL ?
+				padding-left: 0; // @todo RTL ?
+			}
+
+			&:last-child {
+				padding-right: 0; // @todo RTL ?
+			}
+		}
 	}
 }
 
