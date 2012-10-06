@@ -20,7 +20,7 @@
 	<div class="activity-content">
 
 		<div class="activity-header">
-			<?php bp_activity_action(); ?>
+			<?php ts_bp_activity_action( 'no_timestamp=1' ); ?>
 		</div>
 
 		<?php if ( 'activity_comment' == bp_get_activity_type() ) : ?>
@@ -37,6 +37,8 @@
 
 		<?php if ( is_user_logged_in() ) : ?>
 			<ul class="activity-meta">
+
+				<li><?php echo bp_core_time_since( bp_get_activity_date_recorded() ); ?></li>
 
 				<?php if ( bp_activity_can_comment() ) : ?>
 					<li><a href="<?php bp_get_activity_comment_link(); ?>"><?php printf( __( 'Comment <span>%s</span>', 'buddypress' ), bp_activity_get_comment_count() ); ?></a></li>
