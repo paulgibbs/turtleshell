@@ -37,11 +37,11 @@
 
 		<div class="activity-meta">
 			<div class="activity-timestamp">
-				<?php echo bp_core_time_since( bp_get_activity_date_recorded() ); ?>
+				<a href="<?php bp_activity_thread_permalink(); ?>"><?php echo bp_core_time_since( bp_get_activity_date_recorded() ); ?></a>
 			</div>
 
 			<?php if ( is_user_logged_in() ) : ?>
-				<ul>
+				<ul class="activity-actions">
 
 					<?php if ( bp_activity_can_comment() ) : ?>
 						<li><a href="<?php bp_get_activity_comment_link(); ?>"><?php printf( __( 'Comment <span>%s</span>', 'buddypress' ), bp_activity_get_comment_count() ); ?></a></li>
