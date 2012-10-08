@@ -111,7 +111,7 @@
 --------------------------------------------------------------- */
 #buddypress .bp-archive-activity {
 	li {
-		margin: 0 0 @themeCompatMargin*2 0;
+		margin: 0 0 @themeCompatMargin*3 0;
 	}
 
 	.activity-actions li {
@@ -135,16 +135,18 @@
 
 	.activity-header {
 		border-bottom: 1px solid @themeCompatSubtleBorder;
+		font-size: @smallFontSize;
 		padding-bottom: @themeCompatMargin;
 
-		p { margin-bottom: 0 0; }
+		font-size: @smallFontSize;
+		p { margin-bottom: 0; }
 	}
 
 	.activity-body {
 		border-bottom: 1px solid @themeCompatSubtleBorder;
 		padding: @themeCompatMargin 0;
 
-		p { margin-bottom: 0 0; }
+		p { margin-bottom: 0; }
 	}
 
 	.activity-meta {
@@ -197,6 +199,7 @@
 
 	.blog-author-avatar {
 		float: left;  // @todo RTL
+		margin-right: 10px;
 		margin-right: 1rem;  // @todo RTL
 	}
 
