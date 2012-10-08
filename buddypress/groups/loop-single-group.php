@@ -31,10 +31,8 @@
 
 	<?php do_action( 'bp_template_before_group_details' ); ?>
 
-	<div class="group-details">
-		<div class="group-meta">
-			<span class="group-activity activity"><?php bp_group_last_active(); ?></span>
-		</div>
+	<div class="group-meta">
+		<span class="group-activity activity"><?php bp_group_last_active(); ?></span>
 	</div>
 
 	<?php do_action( 'bp_template_after_group_details' ); ?>
