@@ -20,22 +20,38 @@
 	<?php do_action( 'bp_template_after_group_avatar' ); ?>
 
 
-	<?php do_action( 'bp_template_before_group_title' ); ?>
+	<div class="group-details">
 
-	<div class="group-title">
-		<a href="<?php bp_group_permalink(); ?>"><?php bp_group_name(); ?></a>
-	</div>
+		<?php do_action( 'bp_template_before_group_title' ); ?>
 
-	<?php do_action( 'bp_template_after_group_title' ); ?>
+		<div class="group-title">
+			<a href="<?php bp_group_permalink(); ?>"><?php bp_group_name(); ?></a>
+		</div>
+
+		<?php do_action( 'bp_template_after_group_title' ); ?>
 
 
-	<?php do_action( 'bp_template_before_group_details' ); ?>
+		<?php do_action( 'bp_template_before_group_meta' ); ?>
 
-	<div class="group-meta">
-		<span class="group-activity activity"><?php bp_group_last_active(); ?></span>
-	</div>
+		<div class="group-meta">
+			<ul>
+				<li class="group-activity"><?php bp_group_last_active(); ?></li>
+				<li class="group-member-count"><?php bp_group_member_count(); ?></li>
 
-	<?php do_action( 'bp_template_after_group_details' ); ?>
+				<?php do_action( 'bp_template_in_group_meta' ); ?>
+			</ul>
+		</div>
+
+		<?php do_action( 'bp_template_after_group_meta' ); ?>
+
+	</div><!-- .group-details -->
+
+
+	<?php do_action( 'bp_template_before_group_description' ); ?>
+
+	<div class="group-description"><?php bp_group_description_excerpt(); ?></div>
+
+	<?php do_action( 'bp_template_after_group_description' ); ?>
 
 
 	<?php do_action( 'bp_template_in_groups_loop_late' ); ?>

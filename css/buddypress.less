@@ -70,19 +70,48 @@
 
 	li {
 		float: left;  // @todo RTL
-		margin: 0 1% @themeCompatMargin 0;  // @todo RTL
-		width: 49%;
+		margin: 0 2% @themeCompatMargin*2 0;  // @todo RTL
+		width: 48%;
+
+		&:nth-child(2n+2) { margin-right: 0; } // @todo RT
+	}
+
+	.group-meta li {
+		margin: 0;
+		width: 100%;
 	}
 }
 
-.bp-archive-groups {	
+.bp-archive-groups {
+	li:nth-child(2n+1) {
+		clear: left;
+	}
+
 	.group-avatar {
 		float: left;  // @todo RTL
 		margin: 0 @themeCompatMargin 0 0;  // @todo RTL
+		width: 48%;
+	}
+
+	.group-details {
+		float: left;  // @todo RTL
+		width: 48%;
 	}
 
 	.group-meta {
 		font-size: @smallFontSize;
+
+		ul {
+			.clearfix();
+			word-wrap: break-word;
+		}
+	}
+
+	.group-description {
+		float: left;  // @todo RTL
+		margin-right: @themeCompatMargin;  // @todo RTL
+
+		p { margin-bottom: 0; }
 	}
 }
 

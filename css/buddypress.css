@@ -102,15 +102,50 @@
 }
 #buddypress .bp-archive-groups li {
   float: left;
-  margin: 0 1% 0.75rem 0;
-  width: 49%;
+  margin: 0 2% 1.5rem 0;
+  width: 48%;
+}
+#buddypress .bp-archive-groups li:nth-child(2n+2) {
+  margin-right: 0;
+}
+#buddypress .bp-archive-groups .group-meta li {
+  margin: 0;
+  width: 100%;
+}
+.bp-archive-groups li:nth-child(2n+1) {
+  clear: left;
 }
 .bp-archive-groups .group-avatar {
   float: left;
   margin: 0 0.75rem 0 0;
+  width: 48%;
+}
+.bp-archive-groups .group-details {
+  float: left;
+  width: 48%;
 }
 .bp-archive-groups .group-meta {
   font-size: 0.85rem;
+}
+.bp-archive-groups .group-meta ul {
+  *zoom: 1;
+  word-wrap: break-word;
+}
+.bp-archive-groups .group-meta ul:before,
+.bp-archive-groups .group-meta ul:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.bp-archive-groups .group-meta ul:after {
+  clear: both;
+}
+.bp-archive-groups .group-description {
+  float: left;
+  margin-right: 0.75rem;
+}
+.bp-archive-groups .group-description p {
+  margin-bottom: 0;
 }
 /* =04. Pagination
 -------------------------------------------------------------- */
