@@ -59,7 +59,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   *zoom: 1;
-  margin: 0 0 0.75rem 0;
+  margin: 0 0 10px 0;
   width: 100%;
 }
 #buddypress .bp-archive-members:before,
@@ -73,7 +73,7 @@
 }
 #buddypress .bp-archive-members li {
   float: left;
-  margin: 0 0.75rem 0.75rem 0;
+  margin: 0 10px 10px 0;
 }
 .bp-archive-members li {
   text-align: center;
@@ -89,7 +89,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   *zoom: 1;
-  margin: 0 0 0.75rem 0;
+  margin: 0 0 10px 0;
   width: 100%;
 }
 #buddypress .bp-archive-groups:before,
@@ -103,7 +103,7 @@
 }
 #buddypress .bp-archive-groups li {
   float: left;
-  margin: 0 2% 1.5rem 0;
+  margin: 0 2% 20px 0;
   width: 48%;
 }
 #buddypress .bp-archive-groups li:nth-child(2n+2) {
@@ -118,7 +118,7 @@
 }
 .bp-archive-groups .group-avatar {
   float: left;
-  margin: 0 0.75rem 0 0;
+  margin: 0 10px 0 0;
   width: 48%;
 }
 .bp-archive-groups .group-details {
@@ -144,7 +144,7 @@
 }
 .bp-archive-groups .group-description {
   float: left;
-  margin-right: 0.75rem;
+  margin-right: 10px;
 }
 .bp-archive-groups .group-description p {
   margin-bottom: 0;
@@ -161,7 +161,7 @@
   float: right;
   font-size: 10px;
   font-size: 0.85rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 10px;
   width: 100%;
 }
 .bp-pagination a {
@@ -170,7 +170,7 @@
 /* =05. Activity List
 --------------------------------------------------------------- */
 #buddypress .bp-archive-activity li {
-  margin: 0 0 2.25rem 0;
+  margin: 0 0 30px 0;
 }
 #buddypress .bp-archive-activity .activity-actions li {
   margin: 0 0;
@@ -189,7 +189,7 @@
 }
 .bp-archive-activity .activity-avatar {
   float: left;
-  margin-right: 0.75rem;
+  margin-right: 10px;
   width: 10%;
 }
 .bp-archive-activity .activity-content {
@@ -209,14 +209,14 @@
   border-bottom: 1px solid #dddddd;
   font-size: 10px;
   font-size: 0.85rem;
-  padding-bottom: 0.75rem;
+  padding-bottom: 10px;
 }
 .bp-archive-activity .activity-header p {
   margin-bottom: 0;
 }
 .bp-archive-activity .activity-body {
   border-bottom: 1px solid #dddddd;
-  padding: 0.75rem 0;
+  padding: 10px 0;
 }
 .bp-archive-activity .activity-body p {
   margin-bottom: 0;
@@ -225,7 +225,7 @@
   float: left;
   font-size: 10px;
   font-size: 0.85rem;
-  margin-top: 0.75rem;
+  margin-top: 10px;
   width: 100%;
 }
 .bp-archive-activity .activity-timestamp {
@@ -238,7 +238,7 @@
 }
 .bp-archive-activity .activity-actions li {
   border-left: 1px solid #dddddd;
-  padding: 0 0.75rem;
+  padding: 0 10px;
   display: inline-block;
 }
 .bp-archive-activity .activity-actions li:first-child {
@@ -301,5 +301,5 @@
 }
 .bp-archive-blogs .blog-content .blog-image,
 .bp-archive-blogs .blog-content .blog-excerpt {
-  margin-top: 0.75rem;
+  margin-top: 10px;
 }
