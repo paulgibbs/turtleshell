@@ -37,6 +37,7 @@
 			<ul>
 				<li class="group-activity"><?php bp_group_last_active(); ?></li>
 				<li class="group-member-count"><?php bp_group_member_count(); ?></li>
+				<li class="group-action"><?php bp_group_join_button(); ?></li>
 
 				<?php do_action( 'bp_template_in_group_meta' ); ?>
 			</ul>
