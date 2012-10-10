@@ -75,8 +75,15 @@
   float: left;
   margin: 0 10px 10px 0;
 }
+#buddypress .bp-archive-members li:nth-child(4n+4) {
+  margin-right: 0;
+}
 .bp-archive-members li {
   text-align: center;
+  width: 23%;
+}
+.bp-archive-members li:nth-child(4n+5) {
+  clear: left;
 }
 .bp-archive-members .member-meta {
   font-size: 10px;

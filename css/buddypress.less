@@ -46,12 +46,17 @@
 	li {
 		float: left;  // @todo RTL
 		margin: 0 @themeCompatMargin @themeCompatMargin 0;  // @todo RTL
+
+		&:nth-child(4n+4) { margin-right: 0; }  // @todo RTL
 	}
 }
 
 .bp-archive-members {
 	li {
 		text-align: center;
+		width: 23%;
+
+		&:nth-child(4n+5) { clear: left; }  // @todo RTL
 	}
 
 	.member-meta {
@@ -85,7 +90,7 @@
 
 .bp-archive-groups {
 	li:nth-child(2n+1) {
-		clear: left;
+		clear: left; // @todo RTL
 	}
 
 	.group-avatar {
