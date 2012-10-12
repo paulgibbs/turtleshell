@@ -48,10 +48,6 @@
   list-style: none;
   margin: 0;
 }
-#buddypress img {
-  height: auto;
-  max-width: 100%;
-}
 /* =02. Members Directory
 -------------------------------------------------------------- */
 #buddypress .bp-archive-members {
@@ -309,4 +305,23 @@
 .bp-archive-blogs .blog-content .blog-image,
 .bp-archive-blogs .blog-content .blog-excerpt {
   margin-top: 10px;
+}
+#bp-member-menu {
+  border: 1px solid black;
+  float: left;
+  width: 20%;
+}
+.lorum {
+  *zoom: 1;
+  float: left;
+  width: 79%;
+}
+.lorum:before,
+.lorum:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.lorum:after {
+  clear: both;
 }
