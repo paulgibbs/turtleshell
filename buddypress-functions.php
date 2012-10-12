@@ -194,6 +194,6 @@ function ts_bp_member_menu() {
 		$class = implode( ' ', $class );
 		$link  = esc_url( trailingslashit( $nav_item['link'] ) );
 
-		printf( '<li %1$s><a href="%2$s">%3$s</a></li>', $class, esc_attr( $link ), $nav_item['name'] );
+		printf( '<li class="%1$s"><a href="%2$s">%3$s</a></li>', $class, esc_attr( $link ), $nav_item['name'] );
 	}
 }
