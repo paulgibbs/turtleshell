@@ -307,9 +307,19 @@
   margin-top: 10px;
 }
 #bp-member-menu {
+  *zoom: 1;
   border: 1px solid black;
   float: left;
   width: 20%;
+}
+#bp-member-menu:before,
+#bp-member-menu:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#bp-member-menu:after {
+  clear: both;
 }
 .lorum {
   *zoom: 1;
