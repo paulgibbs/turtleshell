@@ -12,12 +12,14 @@ $(document).scroll(function() {
 		menu.css( 'position', 'fixed' );
 		menu.addClass( 'docked' );
 		docked = true;
+		$('.lorum').css( 'margin-left', '160px' );
 
 	} else if (docked && $(window).scrollTop() <= init) {
 		menu.css( 'position', 'static' );
 		menu.css( 'top', init + 'px' );
 		menu.removeClass( 'docked' );
 		docked = false;
+		$('.lorum').css( 'margin-left', 'auto' );
 	}
 });
 

@@ -323,3 +323,7 @@
 #bp-member-menu:after {
   clear: both;
 }
+.lorum {
+  float: left;
+  width: 74%;
+}
