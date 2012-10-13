@@ -6,6 +6,8 @@
 04. Pagination
 05. Activity Directory
 07. Sites Directory
+08. Single member
+08a. Single member - menu
 */
 .clearfix {
   *zoom: 1;
@@ -306,12 +308,15 @@
 .bp-archive-blogs .blog-content .blog-excerpt {
   margin-top: 10px;
 }
-#buddypress #bp-member-menu {
-  margin-right: 10px;
+/* =08a. Single member
+--------------------------------------------------------------- */
+.bp-member-content {
+  margin-left: 10px;
 }
+/* =08a. Single member - menu
+--------------------------------------------------------------- */
 #bp-member-menu {
   *zoom: 1;
-  border: 1px solid black;
   float: left;
 }
 #bp-member-menu:before,

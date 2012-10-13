@@ -6,6 +6,8 @@
 04. Pagination
 05. Activity Directory
 07. Sites Directory
+08. Single member
+08a. Single member - menu
 */
 
 @import "variables.less";
@@ -261,14 +263,16 @@
 }
 
 
-// Member single screens
-#buddypress #bp-member-menu {
-	margin-right: @themeCompatMargin;
+/* =08a. Single member
+--------------------------------------------------------------- */
+.bp-member-content {
+	margin-left: @themeCompatMargin;
 }
 
+/* =08a. Single member - menu
+--------------------------------------------------------------- */
 #bp-member-menu {
 	.clearfix();
-	border: 1px solid black;
 	float: left;  // @todo RTL
 
 	&.docked {
