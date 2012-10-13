@@ -20,11 +20,11 @@
 
 			if (!docked && (obj.menu.offset().top - $(window).scrollTop() < 0)) {
 				obj.menu.addClass('docked');
-				$('.lorum').css( 'margin-left', '162px' );
+				$('.bp-member-content').css( 'margin-left', '162px' );
 
 			} else if (docked && $(window).scrollTop() <= obj.offset) {
 				obj.menu.removeClass( 'docked' );
-				$('.lorum').css( 'margin-left', 'auto' );
+				$('.bp-member-content').css( 'margin-left', 'auto' );
 			}
 		}
 	};
