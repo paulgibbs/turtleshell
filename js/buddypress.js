@@ -1,27 +1,28 @@
 /*! http://buddypress.org/ */
-(function( $ ) {
-$( document ).ready(function() {
+(function($) {
+$(document).ready(function() {
 
-var menu = $('#bp-member-menu'),
-init = menu.offset().top,
-docked;
+var menu = $('#bp-member-menu');
 
-$(document).scroll(function() {
-	if (!docked && (menu.offset().top - $(window).scrollTop() < 0)) {
-		menu.css( 'top', 0 );
-		menu.css( 'position', 'fixed' );
-		menu.addClass( 'docked' );
-		docked = true;
-		$('.lorum').css( 'margin-left', '160px' );
+// Member menu
+if (menu.length > 0) {
+	var init = menu.offset().top, docked;
 
-	} else if (docked && $(window).scrollTop() <= init) {
-		menu.css( 'position', 'static' );
-		menu.css( 'top', init + 'px' );
-		menu.removeClass( 'docked' );
-		docked = false;
-		$('.lorum').css( 'margin-left', 'auto' );
-	}
-});
+	$(document).scroll(function() {
+		if (!docked && (menu.offset().top - $(window).scrollTop() < 0)) {
+			docked = true;
+			menu.css({top: 0, position: 'fixed'});
+			menu.addClass( 'docked' );
+			$('.lorum').css( 'margin-left', '162px' );
+
+		} else if (docked && $(window).scrollTop() <= init) {
+			docked = false;
+			menu.css({top: init + 'px', position: 'static'});
+			menu.removeClass( 'docked' );
+			$('.lorum').css( 'margin-left', 'auto' );
+		}
+	});
+}
 
 });
 })( jQuery );
