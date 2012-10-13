@@ -19,34 +19,30 @@
 
 		<?php do_action( 'bp_before_member_body' );
 
-		/*if ( bp_is_user_activity() ) :
-			locate_template( array( 'members/single/activity.php'  ), true );
+		if ( bp_is_user_activity() ) :
+			bp_get_template_part( 'members/single/activity' );
 
 		elseif ( bp_is_user_blogs() ) :
-			locate_template( array( 'members/single/blogs.php'     ), true );
+			bp_get_template_part( 'members/single/blogs'    );
 
 		elseif ( bp_is_user_friends() ) :
-			locate_template( array( 'members/single/friends.php'   ), true );
+			bp_get_template_part( 'members/single/friends'  );
 
 		elseif ( bp_is_user_groups() ) :
-			locate_template( array( 'members/single/groups.php'    ), true );
+			bp_get_template_part( 'members/single/groups'   );
 
 		elseif ( bp_is_user_messages() ) :
-			locate_template( array( 'members/single/messages.php'  ), true );
+			bp_get_template_part( 'members/single/messages' );
 
 		elseif ( bp_is_user_profile() || ! bp_current_component() ) :
-			locate_template( array( 'members/single/profile.php'   ), true );
-
-		elseif ( bp_is_user_forums() ) :
-			locate_template( array( 'members/single/forums.php'    ), true );
+			bp_get_template_part( 'members/single/profile'  );
 
 		elseif ( bp_is_user_settings() ) :
-			locate_template( array( 'members/single/settings.php'  ), true );
+			bp_get_template_part( 'members/single/settings' );
 
 		else :
-			locate_template( array( 'members/single/plugins.php'   ), true );
-
-		endif;*/
+			bp_get_template_part( 'members/single/plugins'  );
+		endif;
 
 		do_action( 'bp_after_member_body' ); ?>
 
