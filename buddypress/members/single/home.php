@@ -1,6 +1,6 @@
 <div id="buddypress">
 
-	<?php bp_get_template_part( 'members/single/menu' ); ?>
+	<?php bp_get_template_part( 'members/single/menu', 'members' ); ?>
 
 	<div class="lorum">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non elit mauris. Duis in gravida mi. Pellentesque ultricies dictum orci, id sagittis leo lobortis et. Fusce egestas, nisi nec posuere feugiat, erat mi ultricies sapien, at convallis mi dolor eu ipsum. Curabitur viverra placerat urna, sit amet ullamcorper lorem consectetur ac. Cras placerat tincidunt venenatis. Ut sodales neque quis odio volutpat in facilisis erat tristique. Quisque tempus, nibh sed sodales varius, orci nisi pharetra risus, id aliquam sapien metus vitae tortor. Fusce ac vestibulum justo. Aenean tempus, nisl nec mattis ullamcorper, augue metus mollis libero, sed mattis nulla augue ut velit. Duis sit amet sem nec justo malesuada mollis sed nec leo. Nam eleifend tempus arcu, quis convallis tellus semper vulputate.</p>
