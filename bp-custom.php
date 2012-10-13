@@ -16,3 +16,6 @@ function turtlepower_package_id( $package_id ) {
 	return 'turtleshell';
 }
 add_filter( 'pre_option__bp_theme_package_id', 'turtlepower_package_id' );
+
+if ( ! defined( 'BP_DEFAULT_COMPONENT' ) )
+	define( 'BP_DEFAULT_COMPONENT', 'profile' );
