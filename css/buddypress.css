@@ -173,7 +173,7 @@
 /* =05. Activity List
 --------------------------------------------------------------- */
 #buddypress .bp-archive-activity li {
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
 }
 #buddypress .bp-archive-activity .activity-actions li {
   margin: 0 0;
@@ -256,7 +256,7 @@
   -moz-border-radius: 3px;
   border-radius: 3px;
   background: #dddddd;
-  padding: 1px 6px;
+  padding: 2px 4px;
 }
 /* =06. Sites Directory
 --------------------------------------------------------------- */
@@ -330,4 +330,8 @@
 .lorum {
   float: left;
   width: 74%;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
