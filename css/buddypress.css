@@ -311,7 +311,9 @@
 /* =08a. Single member
 --------------------------------------------------------------- */
 .bp-member-content {
+  float: left;
   margin-left: 10px;
+  width: 74%;
 }
 /* =08a. Single member - menu
 --------------------------------------------------------------- */
@@ -331,10 +333,6 @@
 #bp-member-menu.docked {
   position: fixed;
   top: 0;
-}
-.bp-member-content {
-  float: left;
-  width: 74%;
 }
 img {
   max-width: 100%;
