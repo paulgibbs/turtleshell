@@ -263,12 +263,11 @@
 .bp-archive-activity .activity-actions li:last-child {
   padding-right: 0;
 }
-.bp-archive-activity .activity-actions li .has-count span {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background: #dddddd;
-  padding: 2px 4px;
+.bp-archive-activity .activity-actions li .has-count span:before {
+  content: "(";
+}
+.bp-archive-activity .activity-actions li .has-count span:after {
+  content: ")";
 }
 /* =06. Sites Directory
 --------------------------------------------------------------- */

@@ -226,12 +226,8 @@
 			}
 
 			.has-count {
-				span {
-					.border-radius(3px);
-					background: @themeCompatSubtleBorder;
-					padding: 2px 4px;
-					//text-decoration: none;  // @todo If display: inline-block, this works, but messes up height of line. Any workaround?
-				}
+				span:before { content: "("; }
+				span:after { content: ")"; }
 			}
 		}
 	}
@@ -287,7 +283,7 @@
 
 /* =08a. Single member - menu
 --------------------------------------------------------------- */
-#bp-member-menu {
+	#bp-member-menu {
 	float: left;  // @todo RTL
 
 	&.docked {
