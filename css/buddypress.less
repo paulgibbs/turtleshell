@@ -315,26 +315,23 @@
 		.box-sizing(border-box);
 		width: @menuWidth;
 
-		li span {
-			.border-radius(3px);
-			background: @themeCompatSubtleBorder;
-			padding: 2px 4px;
-		}
-
-		li{
+		li {
 			background: rgba(0, 0, 0, 0.05);
-			padding: 4px 10px;
 			margin-bottom: 1px;
-		}
+			padding: 4px 10px;
 
-		li.member-menu-avatar{
-			background: none;
-			padding: 0;
-		}
+			&.member-menu-avatar{
+				background: none;
+				padding: 0;
+			}
 
-		li a{
-			text-decoration: none;
-		}
+			a { text-decoration: none; }
+			span {
+				.border-radius(3px);
+				background: @themeCompatSubtleBorder;
+				padding: 2px 4px;
+			}
+		}		
 	}
 }
 
