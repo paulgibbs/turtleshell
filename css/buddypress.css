@@ -339,10 +339,6 @@
 }
 /* =08a. Single member - menu
 --------------------------------------------------------------- */
-#buddypress #bp-member-menu .activity,
-#buddypress #bp-member-menu .navigation {
-  padding: 10px 0;
-}
 #bp-member-menu {
   float: left;
 }
