@@ -13,4 +13,13 @@
 	</li>
 
 	<?php ts_bp_member_menu(); ?>
+
+
+	<!-- placeholder only -->
+	<li>
+		<form method="post">
+			<textarea style="box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; width: 100%"></textarea>
+			<input type="submit" nvalue="<?php _e( 'Post', 'buddypress' ); ?>" />
+		</form>
+	</li>
 </ul>
