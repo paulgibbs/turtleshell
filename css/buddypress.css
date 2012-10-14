@@ -354,7 +354,8 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  outline: 1px solid green;
+  background: #000000;
+  background: rgba(0, 0, 0, 0.08);
   width: 150px;
 }
 #bp-member-menu .activity textarea {
@@ -365,7 +366,8 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  outline: 1px solid red;
+  background: #000000;
+  background: rgba(0, 0, 0, 0.05);
   width: 150px;
 }
 #bp-member-menu .navigation li span {
