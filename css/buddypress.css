@@ -334,6 +334,13 @@
   position: fixed;
   top: 0;
 }
+#bp-member-menu li span {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #dddddd;
+  padding: 2px 4px;
+}
 img {
   max-width: 100%;
   height: auto;
