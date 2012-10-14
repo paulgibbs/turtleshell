@@ -8,6 +8,7 @@
 07. Sites Directory
 08. Single member
 08a. Single member - menu
+08b. Single member - activity
 */
 .clearfix {
   *zoom: 1;
@@ -40,6 +41,10 @@
 -------------------------------------------------------------- */
 #buddypress {
   background: transparent;
+}
+#buddypress img {
+  height: auto;
+  max-width: 100%;
 }
 #buddypress ul {
   list-style: none;
@@ -109,7 +114,7 @@
 #buddypress .bp-archive-groups li {
   float: left;
   margin: 0 2% 20px 0;
-  width: 48%;
+  width: 49%;
 }
 #buddypress .bp-archive-groups li:nth-child(2n+2) {
   margin-right: 0;
@@ -308,18 +313,18 @@
 .bp-archive-blogs .blog-content .blog-excerpt {
   margin-top: 10px;
 }
-/* =08a. Single member
+/* =08. Single member
 --------------------------------------------------------------- */
 .bp-member-content {
   float: left;
-  margin-left: 10px;
-  width: 74%;
+  width: 65%;
 }
 /* =08a. Single member - menu
 --------------------------------------------------------------- */
 #bp-member-menu {
   *zoom: 1;
   float: left;
+  width: 35%;
 }
 #bp-member-menu:before,
 #bp-member-menu:after {
@@ -341,7 +346,11 @@
   background: #dddddd;
   padding: 2px 4px;
 }
-img {
-  max-width: 100%;
-  height: auto;
+/* =08b. Single member - activity
+--------------------------------------------------------------- */
+.bp-member-content .bp-archive-activity .activity-avatar {
+  display: none;
+}
+.bp-member-content .bp-archive-activity .activity-content {
+  margin-left: 0;
 }
