@@ -9,6 +9,7 @@
 08. Single member
 08a. Single member - menu
 08b. Single member - activity
+08c. Single member - groups
 */
 .clearfix {
   *zoom: 1;
@@ -352,4 +353,15 @@
 }
 .bp-member-content .bp-archive-activity .activity-content {
   margin-left: 0;
+}
+/* =08b. Single member - groups
+--------------------------------------------------------------- */
+.bp-member-content .bp-archive-groups .group-avatar {
+  margin-right: 0;
+  float: inherit;
+  width: auto;
+}
+.bp-member-content .bp-archive-groups .group-details {
+  float: inherit;
+  width: auto;
 }

@@ -9,6 +9,7 @@
 08. Single member
 08a. Single member - menu
 08b. Single member - activity
+08c. Single member - groups
 */
 
 @import "variables.less";
@@ -301,4 +302,20 @@
 .bp-member-content .bp-archive-activity {
 	.activity-avatar { display: none; }
 	.activity-content { margin-left: 0; }  // @todo RTL
+}
+
+
+/* =08b. Single member - groups
+--------------------------------------------------------------- */
+.bp-member-content .bp-archive-groups {
+	.group-avatar {
+		margin-right: 0;  // @todo RTL
+		float: inherit;
+		width: auto;
+	}
+
+	.group-details {
+		float: inherit;
+		width: auto;
+	}
 }
