@@ -76,6 +76,7 @@
 	.box-sizing(border-box);
 	.clearfix();
 	margin: 0 0 @themeCompatMargin 0;
+	overflow: hidden;
 	width: 100%;
 
 	li {
@@ -161,6 +162,10 @@
 
 .bp-archive-activity {
 	.clearfix();
+
+	> li {
+		overflow: hidden;
+	}
 
 	.activity-avatar {
 		float: left; // @todo RTL
@@ -273,30 +278,51 @@
 /* =08. Single member
 --------------------------------------------------------------- */
 .bp-member-content {
-	float: left;  // @todo RTL
-	width: 65%;
+	.box-sizing(border-box);
+	.clearfix();
+	padding-left: @menuWidth + @themeCompatMargin;
+	width: 100%;
 }
 
 
 /* =08a. Single member - menu
 --------------------------------------------------------------- */
+#buddypress #bp-member-menu .activity,
+#buddypress #bp-member-menu .navigation {
+	padding: @themeCompatMargin;
+}
+
 #bp-member-menu {
-	.clearfix();
 	float: left;  // @todo RTL
-	width: 35%;
 
 	&.docked {
 		position: fixed;
-		top: 0;
+		top: 28px;
 	}
 
-	li span {
-		.border-radius(3px);
-		background: @themeCompatSubtleBorder;
-		padding: 2px 4px;
+	.activity {
+		.box-sizing(border-box);
+		outline: 1px solid green;
+		width: @menuWidth;
+
+		textarea {
+			height: 5rem;
+			width: 90%;
+		}
+	}
+
+	.navigation {
+		.box-sizing(border-box);
+		outline: 1px solid red;
+		width: @menuWidth;
+
+		li span {
+			.border-radius(3px);
+			background: @themeCompatSubtleBorder;
+			padding: 2px 4px;
+		}
 	}
 }
-
 
 /* =08b. Single member - activity
 --------------------------------------------------------------- */

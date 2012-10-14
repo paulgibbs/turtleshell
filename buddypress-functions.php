@@ -178,22 +178,3 @@ function ts_bp_activity_action( $args = array() ) {
 
 		return apply_filters_ref_array( 'bp_get_activity_action', array( $action, &$activities_template->activity ) );
 	}
-
-
-function ts_bp_member_menu() {
-	foreach ( (array) buddypress()->bp_nav as $nav_item ) {
-		if ( empty( $nav_item['show_for_displayed_user'] ) && ! bp_is_my_profile() )
-			continue;
-
-		$class   = array();
-		$class[] = 'member-menu-' . esc_attr( $nav_item['slug'] );
-
-		if ( bp_is_current_component( $nav_item['slug'] ) )
-			$class[] = 'selected';
-
-		$class = implode( ' ', $class );
-		$link  = esc_url( trailingslashit( $nav_item['link'] ) );
-
-		printf( '<li class="%1$s"><a href="%2$s">%3$s</a></li>', $class, esc_attr( $link ), $nav_item['name'] );
-	}
-}
