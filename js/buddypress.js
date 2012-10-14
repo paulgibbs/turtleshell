@@ -3,7 +3,7 @@
 
 	var bp_members_menu = {
 		container: null,
-		container_offset: 0,
+		container_margin: 0,
 		menu: null,
 		offset: 0,
 
