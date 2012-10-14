@@ -280,7 +280,7 @@
 .bp-member-content {
 	.box-sizing(border-box);
 	.clearfix();
-	padding-left: @menuWidth + @themeCompatMargin;
+	padding-left: @menuWidth + (@themeCompatMargin*3);
 	width: 100%;
 }
 
@@ -302,7 +302,6 @@
 
 	.activity {
 		.box-sizing(border-box);
-		//background: rgba(0, 0, 0, 0.05);
 		width: @menuWidth;
 
 		textarea {
@@ -319,18 +318,13 @@
 			margin-bottom: 1px;
 			padding: 4px @themeCompatMargin;
 
-			&.member-menu-avatar {
-				padding: 0;
-			}
-			&.selected { background: rgba(0, 0, 0, 0.05); }
+			&.member-menu-avatar { padding: 0; }
+			&.selected { background: rgba(0, 0, 0, 0.1); }
 
 			a { text-decoration: none; }
-			span {
-				.border-radius(3px);
-				background: @themeCompatSubtleBorder;
-				padding: 2px 4px;
-			}
-		}		
+			span:before { content: "("; }
+			span:after { content: ")"; }
+		}
 	}
 }
 

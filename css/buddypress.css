@@ -325,7 +325,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   *zoom: 1;
-  padding-left: 160px;
+  padding-left: 180px;
   width: 100%;
 }
 .bp-member-content:before,
@@ -374,17 +374,16 @@
   padding: 0;
 }
 #bp-member-menu .navigation li.selected {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.1);
 }
 #bp-member-menu .navigation li a {
   text-decoration: none;
 }
-#bp-member-menu .navigation li span {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background: #dddddd;
-  padding: 2px 4px;
+#bp-member-menu .navigation li span:before {
+  content: "(";
+}
+#bp-member-menu .navigation li span:after {
+  content: ")";
 }
 /* =08b. Single member - activity
 --------------------------------------------------------------- */
