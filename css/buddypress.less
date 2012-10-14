@@ -309,7 +309,12 @@
 			margin-bottom: 1px;
 			padding: 4px @themeCompatMargin;
 
-			&.member-menu-avatar { padding: 0; }
+			&.member-menu-avatar {
+				&:hover { background: none; }
+				padding: 0;
+			}
+
+			&:hover { background: rgba(0, 0, 0, 0.1); }
 			&.selected { background: rgba(0, 0, 0, 0.1); }
 
 			a { text-decoration: none; }
