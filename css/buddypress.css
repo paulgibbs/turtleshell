@@ -354,7 +354,6 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.05);
   width: 150px;
 }
 #bp-member-menu .activity textarea {
@@ -368,13 +367,14 @@
   width: 150px;
 }
 #bp-member-menu .navigation li {
-  background: rgba(0, 0, 0, 0.05);
   margin-bottom: 1px;
   padding: 4px 10px;
 }
 #bp-member-menu .navigation li.member-menu-avatar {
-  background: none;
   padding: 0;
+}
+#bp-member-menu .navigation li.selected {
+  background: rgba(0, 0, 0, 0.05);
 }
 #bp-member-menu .navigation li a {
   text-decoration: none;
