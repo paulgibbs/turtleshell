@@ -289,7 +289,7 @@
 --------------------------------------------------------------- */
 #buddypress #bp-member-menu .activity,
 #buddypress #bp-member-menu .navigation {
-	padding: @themeCompatMargin;
+	padding: @themeCompatMargin 0;
 }
 
 #bp-member-menu {
@@ -303,7 +303,7 @@
 	.activity {
 		.box-sizing(border-box);
 		background: rgb(0, 0, 0);
-		background: rgba(0, 0, 0, 0.08);
+		background: rgba(0, 0, 0, 0.05);
 		width: @menuWidth;
 
 		textarea {
@@ -314,14 +314,28 @@
 
 	.navigation {
 		.box-sizing(border-box);
-		background: rgb(0, 0, 0);
-		background: rgba(0, 0, 0, 0.05);
 		width: @menuWidth;
 
 		li span {
 			.border-radius(3px);
 			background: @themeCompatSubtleBorder;
 			padding: 2px 4px;
+		}
+
+		li{
+			background: rgb(0, 0, 0);
+			background: rgba(0, 0, 0, 0.05);
+			padding: 4px 10px;
+			margin-bottom: 1px;
+		}
+
+		li.member-menu-avatar{
+			background: none;
+			padding: 0;
+		}
+
+		li a{
+			text-decoration: none;
 		}
 	}
 }

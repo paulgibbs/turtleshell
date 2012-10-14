@@ -341,7 +341,7 @@
 --------------------------------------------------------------- */
 #buddypress #bp-member-menu .activity,
 #buddypress #bp-member-menu .navigation {
-  padding: 10px;
+  padding: 10px 0;
 }
 #bp-member-menu {
   float: left;
@@ -355,7 +355,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: #000000;
-  background: rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.05);
   width: 150px;
 }
 #bp-member-menu .activity textarea {
@@ -366,8 +366,6 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: #000000;
-  background: rgba(0, 0, 0, 0.05);
   width: 150px;
 }
 #bp-member-menu .navigation li span {
@@ -376,6 +374,19 @@
   border-radius: 3px;
   background: #dddddd;
   padding: 2px 4px;
+}
+#bp-member-menu .navigation li {
+  background: #000000;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 4px 10px;
+  margin-bottom: 1px;
+}
+#bp-member-menu .navigation li.member-menu-avatar {
+  background: none;
+  padding: 0;
+}
+#bp-member-menu .navigation li a {
+  text-decoration: none;
 }
 /* =08b. Single member - activity
 --------------------------------------------------------------- */
