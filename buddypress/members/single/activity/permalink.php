@@ -9,9 +9,10 @@
 
 <div id="buddypress">
 
-	<?php if ( bp_has_activities() ) : ?>
+	<?php if ( bp_has_activities( 'display_comments=threaded&show_hidden=true&include=' . bp_current_action() ) ) : ?>
 
 		<ul class="bp-archive-activity">
+		
 		<?php while ( bp_activities() ) : bp_the_activity(); ?>
 		
 			<?php do_action( 'bp_before_activity_entry' ); ?>
@@ -21,7 +22,8 @@
 			<?php do_action( 'bp_after_activity_entry' ); ?>
 		
 		<?php endwhile; ?>
-		</ul>
+		
+		</ul><!-- .bp-archive-activity -->
 
 	<?php endif; ?>
 
