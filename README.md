@@ -31,4 +31,4 @@ Contributing
 
 [1]: https://github.com/paulgibbs/
 [2]: https://github.com/karmatosed/
-[3]: http://cl.ly/image/2B2p142f1Y2X
+[3]: http://cl.ly/image/2B2p142f1Y2X/
