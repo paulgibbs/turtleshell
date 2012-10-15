@@ -155,6 +155,8 @@
 		margin: 0 0 @themeCompatMargin*3 0;
 	}
 
+	p { margin-bottom: 0; }
+
 	.activity-actions li {
 		margin: 0 0;
 	}
@@ -283,7 +285,7 @@
 
 /* =08a. Single member - menu
 --------------------------------------------------------------- */
-	#bp-member-menu {
+#bp-member-menu {
 	float: left;  // @todo RTL
 
 	&.docked {
@@ -324,11 +326,17 @@
 	}
 }
 
+
 /* =08b. Single member - activity
 --------------------------------------------------------------- */
 .bp-member-content .bp-archive-activity {
-	.activity-avatar { display: none; }
-	.activity-content { margin-left: 0; }  // @todo RTL
+	.activity-avatar {
+		display: none;
+	}
+
+	.activity-content {
+		margin-left: 0;  // @todo RTL
+	}
 }
 
 
