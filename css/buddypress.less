@@ -318,17 +318,20 @@
 
 		li {
 			margin-bottom: 1px;
-			padding: 4px @themeCompatMargin;
 
+			&.selected { background: rgba(0, 0, 0, 0.1); }
+			&:hover { background: rgba(0, 0, 0, 0.1); }
 			&.member-menu-avatar {
 				&:hover { background: none; }
 				padding: 0;
 			}
 
-			&:hover { background: rgba(0, 0, 0, 0.1); }
-			&.selected { background: rgba(0, 0, 0, 0.1); }
+			a {
+				display: block;
+				padding: 4px @themeCompatMargin;
+				text-decoration: none;
+			}
 
-			a { text-decoration: none; }
 			span:before { content: "("; }
 			span:after { content: ")"; }
 		}

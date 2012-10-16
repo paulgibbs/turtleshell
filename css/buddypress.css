@@ -372,7 +372,12 @@
 }
 #bp-member-menu .navigation li {
   margin-bottom: 1px;
-  padding: 4px 10px;
+}
+#bp-member-menu .navigation li.selected {
+  background: rgba(0, 0, 0, 0.1);
+}
+#bp-member-menu .navigation li:hover {
+  background: rgba(0, 0, 0, 0.1);
 }
 #bp-member-menu .navigation li.member-menu-avatar {
   padding: 0;
@@ -380,13 +385,9 @@
 #bp-member-menu .navigation li.member-menu-avatar:hover {
   background: none;
 }
-#bp-member-menu .navigation li:hover {
-  background: rgba(0, 0, 0, 0.1);
-}
-#bp-member-menu .navigation li.selected {
-  background: rgba(0, 0, 0, 0.1);
-}
 #bp-member-menu .navigation li a {
+  display: block;
+  padding: 4px 10px;
   text-decoration: none;
 }
 #bp-member-menu .navigation li span:before {
