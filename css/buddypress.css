@@ -5,6 +5,7 @@
 03. Groups Directory
 04. Pagination
 05. Activity Directory
+05a. Activity Permalink
 07. Sites Directory
 08. Single member
 08a. Single member - menu
@@ -271,6 +272,11 @@
 }
 .bp-archive-activity .activity-actions li .has-count span:after {
   content: ")";
+}
+/* =05a. Activity Permalink
+--------------------------------------------------------------- */
+#buddypress .bp-single-activity li {
+  margin: 0;
 }
 /* =06. Sites Directory
 --------------------------------------------------------------- */

@@ -7,11 +7,13 @@
  */
 ?>
 
+<?php do_action( 'bp_before_single_activity' ); ?>
+
 <div id="buddypress">
 
 	<?php if ( bp_has_activities( 'display_comments=threaded&show_hidden=true&include=' . bp_current_action() ) ) : ?>
 
-		<ul class="bp-archive-activity">
+		<ul class="bp-archive-activity bp-single-activity">
 		
 		<?php while ( bp_activities() ) : bp_the_activity(); ?>
 		
@@ -29,3 +31,4 @@
 
 </div><!-- #buddypress -->
 
+<?php do_action( 'bp_after_single_activity' ); ?>
