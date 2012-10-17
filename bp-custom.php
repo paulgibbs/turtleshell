@@ -5,9 +5,9 @@ function turtlepower() {
 		'name'    => __( 'Turtle Shell', 'buddypress' ),
 		'version' => bp_get_version(),
 
-		// Adjust these to point to your dev server
-		'dir'     => trailingslashit( '/Users/paul/Sites/example.com/wp-content/plugins/buddypress/bp-themes/turtleshell' ),
-		'url'     => trailingslashit( 'http://example.com/wp-content/plugins/buddypress/bp-themes/turtleshell' )
+		// Adjust these to point to your dev server if necessary
+		'dir'     => trailingslashit( BP_PLUGIN_DIR . 'bp-themes/turtleshell' ),
+		'url'     => trailingslashit( BP_PLUGIN_URL . 'bp-themes/turtleshell' )
 	) );
 }
 add_action( 'bp_register_theme_packages', 'turtlepower' );
