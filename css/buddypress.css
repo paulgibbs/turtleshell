@@ -328,7 +328,7 @@
 }
 /* =08. Single member
 --------------------------------------------------------------- */
-.bp-member-content {
+#bp-member-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -336,13 +336,13 @@
   padding-left: 180px;
   width: 100%;
 }
-.bp-member-content:before,
-.bp-member-content:after {
+#bp-member-content:before,
+#bp-member-content:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.bp-member-content:after {
+#bp-member-content:after {
   clear: both;
 }
 /* =08a. Single member - menu
@@ -398,20 +398,20 @@
 }
 /* =08b. Single member - activity
 --------------------------------------------------------------- */
-.bp-member-content .bp-archive-activity .activity-avatar {
+#bp-member-content .bp-archive-activity .activity-avatar {
   display: none;
 }
-.bp-member-content .bp-archive-activity .activity-content {
+#bp-member-content .bp-archive-activity .activity-content {
   margin-left: 0;
 }
 /* =08b. Single member - groups
 --------------------------------------------------------------- */
-.bp-member-content .bp-archive-groups .group-avatar {
+#bp-member-content .bp-archive-groups .group-avatar {
   margin-right: 0;
   float: inherit;
   width: auto;
 }
-.bp-member-content .bp-archive-groups .group-details {
+#bp-member-content .bp-archive-groups .group-details {
   float: inherit;
   width: auto;
 }

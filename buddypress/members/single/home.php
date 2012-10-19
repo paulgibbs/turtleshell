@@ -15,7 +15,7 @@
 
 	<?php bp_get_template_part( 'members/single/menu', 'members' ); ?>
 
-	<div class="bp-member-content">
+	<div id="bp-member-content">
 
 		<?php do_action( 'bp_before_member_body' );
 
