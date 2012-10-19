@@ -7,7 +7,7 @@
  */
 ?>
 
-<?php do_action( 'bp_before_member_activity_content' ); ?>
+<?php do_action( 'bp_template_before_member_activity_content' ); ?>
 
 <?php if ( bp_has_activities() ) : ?>
 
@@ -23,4 +23,4 @@
 
 <?php endif; ?>
 
-<?php do_action( 'bp_after_member_activity_content' ); ?>
+<?php do_action( 'bp_template_after_member_activity_content' ); ?>

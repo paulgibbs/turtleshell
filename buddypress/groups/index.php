@@ -7,11 +7,11 @@
  */
 ?>
 
-<?php do_action( 'bp_before_directory_groups_page' ); ?>
+<?php do_action( 'bp_template_before_directory_groups_page' ); ?>
 
 <div id="buddypress">
 
-	<?php do_action( 'bp_before_directory_groups_content' ); ?>
+	<?php do_action( 'bp_template_before_directory_groups_content' ); ?>
 
 	<?php if ( bp_has_groups() ) : ?>
 
@@ -27,8 +27,8 @@
 
 	<?php endif; ?>
 
-	<?php do_action( 'bp_after_directory_groups_content' ); ?>
+	<?php do_action( 'bp_template_after_directory_groups_content' ); ?>
 
 </div><!-- #buddypress -->
 
-<?php do_action( 'bp_after_directory_groups_page' ); ?>
+<?php do_action( 'bp_template_after_directory_groups_page' ); ?>

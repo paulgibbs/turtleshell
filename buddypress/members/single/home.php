@@ -7,17 +7,17 @@
  */
 ?>
 
-<?php do_action( 'bp_before_member_page' ); ?>
+<?php do_action( 'bp_template_before_member_page' ); ?>
 
 <div id="buddypress">
 
-	<?php do_action( 'bp_before_member_content' ); ?>
+	<?php do_action( 'bp_template_before_member_content' ); ?>
 
 	<?php bp_get_template_part( 'members/single/menu', 'members' ); ?>
 
 	<div id="bp-member-content">
 
-		<?php do_action( 'bp_before_member_body' );
+		<?php do_action( 'bp_template_before_member_body' );
 
 		if ( bp_is_user_activity() ) :
 			bp_get_template_part( 'members/single/activity' );
@@ -44,12 +44,12 @@
 			bp_get_template_part( 'members/single/plugins'  );
 		endif;
 
-		do_action( 'bp_after_member_body' ); ?>
+		do_action( 'bp_template_after_member_body' ); ?>
 
 	</div><!-- .bp-member-content -->
 
-	<?php do_action( 'bp_after_member_content' ); ?>
+	<?php do_action( 'bp_template_after_member_content' ); ?>
 
 </div><!-- #buddypress -->
 
-<?php do_action( 'bp_after_member_page' ); ?>
+<?php do_action( 'bp_template_after_member_page' ); ?>

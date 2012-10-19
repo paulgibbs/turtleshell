@@ -7,11 +7,11 @@
  */
 ?>
 
-<?php do_action( 'bp_before_directory_activity_list' ); ?>
+<?php do_action( 'bp_template_before_directory_activity_list' ); ?>
 
 <ul class="bp-archive-activity">
 
-	<?php do_action( 'bp_before_activity_loop' ); ?>
+	<?php do_action( 'bp_template_before_activity_loop' ); ?>
 
 	<?php while ( bp_activities() ) : bp_the_activity(); ?>
 
@@ -19,8 +19,8 @@
 
 	<?php endwhile; ?>
 
-	<?php do_action( 'bp_after_activity_loop' ); ?>
+	<?php do_action( 'bp_template_after_activity_loop' ); ?>
 
 </ul><!-- .bp-archive-activity -->
 
-<?php do_action( 'bp_after_directory_activity_list' ); ?>
+<?php do_action( 'bp_template_after_directory_activity_list' ); ?>

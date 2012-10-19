@@ -7,11 +7,11 @@
  */
 ?>
 
-<?php do_action( 'bp_before_directory_members_list' ); ?>
+<?php do_action( 'bp_template_before_directory_members_list' ); ?>
 
 <ul class="bp-archive-members">
 
-	<?php do_action( 'bp_before_members_loop' ); ?>
+	<?php do_action( 'bp_template_before_members_loop' ); ?>
 
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 
@@ -19,8 +19,8 @@
 
 	<?php endwhile; ?>
 
-	<?php do_action( 'bp_after_members_loop' ); ?>
+	<?php do_action( 'bp_template_after_members_loop' ); ?>
 
 </ul><!-- .bp-archive-members -->
 
-<?php do_action( 'bp_after_directory_members_list' ); ?>
+<?php do_action( 'bp_template_after_directory_members_list' ); ?>

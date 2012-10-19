@@ -7,7 +7,7 @@
  */
 ?>
 
-<?php do_action( 'bp_before_single_activity' ); ?>
+<?php do_action( 'bp_template_before_single_activity' ); ?>
 
 <div id="buddypress">
 
@@ -17,11 +17,11 @@
 		
 		<?php while ( bp_activities() ) : bp_the_activity(); ?>
 		
-			<?php do_action( 'bp_before_activity_entry' ); ?>
+			<?php do_action( 'bp_template_before_activity_entry' ); ?>
 
 			<?php bp_get_template_part( 'activity/loop', 'single-activity' ); ?>
 			
-			<?php do_action( 'bp_after_activity_entry' ); ?>
+			<?php do_action( 'bp_template_after_activity_entry' ); ?>
 		
 		<?php endwhile; ?>
 		
@@ -31,4 +31,4 @@
 
 </div><!-- #buddypress -->
 
-<?php do_action( 'bp_after_single_activity' ); ?>
+<?php do_action( 'bp_template_after_single_activity' ); ?>
