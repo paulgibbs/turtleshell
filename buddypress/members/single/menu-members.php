@@ -10,7 +10,7 @@
 <?php do_action( 'bp_template_before_member_menu_content' ); ?>
 
 <div id="bp-member-menu">
-	<ul class="navigation">
+	<ul class="bp-navigation">
 
 		<?php do_action( 'bp_template_before_member_menu_avatar' ); ?>
 
