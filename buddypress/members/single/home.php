@@ -46,7 +46,7 @@
 
 		do_action( 'bp_template_after_member_body' ); ?>
 
-	</div><!-- .bp-member-content -->
+	</div><!-- #bp-member-content -->
 
 	<?php do_action( 'bp_template_after_member_content' ); ?>
 
