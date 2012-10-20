@@ -11,6 +11,7 @@
 08a. Single member - menu
 08b. Single member - activity
 08c. Single member - groups
+09. Core widgets
 */
 .clearfix {
   *zoom: 1;
@@ -414,4 +415,73 @@
 #bp-member-content .bp-archive-groups .group-details {
   float: inherit;
   width: auto;
+}
+/* =09. Core widgets
+--------------------------------------------------------------- */
+.widget_bp_core_whos_online_widget .avatar-block,
+.widget_bp_core_recently_active_widget .avatar-block {
+  *zoom: 1;
+}
+.widget_bp_core_whos_online_widget .avatar-block:before,
+.widget_bp_core_recently_active_widget .avatar-block:before,
+.widget_bp_core_whos_online_widget .avatar-block:after,
+.widget_bp_core_recently_active_widget .avatar-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.widget_bp_core_whos_online_widget .avatar-block:after,
+.widget_bp_core_recently_active_widget .avatar-block:after {
+  clear: both;
+}
+.widget_bp_core_whos_online_widget .item-avatar,
+.widget_bp_core_recently_active_widget .item-avatar {
+  float: left;
+  margin-right: 4px;
+}
+.widget_bp_core_whos_online_widget img,
+.widget_bp_core_recently_active_widget img {
+  height: 40px;
+  width: 40px;
+}
+.widget_bp_groups_widget #groups-list,
+.widget_bp_core_members_widget #groups-list,
+.widget_bp_groups_widget #members-list,
+.widget_bp_core_members_widget #members-list {
+  list-style: none;
+  margin: 10px 0 0;
+}
+.widget_bp_groups_widget li,
+.widget_bp_core_members_widget li {
+  *zoom: 1;
+  margin-bottom: 20px;
+}
+.widget_bp_groups_widget li:before,
+.widget_bp_core_members_widget li:before,
+.widget_bp_groups_widget li:after,
+.widget_bp_core_members_widget li:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.widget_bp_groups_widget li:after,
+.widget_bp_core_members_widget li:after {
+  clear: both;
+}
+.widget_bp_groups_widget .item-avatar,
+.widget_bp_core_members_widget .item-avatar {
+  float: left;
+}
+.widget_bp_groups_widget .item-avatar img,
+.widget_bp_core_members_widget .item-avatar img {
+  height: 20px;
+  width: 20px;
+}
+.widget_bp_groups_widget .item,
+.widget_bp_core_members_widget .item {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 30px;
+  width: 100%;
 }

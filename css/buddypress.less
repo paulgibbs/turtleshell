@@ -11,6 +11,7 @@
 08a. Single member - menu
 08b. Single member - activity
 08c. Single member - groups
+09. Core widgets
 */
 
 @import "variables.less";
@@ -364,5 +365,54 @@
 	.group-details {
 		float: inherit;
 		width: auto;
+	}
+}
+
+
+/* =09. Core widgets
+--------------------------------------------------------------- */
+.widget_bp_core_whos_online_widget,
+.widget_bp_core_recently_active_widget {
+	.avatar-block {
+		.clearfix();
+	}
+
+	.item-avatar {
+		float: left;  // @todo RTL
+		margin-right: 4px;  // @todo RTL
+	}
+
+	img {
+		height: 40px;
+		width: 40px;
+	}
+}
+
+.widget_bp_groups_widget,
+.widget_bp_core_members_widget {
+	#groups-list,
+	#members-list {
+		list-style: none;
+		margin: @themeCompatMargin 0 0;  // Required to override theme
+	}
+
+	li {
+		.clearfix();
+		margin-bottom: @themeCompatMargin*2;
+	}
+
+	.item-avatar {
+		float: left;  // @todo RTL
+
+		img {
+			height: 20px;
+			width: 20px;
+		}
+	}
+
+	.item {
+		.box-sizing(border-box);
+		padding-left: 20px + @themeCompatMargin;  // .item-avatar img width + global margin.  @todo RTL
+		width: 100%;
 	}
 }
