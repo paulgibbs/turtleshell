@@ -366,9 +366,6 @@
 #bp-member-menu .bp-navigation li {
   margin-bottom: 1px;
 }
-#bp-member-menu .bp-navigation li.selected {
-  background: rgba(0, 0, 0, 0.1);
-}
 #bp-member-menu .bp-navigation li:hover {
   background: rgba(0, 0, 0, 0.1);
 }
@@ -380,6 +377,12 @@
 }
 #bp-member-menu .bp-navigation li.member-menu-avatar a {
   padding: 0;
+}
+#bp-member-menu .bp-navigation li.selected {
+  background: rgba(0, 0, 0, 0.1);
+}
+#bp-member-menu .bp-navigation li.selected a {
+  color: #000;
 }
 #bp-member-menu .bp-navigation li a {
   display: block;
