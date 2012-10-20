@@ -355,21 +355,14 @@
   position: fixed;
   top: 28px;
 }
-#bp-member-menu .activity {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 150px;
-}
-#bp-member-menu .activity textarea {
-  height: 5rem;
-  width: 90%;
-}
 #bp-member-menu .navigation {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 150px;
+}
+#bp-member-menu .navigation #activity-personal-li {
+  margin-top: 10px;
 }
 #bp-member-menu .navigation li {
   margin-bottom: 1px;
