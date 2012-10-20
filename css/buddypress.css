@@ -379,6 +379,9 @@
 #bp-member-menu .navigation li.member-menu-avatar:hover {
   background: none;
 }
+#bp-member-menu .navigation li.member-menu-avatar a {
+  padding: 0;
+}
 #bp-member-menu .navigation li a {
   display: block;
   padding: 4px 10px;
