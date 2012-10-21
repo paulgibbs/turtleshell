@@ -50,7 +50,7 @@
 	margin: 0 0 @themeCompatMargin 0;
 	width: 100%;
 
-	li {
+	> li {
 		float: left;  // @todo RTL
 		margin: 0 @themeCompatMargin @themeCompatMargin 0;  // @todo RTL
 
@@ -59,7 +59,7 @@
 }
 
 .bp-archive-members {
-	li {
+	> li {
 		text-align: center;
 		width: 23%;
 
@@ -160,7 +160,7 @@
 /* =05. Activity List
 --------------------------------------------------------------- */
 #buddypress .bp-archive-activity {
-	li {
+	> li {
 		margin: 0 0 @themeCompatMargin*3 0;
 	}
 
@@ -247,7 +247,7 @@
 /* =05a. Activity Permalink
 --------------------------------------------------------------- */
 #buddypress .bp-single-activity {
-	li {
+	> li {
 		margin: 0;
 	}
 }
@@ -360,7 +360,6 @@
 /* =08b. Single member - groups
 --------------------------------------------------------------- */
 #bp-member-content .bp-archive-groups {
-
 	.group-details {
 		clear: left;  // @todo RTL
 		padding-left: 0;
