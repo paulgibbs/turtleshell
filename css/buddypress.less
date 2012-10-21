@@ -311,28 +311,26 @@
 		li {
 			margin-bottom: 1px;
 
-			&:hover { background: rgba(0, 0, 0, 0.1); }
-			&.member-menu-avatar {
-				&:hover { background: none; }
-				padding: 0;
-
-				a { padding: 0; }
-			}
-
-			&.selected {
-				background: rgba(0, 0, 0, 0.1);
-
-				a { color: #000; }
-			}
-
 			a {
 				display: block;
+				font-size: @smallFontSizePx;
+				font-size: @smallFontSizeRem;
 				padding: 4px @themeCompatMargin;
 				text-decoration: none;
 			}
 
 			span:before { content: "("; }
 			span:after { content: ")"; }
+
+			&.member-menu-avatar {
+				padding: 0;
+				a { padding: 0; }
+			}
+
+			&.selected {
+				background: @themeCompatSubtleBackground;
+				opacity: 0.9;
+			}
 		}
 	}
 }
