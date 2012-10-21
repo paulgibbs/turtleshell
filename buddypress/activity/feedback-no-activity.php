@@ -7,6 +7,6 @@
  */
 ?>
 
-<div id="bp-message" class="activity">
-	<p><?php _e( 'Sorry, there was no activity found.', 'buddypress' ); ?></p>
+<div class="bp-template-notice activity">
+	<p><?php _e( 'No activity was found', 'buddypress' ); ?></p>
 </div>

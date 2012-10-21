@@ -12,6 +12,7 @@
 08b. Single member - activity
 08c. Single member - groups
 09. Core widgets
+10. Notices
 */
 
 @import "variables.less";
@@ -418,5 +419,45 @@
 		.box-sizing(border-box);
 		padding-left: 20px + @themeCompatMargin;  // .item-avatar img width + global margin.  @todo RTL
 		width: 100%;
+	}
+}
+
+
+/* =10. Notices
+--------------------------------------------------------------- */
+#buddypress .bp-template-notice p {
+	margin: @themeCompatMargin/2 0;
+}
+
+.bp-template-notice {
+	.border-radius(3px);
+	background-color: @noticeBackground;
+	border: 1px solid @noticeBorder;
+	color: #000;
+	margin: @themeCompatMargin 0;
+	padding: 0 @themeCompatMargin;
+
+	a { text-decoration: none; }
+	p {
+		font-size: @smallFontSizePx;
+		font-size: @smallFontSizeRem;		
+	}
+
+	&.info {
+		border: @noticeInfoBorder 1px solid;
+		background-color: @noticeInfoBackground;
+	}
+
+	&.important {
+		border: @noticeBorder 1px solid;
+		background-color: @noticeImportantBackground;
+	}
+
+	&.error,
+	&.warning {
+		background-color: @noticeErrorBackground;
+		border-color: @noticeErrorBorder;
+
+		a { color: @noticeErrorBorder; }
 	}
 }

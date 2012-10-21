@@ -13,7 +13,7 @@
 
 	<?php do_action( 'bp_template_before_directory_activity_content' ); ?>
 
-	<?php if ( bp_has_activities() ) : ?>
+	<?php if ( !bp_has_activities() ) : ?>
 
 		<?php bp_get_template_part( 'activity/pagination', 'activity' ); ?>
 

@@ -7,6 +7,6 @@
  */
 ?>
 
-<div id="bp-message" class="groups">
-	<p><?php _e( 'Sorry, there were no groups found.', 'buddypress' ); ?></p>
+<div class="bp-template-notice groups">
+	<p><?php _e( 'No groups were found', 'buddypress' ); ?></p>
 </div>

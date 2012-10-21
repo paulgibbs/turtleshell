@@ -7,6 +7,6 @@
  */
 ?>
 
-<div id="bp-message" class="members">
-	<p><?php _e( 'Sorry, there were no members found.', 'buddypress' ); ?></p>
+<div class="bp-template-notice members">
+	<p><?php _e( 'No members were found', 'buddypress' ); ?></p>
 </div>

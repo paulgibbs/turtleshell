@@ -7,6 +7,6 @@
  */
 ?>
 
-<div id="bp-message" class="blogs">
-	<p><?php _e( 'Sorry, there were no blogs found.', 'buddypress' ); ?></p>
+<div class="bp-template-notice blogs">
+	<p><?php _e( 'No sites were found', 'buddypress' ); ?></p>
 </div>
