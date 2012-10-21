@@ -123,8 +123,12 @@
 #buddypress .bp-archive-groups li:nth-child(2n+2) {
   margin-right: 0;
 }
+#buddypress .bp-archive-groups .group-meta ul {
+  margin: 0;
+}
 #buddypress .bp-archive-groups .group-meta li {
   margin: 0;
+  padding: 0;
   width: 100%;
 }
 .bp-archive-groups li:nth-child(2n+1) {
