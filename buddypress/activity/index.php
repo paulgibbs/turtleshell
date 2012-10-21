@@ -15,6 +15,8 @@
 
 	<?php if ( bp_has_activities() ) : ?>
 
+		<?php do_action( 'template_notices' ); ?>
+
 		<?php bp_get_template_part( 'activity/pagination', 'activity' ); ?>
 
 		<?php bp_get_template_part( 'activity/loop', 'activity' ); ?>

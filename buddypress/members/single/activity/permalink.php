@@ -11,6 +11,8 @@
 
 <div id="buddypress">
 
+	<?php do_action( 'template_notices' ); ?>
+
 	<?php if ( bp_has_activities( 'display_comments=threaded&show_hidden=true&include=' . bp_current_action() ) ) : ?>
 
 		<ul class="bp-archive-activity bp-single-activity">

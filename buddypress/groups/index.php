@@ -15,6 +15,8 @@
 
 	<?php if ( bp_has_groups() ) : ?>
 
+		<?php do_action( 'template_notices' ); ?>
+
 		<?php bp_get_template_part( 'groups/pagination', 'groups' ); ?>
 
 		<?php bp_get_template_part( 'groups/loop', 'groups' ); ?>

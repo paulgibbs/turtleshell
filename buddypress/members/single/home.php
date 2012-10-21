@@ -13,6 +13,8 @@
 
 	<?php do_action( 'bp_template_before_member_content' ); ?>
 
+	<?php do_action( 'template_notices' ); ?>
+
 	<?php bp_get_template_part( 'members/single/menu', 'members' ); ?>
 
 	<div id="bp-member-content">

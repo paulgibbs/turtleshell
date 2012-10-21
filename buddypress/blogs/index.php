@@ -15,6 +15,8 @@
 
 	<?php if ( bp_has_blogs() ) : ?>
 
+		<?php do_action( 'template_notices' ); ?>
+
 		<?php bp_get_template_part( 'blogs/pagination', 'blogs' ); ?>
 
 		<?php bp_get_template_part( 'blogs/loop', 'blogs' ); ?>

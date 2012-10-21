@@ -15,6 +15,8 @@
 
 	<?php if ( bp_has_members() ) : ?>
 
+		<?php do_action( 'template_notices' ); ?>
+
 		<?php bp_get_template_part( 'members/pagination', 'members' ); ?>
 
 		<?php bp_get_template_part( 'members/loop', 'members' ); ?>
