@@ -121,7 +121,7 @@
   margin: 0 2% 20px 0;
   width: 49%;
 }
-#buddypress .bp-archive-groups li:nth-child(2n+2) {
+#buddypress .bp-archive-groups > li:nth-child(2n+2) {
   margin-right: 0;
 }
 #buddypress .bp-archive-groups .group-meta ul {
