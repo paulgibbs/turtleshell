@@ -517,3 +517,6 @@
 .bp-template-notice.warning a {
   color: #cc0000;
 }
+.bp-user .bp-template-notice {
+  margin-bottom: 20px;
+}
