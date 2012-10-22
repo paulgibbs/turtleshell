@@ -6,11 +6,11 @@ function turtlepower() {
 		'version' => bp_get_version(),
 
 		// Adjust these to point to your dev server if necessary
-		'dir'     => trailingslashit( BP_PLUGIN_DIR . 'bp-themes/turtleshell' ),
-		'url'     => trailingslashit( BP_PLUGIN_URL . 'bp-themes/turtleshell' )
+		'dir'     => trailingslashit( BP_PLUGIN_DIR . 'bp-templates/turtleshell' ),
+		'url'     => trailingslashit( BP_PLUGIN_URL . 'bp-templates/turtleshell' )
 	) );
 }
-add_action( 'bp_register_theme_packages', 'turtlepower' );
+add_action( 'bp_register_theme_directory', 'turtlepower' );
 
 function turtlepower_package_id( $package_id ) {
 	return 'turtleshell';

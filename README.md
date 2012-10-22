@@ -12,8 +12,8 @@ Requirements
 
 Installation 
 ------------
-1. Download turtleshell, and put it in `/plugins/buddypress/bp-themes/turtleshell`. If you're not sure where that is, see this screenshot[3].
-2. Copy `/plugins/buddypress/bp-themes/turtleshell/bp-custom.php` to `/plugins/bp-custom.php`.
+1. Download turtleshell, and put it in `/plugins/buddypress/bp-templates/turtleshell`. If you're not sure where that is, see this screenshot[3].
+2. Copy `/plugins/buddypress/bp-templates/turtleshell/bp-custom.php` to `/plugins/bp-custom.php`.
 3. Edit `/plugins/bp-custom.php`, and update lines 9 and 10 with the absolute path to your web server's serving directory, and the URL of your dev site.
 4. Go to your WordPress site, switch to a nice WordPress theme, and then go and browse BuddyPress content!
 
