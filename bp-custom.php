@@ -10,7 +10,7 @@ function turtlepower() {
 		'url'     => trailingslashit( BP_PLUGIN_URL . 'bp-templates/turtleshell' )
 	) );
 }
-add_action( 'bp_register_theme_directory', 'turtlepower' );
+add_action( 'bp_register_theme_packages', 'turtlepower' );
 
 function turtlepower_package_id( $package_id ) {
 	return 'turtleshell';
