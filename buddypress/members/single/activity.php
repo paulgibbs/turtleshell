@@ -7,8 +7,6 @@
  */
 ?>
 
-<ul id="bp-options-menu"><?php bp_get_options_nav(); ?></ul>
-
 <?php do_action( 'bp_template_before_member_activity_content' ); ?>
 
 <?php if ( bp_has_activities() ) : ?>
