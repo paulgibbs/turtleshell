@@ -432,10 +432,37 @@
 	.bp-navigation {
 		.box-sizing(border-box);
 		width: @menuWidth;
+	}
+}
 
-		li {
-			span:before { content: "("; }
-			span:after { content: ")"; }
-		}
+#menu-bp {
+	font-size: @smallFontSizePx;
+	font-size: @smallFontSizeRem;
+
+	.sub-menu {
+		display: none;
+		margin-left: @themeCompatMargin;
+	}
+
+	.current-menu-item a,
+	.current-menu-parent > a {
+		color: inherit;
+		font-weight: bold;
+	}
+
+	.current-menu-parent {
+		margin-bottom: 5px;  // temp
+	}
+
+	a {
+		display: inline-block;
+		text-decoration: none;
+		width: 100%;
+	}
+
+	li {
+		span:before { content: "("; }
+		span:after { content: ")"; }
+		&.current-menu-parent .sub-menu { display: block; }
 	}
 }

@@ -494,9 +494,33 @@
   box-sizing: border-box;
   width: 150px;
 }
-#bp-menu .bp-navigation li span:before {
+#menu-bp {
+  font-size: 10px;
+  font-size: 0.85rem;
+}
+#menu-bp .sub-menu {
+  display: none;
+  margin-left: 10px;
+}
+#menu-bp .current-menu-item a,
+#menu-bp .current-menu-parent > a {
+  color: inherit;
+  font-weight: bold;
+}
+#menu-bp .current-menu-parent {
+  margin-bottom: 5px;
+}
+#menu-bp a {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+}
+#menu-bp li span:before {
   content: "(";
 }
-#bp-menu .bp-navigation li span:after {
+#menu-bp li span:after {
   content: ")";
+}
+#menu-bp li.current-menu-parent .sub-menu {
+  display: block;
 }
