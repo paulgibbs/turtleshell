@@ -9,7 +9,7 @@
 
 <?php do_action( 'bp_template_before_member_menu_content' ); ?>
 
-<div id="bp-member-menu">
+<div id="bp-menu">
 	<ul class="bp-navigation">
 
 		<?php do_action( 'bp_template_before_member_menu_avatar' ); ?>
@@ -36,11 +36,11 @@
 
 		<?php do_action( 'bp_template_before_member_menu_user_nav' ); ?>
 
-		<?php bp_get_displayed_user_nav(); ?>
+		<?php bp_nav_menu( 'container=false' ); ?>
 
 		<?php do_action( 'bp_template_after_member_menu_user_nav' ); ?>
 
 	</ul>
-</div><!-- #bp-member-menu -->
+</div><!-- #bp-menu -->
 
 <?php do_action( 'bp_template_after_member_menu_content' ); ?>

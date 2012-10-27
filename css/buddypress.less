@@ -13,6 +13,7 @@
 08c. Single member - groups
 09. Core widgets
 10. Notices
+11. Menus
 */
 
 @import "variables.less";
@@ -302,71 +303,9 @@
 
 /* =08a. Single member - menu
 --------------------------------------------------------------- */
-#bp-member-menu {
-	float: left;  // @todo RTL
-
-	&.docked {
-		position: fixed;
-		top: 28px;
-	}
-
-	.bp-navigation {
-		.box-sizing(border-box);
-		width: @menuWidth;
-
-		li {
-			&.member-menu-avatar {
-				padding: 0;
-				a { padding: 0; }
-			}
-			&.selected {
-				background: @menuHighlight;
-
-				a {
-					color: #FFF;
-					font-weight: 700;
-				}
-			}
-
-			a {
-				display: block;
-				font-size: @smallFontSizePx;
-				font-size: @smallFontSizeRem;
-				padding: 4px @themeCompatMargin;
-				text-decoration: none;
-			}
-
-			span:before { content: "("; }
-			span:after { content: ")"; }
-		}
-	}
-
-	#activity-personal-li { margin-top: @themeCompatMargin; }
-}
-
-#buddypress #bp-options-menu {
-	border-bottom: 1px solid @menuHighlight;
-	margin-bottom: @themeCompatMargin*3;
-
-	li {
-		display: inline-block;
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
-		margin-right: @themeCompatMargin;
-		padding-bottom: @themeCompatMargin;
-
-		a { text-decoration: none; }
-
-		&:last-child { margin-right: 0; }
-		&.current {
-			border-bottom: 4px solid @menuHighlight;
-
-			a {
-				color: @menuHighlight;
-				font-weight: 700;
-			}
-		}
-	}
+.bp-user #bp-menu .bp-navigation .member-menu-avatar {
+	padding: 0;
+	a { padding: 0; }
 }
 
 
@@ -383,7 +322,7 @@
 }
 
 
-/* =08b. Single member - groups
+/* =08c. Single member - groups
 --------------------------------------------------------------- */
 #bp-member-content .bp-archive-groups {
 	.group-details {
@@ -482,4 +421,21 @@
 
 .bp-user .bp-template-notice {
 	margin-bottom: @themeCompatMargin*2;
+}
+
+
+/* =11. Menus
+--------------------------------------------------------------- */
+#bp-menu {
+	float: left;  // @todo RTL
+
+	.bp-navigation {
+		.box-sizing(border-box);
+		width: @menuWidth;
+
+		li {
+			span:before { content: "("; }
+			span:after { content: ")"; }
+		}
+	}
 }
