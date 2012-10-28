@@ -94,7 +94,7 @@
   clear: left;
 }
 .bp-archive-members .member-meta {
-  font-size: 10px;
+  font-size: 12px;
   font-size: 0.85rem;
 }
 /* =03. Groups Directory
@@ -147,7 +147,7 @@
   width: 100%;
 }
 .bp-archive-groups .group-meta {
-  font-size: 10px;
+  font-size: 12px;
   font-size: 0.85rem;
 }
 .bp-archive-groups .group-meta ul {
@@ -179,7 +179,7 @@
 }
 .bp-pagination {
   float: right;
-  font-size: 10px;
+  font-size: 12px;
   font-size: 0.85rem;
   margin-bottom: 10px;
   width: 100%;
@@ -233,7 +233,7 @@
 }
 .bp-archive-activity .activity-header {
   border-bottom: 1px solid #dddddd;
-  font-size: 10px;
+  font-size: 12px;
   font-size: 0.85rem;
   font-weight: 700;
   padding-bottom: 5px;
@@ -250,14 +250,14 @@
 }
 .bp-archive-activity .activity-meta {
   float: left;
-  font-size: 10px;
+  font-size: 12px;
   font-size: 0.85rem;
   margin-top: 5px;
   width: 100%;
 }
 .bp-archive-activity .activity-timestamp {
   float: left;
-  font-size: 10px;
+  font-size: 12px;
   font-size: 0.85rem;
 }
 .bp-archive-activity .activity-actions {
@@ -325,7 +325,7 @@
 }
 .bp-archive-blogs .blog-content .blog-title span a {
   color: inherit;
-  font-size: 10px;
+  font-size: 12px;
   font-size: 0.85rem;
   text-decoration: none;
 }
@@ -462,7 +462,7 @@
   text-decoration: none;
 }
 .bp-template-notice p {
-  font-size: 10px;
+  font-size: 12px;
   font-size: 0.85rem;
 }
 .bp-template-notice.info {
@@ -502,7 +502,7 @@
 }
 #menu-bp a {
   display: inline-block;
-  font-size: 10px;
+  font-size: 12px;
   font-size: 0.85rem;
   text-decoration: none;
   width: 100%;
