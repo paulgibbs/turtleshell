@@ -97,6 +97,21 @@
   font-size: 12px;
   font-size: 0.85rem;
 }
+#bp_member_search {
+  margin-bottom: 30px;
+}
+#bp_member_search label {
+  display: block;
+  margin-bottom: 5px;
+}
+#bp_member_search .search {
+  margin-bottom: 0;
+  vertical-align: middle;
+  width: 80%;
+}
+#bp_member_search .submit {
+  margin-bottom: 0;
+}
 /* =03. Groups Directory
 -------------------------------------------------------------- */
 #buddypress .bp-archive-groups {
@@ -511,14 +526,14 @@
 #menu-bp li.current-menu-parent .sub-menu {
   display: block;
 }
+#menu-bp li span {
+  float: right;
+}
 #menu-bp li span:after {
   content: ")";
 }
 #menu-bp li span:before {
   content: "(";
-}
-#menu-bp li span {
-  float: right;
 }
 #menu-bp li > .sub-menu {
   display: none;

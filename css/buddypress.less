@@ -73,6 +73,25 @@
 	}
 }
 
+#bp_member_search {
+	margin-bottom: @themeCompatMargin*3;
+
+	label {
+		display: block;
+		margin-bottom: @themeCompatMargin/2;
+	}
+
+	.search {
+		margin-bottom: 0;  // theme compat: twentyten
+		vertical-align: middle;
+		width: 80%;
+	}
+
+	.submit {
+		margin-bottom: 0;  // theme compat: twentyten
+	}
+}
+
 
 /* =03. Groups Directory
 -------------------------------------------------------------- */
@@ -454,10 +473,11 @@
 			display: block;
 		}
 
-		span:after { content: ")"; }
-		span:before { content: "("; }
-		span{
+		span {
 			float: right;
+
+			&:after { content: ")"; }
+			&:before { content: "("; }
 		}
 
 		> .sub-menu {
