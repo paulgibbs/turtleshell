@@ -93,7 +93,7 @@
 .bp-archive-members > li:nth-child(4n+5) {
   clear: left;
 }
-.bp-archive-members .member-meta {
+.bp-archive-members .member-details {
   font-size: 12px;
   font-size: 0.85rem;
 }

@@ -32,9 +32,7 @@
 	<?php do_action( 'bp_template_before_member_details' ); ?>
 
 	<div class="member-details">
-		<div class="member-meta">
-			<span class="member-activity activity"><?php bp_member_last_active(); ?></span>
-		</div>
+		<?php do_action( 'bp_template_in_member_details' ); ?>
 	</div>
 
 	<?php do_action( 'bp_template_after_member_details' ); ?>
