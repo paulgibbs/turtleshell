@@ -17,6 +17,8 @@
 
 		<?php do_action( 'template_notices' ); ?>
 
+		<?php bp_get_template_part( 'groups/form', 'groups-search' ); ?>
+
 		<?php bp_get_template_part( 'groups/pagination', 'groups' ); ?>
 
 		<?php bp_get_template_part( 'groups/loop', 'groups' ); ?>
@@ -26,6 +28,8 @@
 	<?php else : ?>
 
 		<?php bp_get_template_part( 'groups/feedback', 'no-groups' ); ?>
+
+		<?php bp_get_template_part( 'groups/form', 'groups-search' ); ?>
 
 	<?php endif; ?>
 

@@ -182,6 +182,19 @@
 .bp-archive-groups .group-description p {
   margin-bottom: 0;
 }
+#bp_group_search {
+  margin-bottom: 30px;
+}
+#bp_group_search label {
+  display: block;
+}
+#bp_group_search .search {
+  margin-bottom: 0;
+  width: 80%;
+}
+#bp_group_search .submit {
+  margin-bottom: 0;
+}
 /* =04. Pagination
 -------------------------------------------------------------- */
 .bp-pagination-count {
