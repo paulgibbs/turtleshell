@@ -517,6 +517,9 @@
 #menu-bp li span:before {
   content: "(";
 }
+#menu-bp li span {
+  float: right;
+}
 #menu-bp li > .sub-menu {
   display: none;
   margin: 0;
