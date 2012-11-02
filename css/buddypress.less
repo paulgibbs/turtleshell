@@ -77,12 +77,22 @@
 	margin-bottom: @themeCompatMargin*3;
 
 	label { display: block; }
+	span {
+		display: block;
+		overflow: hidden;
+		padding-right: @themeCompatMargin;  // @todo RTL
+	}
 
 	.search {
 		margin-bottom: 0;  // theme compat: twentyten
-		width: 80%;
+		vertical-align: bottom;
+		width: 100%;
 	}
-	.submit { margin-bottom: 0; }  // theme compat: twentyten
+
+	.submit {
+		float: right;  // @todo RTL
+		margin-bottom: 0;  // theme compat: twentyten
+	}
 }
 
 
@@ -152,12 +162,22 @@
 	margin-bottom: @themeCompatMargin*3;
 
 	label { display: block; }
+	span {
+		display: block;
+		overflow: hidden;
+		padding-right: @themeCompatMargin;  // @todo RTL
+	}
 
 	.search {
 		margin-bottom: 0;  // theme compat: twentyten
-		width: 80%;
+		vertical-align: bottom;
+		width: 100%;
 	}
-	.submit { margin-bottom: 0; }  // theme compat: twentyten
+
+	.submit {
+		float: right;  // @todo RTL
+		margin-bottom: 0;  // theme compat: twentyten
+	}
 }
 
 
