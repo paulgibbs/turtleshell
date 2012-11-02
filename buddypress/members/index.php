@@ -17,19 +17,19 @@
 
 		<?php do_action( 'template_notices' ); ?>
 
-		<?php bp_get_template_part( 'members/form', 'members-search' ); ?>
+		<?php bp_get_template_part( 'members/form-members-search' ); ?>
 
-		<?php bp_get_template_part( 'members/pagination', 'members' ); ?>
+		<?php bp_get_template_part( 'members/pagination-members' ); ?>
 
-		<?php bp_get_template_part( 'members/loop', 'members' ); ?>
+		<?php bp_get_template_part( 'members/loop-members' ); ?>
 
-		<?php bp_get_template_part( 'members/pagination', 'members' ); ?>
+		<?php bp_get_template_part( 'members/pagination-members' ); ?>
 
 	<?php else : ?>
 
-		<?php bp_get_template_part( 'members/feedback', 'no-members' ); ?>
+		<?php bp_get_template_part( 'members/feedback-no-members' ); ?>
 
-		<?php bp_get_template_part( 'members/form', 'members-search' ); ?>
+		<?php bp_get_template_part( 'members/form-members-search' ); ?>
 
 	<?php endif; ?>
 

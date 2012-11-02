@@ -15,7 +15,7 @@
 
 	<?php while ( bp_blogs() ) : bp_the_blog(); ?>
 
-		<?php bp_get_template_part( 'blogs/loop', 'single-blog' ); ?>
+		<?php bp_get_template_part( 'blogs/loop-single-blog' ); ?>
 
 	<?php endwhile; ?>
 

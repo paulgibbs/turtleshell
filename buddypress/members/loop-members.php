@@ -15,7 +15,7 @@
 
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 
-		<?php bp_get_template_part( 'members/loop', 'single-member' ); ?>
+		<?php bp_get_template_part( 'members/loop-single-member' ); ?>
 
 	<?php endwhile; ?>
 

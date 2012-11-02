@@ -15,7 +15,7 @@
 
 	<?php while ( bp_groups() ) : bp_the_group(); ?>
 
-		<?php bp_get_template_part( 'groups/loop', 'single-group' ); ?>
+		<?php bp_get_template_part( 'groups/loop-single-group' ); ?>
 
 	<?php endwhile; ?>
 

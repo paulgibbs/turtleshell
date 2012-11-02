@@ -17,15 +17,15 @@
 
 		<?php do_action( 'template_notices' ); ?>
 
-		<?php bp_get_template_part( 'blogs/pagination', 'blogs' ); ?>
+		<?php bp_get_template_part( 'blogs/pagination-blogs' ); ?>
 
-		<?php bp_get_template_part( 'blogs/loop', 'blogs' ); ?>
+		<?php bp_get_template_part( 'blogs/loop-blogs' ); ?>
 
-		<?php bp_get_template_part( 'blogs/pagination', 'blogs' ); ?>
+		<?php bp_get_template_part( 'blogs/pagination-blogs' ); ?>
 
 	<?php else : ?>
 
-		<?php bp_get_template_part( 'blogs/feedback', 'no-blogs' ); ?>
+		<?php bp_get_template_part( 'blogs/feedback-no-blogs' ); ?>
 
 	<?php endif; ?>
 
