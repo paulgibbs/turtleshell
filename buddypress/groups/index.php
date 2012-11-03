@@ -13,7 +13,7 @@
 
 	<?php do_action( 'bp_template_before_directory_groups_content' ); ?>
 
-	<?php if ( bp_has_groups() ) : ?>
+	<?php if ( bp_has_groups( 'type=alphabetical' ) ) : ?>
 
 		<?php do_action( 'template_notices' ); ?>
 
