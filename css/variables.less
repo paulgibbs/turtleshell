@@ -1,11 +1,12 @@
-@smallFontSizePx: 12px;
+@smallFontSizePx: 12px;  // Fallback for oldIE
 @smallFontSizeRem: 0.85rem;
 
-@themeCompatMargin: 10px;
-@themeCompatSubtleBorder: #ddd;
+@themeCompatMargin: 10px;  // Use for gutter between elements
+@themeCompatListSpacing: @themeCompatMargin * 2;  // Use for most vertical <ul> lists
+@themeCompatSearchSpacing: @themeCompatMargin * 3;  // Use for space between search/filter elements and page content
+@themeCompatSubtleBorder: #DDD;
 
-@menuWidth: 150px;
-@menuHighlight: rgba(0,0,0,0.7);
+@menuWidth: 150px;  // BP large avatar size
 
 @noticeBorder: #E6DB55;
 @noticeBackground: #FFFFE0;
