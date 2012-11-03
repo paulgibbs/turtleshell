@@ -289,6 +289,43 @@
 	}
 }
 
+#bp_activity_search_form {
+	margin-bottom: @themeCompatMargin*3;
+
+	.bp_filter_label {
+		float: right;  // @todo RTL
+		font-size: @smallFontSizePx;
+		font-size: @smallFontSizeRem;
+		margin-left: @themeCompatMargin;  // @todo RTL
+	}
+
+	.searchwrapper {
+		.clearfix();
+
+		span {
+			display: block;
+			overflow: hidden;
+			padding-right: @themeCompatMargin;  // @todo RTL
+		}
+
+		.search {
+			margin-bottom: 0;  // theme compat: twentyten
+			width: 100%;
+		}
+
+		.submit {
+			float: right;  // @todo RTL
+			margin-bottom: 0;  // theme compat: twentyten
+		}
+	}
+}
+
+#bp_activity_filter {
+	float: right;  // @todo RTL
+	margin-left: @themeCompatMargin;  // @todo RTL
+}
+
+
 /* =05a. Activity Permalink
 --------------------------------------------------------------- */
 #buddypress .bp-single-activity {
