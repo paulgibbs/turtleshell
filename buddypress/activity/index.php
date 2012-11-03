@@ -29,6 +29,8 @@
 
 		<?php bp_get_template_part( 'activity/feedback-no-activity' ); ?>
 
+		<?php bp_get_template_part( 'activity/form-activity-search' ); ?>
+
 	<?php endif; ?>
 
 	<?php do_action( 'bp_template_after_directory_activity_content' ); ?>
