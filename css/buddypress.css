@@ -98,7 +98,7 @@
   font-size: 0.85rem;
 }
 #bp_member_search_form {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #bp_member_search_form .searchwrapper {
   *zoom: 1;
@@ -202,7 +202,7 @@
   margin-bottom: 0;
 }
 #bp_group_search_form {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #bp_group_search_form .searchwrapper {
   *zoom: 1;
@@ -254,7 +254,7 @@
 /* =05. Activity List
 --------------------------------------------------------------- */
 #buddypress .bp-archive-activity > li {
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
 }
 #buddypress .bp-archive-activity p {
   margin-bottom: 0;
@@ -345,7 +345,7 @@
   content: ")";
 }
 #bp_activity_search_form {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #bp_activity_search_form .bp_filter_label {
   float: right;
@@ -442,7 +442,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   *zoom: 1;
-  padding-left: 180px;
+  padding-left: 170px;
   width: 100%;
 }
 #bp-member-content:before,
