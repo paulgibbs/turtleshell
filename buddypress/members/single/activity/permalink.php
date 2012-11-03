@@ -21,7 +21,7 @@
 		
 			<?php do_action( 'bp_template_before_activity_entry' ); ?>
 
-			<?php bp_get_template_part( 'activity/loop', 'single-activity' ); ?>
+			<?php bp_get_template_part( 'activity/loop-single-activity' ); ?>
 			
 			<?php do_action( 'bp_template_after_activity_entry' ); ?>
 		

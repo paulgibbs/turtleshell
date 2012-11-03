@@ -15,7 +15,7 @@
 
 	<?php do_action( 'template_notices' ); ?>
 
-	<?php bp_get_template_part( 'members/single/menu', 'members' ); ?>
+	<?php bp_get_template_part( 'members/single/menu-members' ); ?>
 
 	<div id="bp-member-content">
 
