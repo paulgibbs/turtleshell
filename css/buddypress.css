@@ -473,6 +473,27 @@
 #buddypress #bp-member-content .bp-archive-activity .activity-content {
   margin-left: 0;
 }
+#bp-member-content #bp_activity_search_form .searchwrapper {
+  *zoom: 1;
+  overflow: hidden;
+}
+#bp-member-content #bp_activity_search_form .searchwrapper:before,
+#bp-member-content #bp_activity_search_form .searchwrapper:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#bp-member-content #bp_activity_search_form .searchwrapper:after {
+  clear: both;
+}
+#bp-member-content #bp_activity_search_form .bp_filter_label {
+  float: inherit;
+  margin-left: 0;
+}
+#bp-member-content #bp_activity_filter {
+  float: inherit;
+  margin-left: 0;
+}
 /* =08c. Single member - groups
 --------------------------------------------------------------- */
 #bp-member-content .bp-archive-groups .group-details {

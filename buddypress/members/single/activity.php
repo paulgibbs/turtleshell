@@ -11,6 +11,8 @@
 
 <?php if ( bp_has_activities() ) : ?>
 
+	<?php bp_get_template_part( 'members/single/form-activity-search' ); ?>
+
 	<?php bp_get_template_part( 'activity/pagination', 'activity' ); ?>
 
 	<?php bp_get_template_part( 'activity/loop', 'activity' ); ?>
