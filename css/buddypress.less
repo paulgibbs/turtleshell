@@ -106,7 +106,7 @@
 	.box-sizing(border-box);
 	.clearfix();
 	margin: 0 0 @themeCompatMargin 0;
-	overflow: hidden;
+	overflow: hidden !important;
 	width: 100%;
 
 	> li {
@@ -400,7 +400,11 @@
 
 /* =08b. Single member - activity
 --------------------------------------------------------------- */
-#bp-member-content .bp-archive-activity {
+#buddypress #bp-member-content .bp-archive-activity {
+	> li {
+		overflow: hidden;
+	}
+
 	.activity-avatar {
 		display: none;
 	}

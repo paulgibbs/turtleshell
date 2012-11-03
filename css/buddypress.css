@@ -137,7 +137,7 @@
   box-sizing: border-box;
   *zoom: 1;
   margin: 0 0 10px 0;
-  overflow: hidden;
+  overflow: hidden !important;
   width: 100%;
 }
 #buddypress .bp-archive-groups:before,
@@ -464,10 +464,13 @@
 }
 /* =08b. Single member - activity
 --------------------------------------------------------------- */
-#bp-member-content .bp-archive-activity .activity-avatar {
+#buddypress #bp-member-content .bp-archive-activity > li {
+  overflow: hidden;
+}
+#buddypress #bp-member-content .bp-archive-activity .activity-avatar {
   display: none;
 }
-#bp-member-content .bp-archive-activity .activity-content {
+#buddypress #bp-member-content .bp-archive-activity .activity-content {
   margin-left: 0;
 }
 /* =08c. Single member - groups
