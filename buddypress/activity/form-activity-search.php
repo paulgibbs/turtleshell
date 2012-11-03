@@ -23,7 +23,7 @@
 		<label class="bp_filter_label" for="bp_activity_filter"><?php esc_html_e( 'Show:', 'buddypress' ); ?></label>
 
 		<input class="submit" type="submit" value="<?php esc_attr_e( 'Search', 'buddypress' ) ?>" />
-		<span><input class="search" id="bp_activity_search_box" type="search" name="s" placeholder="<?php echo esc_attr( bp_get_search_default_text( 'activity' ) ); ?>" value="<?php echo esc_attr( ! empty( $_REQUEST['s'] ) ? stripslashes( $_REQUEST['s'] ) : '' ); ?>" required autofocus /></span>
+		<span><input class="search" id="bp_activity_search_box" type="search" name="s" placeholder="<?php echo esc_attr( bp_get_search_default_text( 'activity' ) ); ?>" value="<?php echo esc_attr( ! empty( $_REQUEST['s'] ) ? stripslashes( $_REQUEST['s'] ) : '' ); ?>" /></span>
 	</div>
 
 	<?php do_action( 'bp_template_activity_search_form_extras_bottom' ); ?>
