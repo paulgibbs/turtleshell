@@ -25,25 +25,28 @@
 			bp_get_template_part( 'members/single/activity' );
 
 		elseif ( bp_is_user_blogs() ) :
-			bp_get_template_part( 'members/single/blogs'    );
+			bp_get_template_part( 'members/single/blogs' );
+
+		elseif ( bp_is_user_friends() && bp_is_current_action( 'requests' ) ) :
+			bp_get_template_part( 'members/single/friends/requests' );
 
 		elseif ( bp_is_user_friends() ) :
-			bp_get_template_part( 'members/single/friends'  );
+			bp_get_template_part( 'members/single/friends' );
 
 		elseif ( bp_is_user_groups() ) :
-			bp_get_template_part( 'members/single/groups'   );
+			bp_get_template_part( 'members/single/groups' );
 
 		elseif ( bp_is_user_messages() ) :
 			bp_get_template_part( 'members/single/messages' );
 
 		elseif ( bp_is_user_profile() || ! bp_current_component() ) :
-			bp_get_template_part( 'members/single/profile'  );
+			bp_get_template_part( 'members/single/profile' );
 
 		elseif ( bp_is_user_settings() ) :
 			bp_get_template_part( 'members/single/settings' );
 
 		else :
-			bp_get_template_part( 'members/single/plugins'  );
+			bp_get_template_part( 'members/single/plugins' );
 		endif;
 
 		do_action( 'bp_template_after_member_body' ); ?>

@@ -11,6 +11,7 @@
 08a. Single member - menu
 08b. Single member - activity
 08c. Single member - groups
+08d. Single member - friends
 09. Core widgets
 10. Notices
 11. Menus
@@ -499,6 +500,11 @@
 #bp-member-content .bp-archive-groups .group-details {
   clear: left;
   padding-left: 0;
+}
+/* =08d. Single member - friends
+--------------------------------------------------------------- */
+#bp-member-content .bp-archive-members {
+  overflow: hidden;
 }
 /* =09. Core widgets
 --------------------------------------------------------------- */
