@@ -544,6 +544,8 @@
 
 /* =11. Menus
 --------------------------------------------------------------- */
+#buddypress #menu-bp .bp-show-menu { display: block; }
+
 #bp-menu {
 	float: left;  // @todo RTL
 
@@ -556,9 +558,8 @@
 	#menu-bp a { border-bottom: 0; } // theme compat: duet
 }
 
-
 #menu-bp {
-	a {		
+	a {
 		display: inline-block;
 		font-size: @smallFontSizePx;
 		font-size: @smallFontSizeRem;
@@ -567,10 +568,7 @@
 	}
 
 	li {
-		&:hover > .sub-menu,
-		&.current-menu-parent .sub-menu {
-			display: block;
-		}
+		&.current-menu-parent .sub-menu { display: block; }
 
 		span {
 			float: right;
@@ -607,3 +605,5 @@
 
 	.sub-menu { padding-bottom: @themeCompatMargin; }
 }
+
+.no-menu-js #menu-bp li:hover > .sub-menu { display: block; }

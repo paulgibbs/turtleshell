@@ -617,6 +617,9 @@
 }
 /* =11. Menus
 --------------------------------------------------------------- */
+#buddypress #menu-bp .bp-show-menu {
+  display: block;
+}
 #bp-menu {
   float: left;
 }
@@ -639,7 +642,6 @@
   text-decoration: none;
   width: 100%;
 }
-#menu-bp li:hover > .sub-menu,
 #menu-bp li.current-menu-parent .sub-menu {
   display: block;
 }
@@ -679,4 +681,7 @@
 }
 #menu-bp .sub-menu {
   padding-bottom: 10px;
+}
+.no-menu-js #menu-bp li:hover > .sub-menu {
+  display: block;
 }

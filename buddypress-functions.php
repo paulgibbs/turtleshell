@@ -129,7 +129,7 @@ class BP_TurtleShell extends BP_Theme_Compat {
 			$handle   = 'bp-turtleshell-js';
 		}
 
-		wp_enqueue_script( $handle, $location . $file, array( 'jquery' ), $this->version );
+		wp_enqueue_script( $handle, $location . $file, array( 'jquery', 'hoverIntent', ), $this->version );
 	}
 }
 new BP_TurtleShell();
