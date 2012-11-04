@@ -71,6 +71,7 @@ class BP_TurtleShell extends BP_Theme_Compat {
 	private function setup_actions() {
 		add_action( 'bp_enqueue_scripts', array( $this, 'enqueue_styles'   ) ); // Enqueue theme CSS
 		add_action( 'bp_enqueue_scripts', array( $this, 'enqueue_scripts'  ) ); // Enqueue theme JS
+		add_action( 'widgets_init',       array( $this, 'widgets_init'     ) ); // Widgets          
 
 		// Run an action for for third-party plugins to affect the template pack
 		do_action_ref_array( 'bp_theme_compat_actions', array( &$this ) );
@@ -130,6 +131,19 @@ class BP_TurtleShell extends BP_Theme_Compat {
 		}
 
 		wp_enqueue_script( $handle, $location . $file, array( 'jquery', 'hoverIntent', ), $this->version );
+	}
+
+	/**
+	 * Registers widget areas
+	 *
+	 * @since BuddyPress (1.7)
+	 */
+	public function widgets_init() {
+		register_sidebar( array(
+			'description' => __( 'Appears on member profiles below the navigation menu', 'buddypress' ),
+			'id'          => 'bp-member-profile-widgets',
+			'name'        => __( '(BuddyPress) Member Profiles', 'buddypress' ),
+		) );
 	}
 }
 new BP_TurtleShell();

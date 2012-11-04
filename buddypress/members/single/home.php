@@ -17,6 +17,12 @@
 
 	<?php bp_get_template_part( 'members/single/menu-members' ); ?>
 
+	<?php if ( is_active_sidebar( 'bp-member-profile-widgets' ) ) : ?>
+		<ul id="bp-member-profile-widgets">
+			<?php dynamic_sidebar( 'bp-member-profile-widgets' ); ?>
+		</ul>
+	<?php endif; ?>
+
 	<div id="bp-member-content">
 
 		<?php do_action( 'bp_template_before_member_body' );

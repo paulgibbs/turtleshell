@@ -508,6 +508,10 @@
 }
 /* =09. Core widgets
 --------------------------------------------------------------- */
+#bp-member-profile-widgets {
+  max-width: 150px;
+  width: 150px;
+}
 .widget_bp_core_whos_online_widget .avatar-block,
 .widget_bp_core_recently_active_widget .avatar-block {
   *zoom: 1;
