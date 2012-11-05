@@ -18,10 +18,7 @@
 	</div>
 
 	<div class="acomment-header">
-		<?php
-		/* translators: 1: user profile link, 2: user name */
-		printf( __( '<a href="%1$s">%2$s</a>', 'buddypress' ), bp_get_activity_comment_user_link(), bp_get_activity_comment_name() );
-		?>
+		<?php printf( '<a href="%1$s">%2$s</a>', esc_url( bp_get_activity_comment_user_link() ), bp_get_activity_comment_name() ); ?>
 	</div>
 
 	<div class="acomment-body">
