@@ -27,9 +27,9 @@
 
 	<?php else : ?>
 
-		<?php bp_get_template_part( 'members/feedback-no-members' ); ?>
-
 		<?php bp_get_template_part( 'members/form-members-search' ); ?>
+
+		<?php bp_get_template_part( 'members/feedback-no-members' ); ?>
 
 	<?php endif; ?>
 

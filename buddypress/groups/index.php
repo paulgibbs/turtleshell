@@ -27,9 +27,9 @@
 
 	<?php else : ?>
 
-		<?php bp_get_template_part( 'groups/feedback-no-groups' ); ?>
-
 		<?php bp_get_template_part( 'groups/form-groups-search' ); ?>
+
+		<?php bp_get_template_part( 'groups/feedback-no-groups' ); ?>
 
 	<?php endif; ?>
 

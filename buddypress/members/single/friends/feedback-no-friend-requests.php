@@ -7,6 +7,6 @@
  */
 ?>
 
-<div class="bp-template-notice friend-requests">
-	<p><?php _e( 'You have no pending friendship requests.', 'buddypress' ); ?></p>
+<div class="bp-template-notice info friend-requests">
+	<p><?php _e( 'No-one wants to be your friend! You should get involved with the community and meet new people.', 'buddypress' ); ?></p>
 </div>

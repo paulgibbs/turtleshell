@@ -8,5 +8,5 @@
 ?>
 
 <div class="bp-template-notice blogs">
-	<p><?php _e( 'No sites were found', 'buddypress' ); ?></p>
+	<p><?php _e( "We couldn't find any sites; check back soon!", 'buddypress' ); ?></p>
 </div>
