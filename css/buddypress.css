@@ -760,3 +760,196 @@
 .no-menu-js #menu-bp li:hover > .sub-menu {
   display: block;
 }
+
+
+
+/* message UI css */
+
+span.thread-avatar img {
+	width: 25px;
+	height: 25px;
+}
+
+span.thread-info {
+}
+
+div.messages-options-nav {
+	font-size: 12px;
+}
+
+span.options-nav {
+	float: right;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+span.thread-avatar {
+	float: left;
+	margin-right: 6px;
+}
+
+span.delete-link {
+	font-size: 10px;
+	float: right;
+}
+
+ul#message-threads li {
+	border-bottom: 1px solid #e0e0e0;
+	padding: 10px;
+}
+ul#message-threads li:first-child {
+	border-top: 1px solid #e0e0e0;
+}
+
+ul#message-threads li.unread {
+	background-color: #fdfcfc;
+}
+
+span.thread-options {
+	display: inline-block;
+	float: right;
+	font-size: 10px;
+}
+
+span.thread-from {
+	display: block;
+}
+
+span.thread-link {
+	display: block;
+	font-size: 12px;
+}
+
+#send_message_form label {
+	font-size: 13px;
+}
+
+#send_message_form ul li {
+	width: 100%;
+}
+
+div#message-search {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+span.message-search {
+	width: 220px;
+	float: right;
+}
+
+#bp-member-content div#message-search h4.message-title {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+div#messages-dir-count.pag-count {
+	font-size: 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	clear: right;
+}
+
+span.notice-action {
+	float: right;
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+span.message-subject, span.message-to {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+span.message-all-notice {
+	font-size: 12px;
+}
+
+input#send-to-input.send-to-input, input#subject {
+	width: 95%;
+}
+
+
+span.notice-content p {
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+
+span.notice-date, span.thread-date {
+	font-size: 11px;
+}
+
+div#message-thread {
+	float: left;
+	width: 100%;
+}
+
+div#message-box > div {
+	margin-left: 20px;
+}
+
+div#message-box > div:first-child {
+	margin-left: 0px;
+}
+
+h4#message-subject {
+	margin: 0 0 10px;
+}
+
+div#message-box div.message-box div.message-content p {
+	padding-left: 40px;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+div.avatar-box {
+	margin-bottom: 15px;
+}
+
+div.message-box-reply {
+	padding-top: 15px;
+	border-top: 1px solid #cacaca;
+	margin-left: 20px;
+}
+
+div.avatar-box strong {
+	line-height: 30px;
+}
+
+#message-box div.message-box div.message-metadata img.avatar, div.message-box-reply div.avatar-box img.avatar{
+	float: left;
+	margin-right: 10px;
+}
+
+div.message-metadata {
+}
+
+p#message-recipients {
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+div.message-box {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid #d3d3d4;
+}
+
+
+div.messages {
+	position: relative;
+}
+
+
+textarea#message_content {
+	height: 80px;
+	width: 100%;
+}
+
+div.submit {
+	float: right;
+	margin-top: 10px;
+}
