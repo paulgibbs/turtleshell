@@ -16,6 +16,24 @@
 10. Notices
 11. Menus
 */
+/* =TABLE OF CONTENTS
+=======================================================
+01. Globals
+02. Members Directory
+03. Groups Directory
+04. Pagination
+05. Activity Directory
+05a. Activity Permalink
+07. Sites Directory
+08. Single member
+08a. Single member - menu
+08b. Single member - activity
+08c. Single member - groups
+08d. Single member - friends
+09. Core widgets
+10. Notices
+11. Menus
+*/
 .clearfix {
   *zoom: 1;
 }
@@ -29,7 +47,7 @@
   clear: both;
 }
 .hide-text {
-  font: a;
+  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -283,17 +301,21 @@
   margin-right: 10px;
   width: 9%;
 }
-.bp-archive-activity .activity-content {
+.bp-archive-activity .activity-content,
+.bp-archive-activity .activity-comments {
   *zoom: 1;
   margin: 0 0 0 11%;
 }
 .bp-archive-activity .activity-content:before,
-.bp-archive-activity .activity-content:after {
+.bp-archive-activity .activity-comments:before,
+.bp-archive-activity .activity-content:after,
+.bp-archive-activity .activity-comments:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.bp-archive-activity .activity-content:after {
+.bp-archive-activity .activity-content:after,
+.bp-archive-activity .activity-comments:after {
   clear: both;
 }
 .bp-archive-activity .activity-header {
@@ -333,7 +355,6 @@
   display: inline-block;
 }
 .bp-archive-activity .activity-actions li:first-child {
-  border-left: 0;
   padding-left: 0;
 }
 .bp-archive-activity .activity-actions li:last-child {
@@ -382,6 +403,56 @@
 #bp_activity_filter {
   float: right;
   margin-left: 10px;
+}
+#buddypress .bp-archive-activity .activity-comments {
+  font-size: 12px;
+  font-size: 0.85rem;
+}
+#buddypress .bp-archive-activity .activity-comments li {
+  *zoom: 1;
+  border-top: 1px dotted #dddddd;
+  margin: 10px 0 5px;
+  padding-top: 10px;
+}
+#buddypress .bp-archive-activity .activity-comments li:before,
+#buddypress .bp-archive-activity .activity-comments li:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#buddypress .bp-archive-activity .activity-comments li:after {
+  clear: both;
+}
+#buddypress .bp-archive-activity .activity-comments li ul {
+  clear: both;
+  margin-left: 60px;
+}
+#buddypress .bp-archive-activity .activity-comments .acomment-actions {
+  float: right;
+  margin-left: 0;
+}
+#buddypress .bp-archive-activity .activity-comments .acomment-actions li {
+  border-top: 0;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 0 5px;
+}
+#buddypress .bp-archive-activity .activity-comments .acomment-actions li:first-child {
+  padding-left: 0;
+}
+#buddypress .bp-archive-activity .activity-comments .acomment-actions li:last-child {
+  padding-right: 0;
+}
+#buddypress .bp-archive-activity .activity-comments .acomment-avatar {
+  float: left;
+  margin-right: 10px;
+  width: 9%;
+}
+#buddypress .bp-archive-activity .activity-comments .acomment-body p {
+  margin: 0;
+}
+#buddypress .bp-archive-activity .activity-comments .acomment-header p {
+  margin-bottom: 0;
 }
 /* =05a. Activity Permalink
 --------------------------------------------------------------- */

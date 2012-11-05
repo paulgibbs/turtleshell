@@ -69,6 +69,12 @@
 		</div><!-- .activity-meta -->
 	</div><!-- .activity-content -->
 
+	<?php if ( ( is_user_logged_in() && bp_activity_can_comment() ) || bp_activity_get_comment_count() ) : ?>
+		<div class="activity-comments">
+			<?php bp_activity_comments(); ?>
+		</div>
+	<?php endif; ?>
+
 
 	<?php do_action( 'bp_template_in_activity_loop_late' ); ?>
 </li>

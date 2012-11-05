@@ -238,7 +238,8 @@
 		width: 9%;
 	}
 
-	.activity-content {
+	.activity-content,
+	.activity-comments {
 		.clearfix();
 		margin: 0 0 0 11%; // @todo RTL
 	}
@@ -282,7 +283,6 @@
 			display: inline-block;
 
 			&:first-child {
-				border-left: 0;  // @todo RTL ?
 				padding-left: 0; // @todo RTL ?
 			}
 
@@ -332,6 +332,52 @@
 #bp_activity_filter {
 	float: right;  // @todo RTL
 	margin-left: @themeCompatMargin;  // @todo RTL
+}
+
+#buddypress .bp-archive-activity .activity-comments {
+	font-size: @smallFontSizePx;
+	font-size: @smallFontSizeRem;
+
+	li {
+		.clearfix();
+		border-top: 1px dotted @themeCompatSubtleBorder;
+		margin: @themeCompatMargin 0 @themeCompatMargin/2;
+		padding-top: @themeCompatMargin;
+
+		ul {
+			clear: both;
+			margin-left: @themeCompatMargin + 50px; // plus avatar width
+		}
+	}
+
+	.acomment-actions {
+		float: right; // @todo RTL
+		margin-left: 0;
+
+		li {
+			border-top: 0;
+			display: inline-block;
+			margin-bottom: 0;
+			padding: 0 @themeCompatMargin/2; // @todo RTL
+
+			&:first-child {
+				padding-left: 0; // @todo RTL ?
+			}
+
+			&:last-child {
+				padding-right: 0; // @todo RTL ?
+			}
+		}
+	}
+
+	.acomment-avatar {
+		float: left; // @todo RTL
+		margin-right: @themeCompatMargin; // @todo RTL
+		width: 9%;
+	}
+
+	.acomment-body p   { margin: 0; }
+	.acomment-header p { margin-bottom: 0; }
 }
 
 
