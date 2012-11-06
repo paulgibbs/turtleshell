@@ -6,6 +6,7 @@
 04. Pagination
 05. Activity Directory
 05a. Activity Permalink
+06. Messages
 07. Sites Directory
 08. Single member
 08a. Single member - menu
@@ -441,7 +442,159 @@
 #buddypress .bp-single-activity > li {
   margin: 0;
 }
-/* =06. Sites Directory
+/* =06. Messages
+-------------------------------------------------------------- */
+#buddypress .messages-options-nav {
+  overflow: hidden;
+}
+#buddypress .options-nav {
+  float: right;
+  margin-bottom: 10px 0;
+  font-size: 12px;
+  font-size: 0.85rem;
+}
+#buddypress .thread-avatar {
+  float: left;
+  margin-right: 10px;
+}
+#buddypress span.delete-link {
+  float: right;
+}
+#buddypress ul#message-threads li {
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+}
+#buddypress ul#message-threads li:first-child {
+  border-top: 1px solid #dddddd;
+}
+#buddypress ul#message-threads li li.unread {
+  background-color: #faf9fb;
+}
+#buddypress .thread-options {
+  overflow: hidden;
+  font-size: 12px;
+  font-size: 0.85rem;
+}
+#buddypress .thread-delete {
+  float: right;
+}
+#buddypress .thread-link {
+  padding-left: 30px;
+}
+#buddypress .thread-content {
+  margin-bottom: 10px;
+}
+#buddypress #send_message_form label {
+  font-size: 12px;
+  font-size: 0.85rem;
+}
+#buddypress #message-header {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+#buddypress #message-header .message-search {
+  float: right;
+}
+#buddypress #message-header h4.message-title {
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+#buddypress #messages-dir-count {
+  float: left;
+}
+#buddypress #messages-dir-pag {
+  float: right;
+}
+#buddypress #user-pag.pagination {
+  padding-top: 5px 0;
+  font-size: 12px;
+  font-size: 0.85rem;
+}
+#buddypress #user-pag.pagination:after {
+  content: " ";
+  clear: right;
+  display: table;
+}
+#buddypress .message-subject,
+#buddypress .message-to {
+  margin-top: 10px 0;
+  display: block;
+}
+#buddypress .message-all-notice {
+  font-size: 12px;
+  font-size: 0.85rem;
+}
+#buddypress input#send-to-input.send-to-input,
+#buddypress input#subject {
+  width: 95%;
+}
+#buddypress .notice-content p {
+  margin-bottom: 10px;
+}
+#buddypress .notice-date {
+  float: left;
+}
+#buddypress .thread-date {
+  float: left;
+  padding-left: 30px;
+}
+#buddypress .notice-action-button {
+  float: right;
+}
+#buddypress .notice-action {
+  overflow: hidden;
+  font-size: 12px;
+  font-size: 0.85rem;
+}
+#buddypress #message-thread {
+  float: left;
+  width: 100%;
+}
+#buddypress #message-box > div {
+  margin-left: 20px;
+}
+#buddypress #message-box > div:first-child {
+  margin-left: 0px;
+}
+#buddypress h4#message-subject {
+  margin: 0;
+}
+#buddypress .message-content p {
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+#buddypress .avatar-box {
+  margin-bottom: 15px;
+}
+#buddypress .message-box-reply {
+  padding-top: 15px;
+  border-top: 1px solid #dddddd;
+  margin-left: 20px;
+}
+#buddypress #message-box img.avatar,
+#buddypress .message-box-reply img.avatar {
+  float: left;
+  margin-right: 10px;
+}
+#buddypress .message-metadata {
+  font-size: 12px;
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+}
+#buddypress p#message-recipients {
+  font-size: 12px;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+#buddypress .message-box {
+  padding-top: 10px 0;
+  border-top: 1px solid #dddddd;
+}
+#buddypress form#send_message_form .message-content {
+  width: 95%;
+}
+/* =07. Sites Directory
 --------------------------------------------------------------- */
 .bp-archive-blogs {
   *zoom: 1;
@@ -745,231 +898,4 @@
 .no-menu-js #menu-bp li:hover > .sub-menu {
   left: 0;
   position: static;
-}
-
-
-
-/* message UI css */
-
-div.thread-avatar img {
-	width: 25px;
-	height: 25px;
-}
-
-span.thread-info {
-}
-
-div.messages-options-nav {
-	overflow: hidden;
-}
-
-div.options-nav {
-	float: right;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	font-size: 12px;
-  	font-size: 0.85rem;
-}
-
-div.thread-avatar {
-	float: left;
-	margin-right: 6px;
-}
-
-span.delete-link {
-	float: right;
-}
-
-ul#message-threads li {
-	border-bottom: 1px solid #dddddd;
-	padding: 10px;
-}
-ul#message-threads li:first-child {
-	border-top: 1px solid #dddddd;
-}
-
-ul#message-threads li.unread {
-	background-color: #faf9fb;
-}
-
-div.thread-options {
-	overflow: hidden;
-	font-size: 12px;
-  	font-size: 0.85rem;
-}
-
-div.thread-delete {
-	float: right;
-}
-
-div.thread-link {
-	padding-left: 30px;
-}
-
-div.thread-content {
-	margin-bottom: 10px;
-}
-
-#send_message_form label {
-	font-size: 14px;
-  	font-size: 1rem;
-}
-
-#send_message_form ul li {
-	width: 100%;
-}
-
-div#message-header{
-	margin-bottom: 10px;
-	overflow: hidden;
-}
-
-div.message-search {
-	float: right;
-}
-
-div#message-header h4.message-title {
-	padding: 0;
-	margin: 0;
-	float: left;
-}
-
-div#messages-dir-count {
-	float: left;
-}
-
-div#messages-dir-pag {
-	float: right;
-}
-
-div#user-pag.pagination {
-	padding-top: 5px;
-	padding-bottom: 5px;
-	font-size: 12px;
-  	font-size: 0.85rem;
-}
-
-div#user-pag.pagination:after {
-    content: " ";
-	clear: right;
-	display: table; 
-}
-
-div.message-subject, div.message-to {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	display: block;
-}
-
-div.message-all-notice {
-	font-size: 12px;
-  	font-size: 0.85rem;
-}
-
-input#send-to-input.send-to-input, input#subject {
-	width: 95%;
-}
-
-div.notice-content p {
-	margin-bottom: 10px;
-}
-
-div.notice-date {
-	float: left;
-}
-
-div.thread-date {
-	float: left;
-	padding-left: 30px;
-
-}
-
-div.notice-action-button {
-	float: right;
-}
-
-div.notice-action {
-	overflow: hidden;
-	font-size: 12px;
-  	font-size: 0.85rem;
-}
-
-div#message-thread {
-	float: left;
-	width: 100%;
-}
-
-div#message-box > div {
-	margin-left: 20px;
-}
-
-div#message-box > div:first-child {
-	margin-left: 0px;
-}
-
-h4#message-subject {
-	margin: 0 0 0 0;
-}
-
-div.message-content p {
-	padding-left: 40px;
-	margin-bottom: 10px;
-}
-
-div.avatar-box {
-	margin-bottom: 15px;
-}
-
-div.message-box-reply {
-	padding-top: 15px;
-	border-top: 1px solid #dddddd;
-	margin-left: 20px;
-}
-
-div.avatar-box strong {
-	line-height: 30px;
-}
-
-#message-box img.avatar, div.message-box-reply img.avatar{
-	float: left;
-	margin-right: 10px;
-}
-
-div.message-metadata {
-	font-size: 12px;
-  	font-size: 0.85rem;
-  	font-weight: 700;
-	margin-bottom: 5px;
-}
-
-span.notice-subject {
-	font-size: 15px;
-  	font-size: 1.0rem;
-  	font-weight: 700;
-}
-
-p#message-recipients {
-	font-size: 12px;
-	margin-bottom: 10px;
-}
-
-div.message-box {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-top: 1px solid #dddddd;
-}
-
-textarea#message_content {
-	height: 80px;
-	width: 100%;
-}
-
-form#send_message_form div.message-content {
-	width: 95%;
-}
-
-
-div.submit {
-	float: right;
-	margin-top: 10px;
 }

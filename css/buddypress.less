@@ -6,6 +6,7 @@
 04. Pagination
 05. Activity Directory
 05a. Activity Permalink
+06. Messages
 07. Sites Directory
 08. Single member
 08a. Single member - menu
@@ -389,8 +390,197 @@
 	}
 }
 
+/* =06. Messages
+-------------------------------------------------------------- */
+#buddypress {
+	.messages-options-nav {
+		overflow: hidden;
+	}
 
-/* =06. Sites Directory
+	.options-nav {
+		float: right;
+		margin-bottom: 10px 0;
+		font-size: @smallFontSizePx;
+		font-size: @smallFontSizeRem;
+	}
+	
+	.thread-avatar {
+		float: left;
+		margin-right: 10px;
+	}
+
+	span.delete-link {
+		float: right;
+	}
+
+	ul#message-threads li {
+		border-bottom: 1px solid @themeCompatSubtleBorder;
+		padding: 10px;
+
+		&:first-child {
+			border-top: 1px solid @themeCompatSubtleBorder;
+		}	
+
+		li.unread {
+			background-color: #faf9fb;
+		}
+	}
+
+	.thread-options {
+		overflow: hidden;
+		font-size: @smallFontSizePx;
+		font-size: @smallFontSizeRem;
+	}
+
+	.thread-delete {
+		float: right;
+	}
+
+	.thread-link {
+		padding-left: 30px;
+	}
+
+	.thread-content {
+		margin-bottom: 10px;
+	}
+
+	#send_message_form label {
+		font-size: @smallFontSizePx;
+		font-size: @smallFontSizeRem;
+	}
+
+	#message-header{
+		margin-bottom: 10px;
+		overflow: hidden;
+
+		.message-search {
+			float: right;
+		}
+
+		h4.message-title {
+			padding: 0;
+			margin: 0;
+			float: left;
+		}
+	}
+
+	#messages-dir-count {
+		float: left;
+	}
+
+	#messages-dir-pag {
+		float: right;
+	}
+
+	#user-pag.pagination {
+		padding-top: 5px 0;
+		font-size: @smallFontSizePx;
+		font-size: @smallFontSizeRem;
+
+		&:after {
+    		content: " ";
+			clear: right;
+			display: table; 
+		}
+	}
+
+	.message-subject, .message-to {
+		margin-top: 10px 0;
+		display: block;
+	}
+
+	.message-all-notice {
+		font-size: @smallFontSizePx;
+		font-size: @smallFontSizeRem;
+	}
+
+	input#send-to-input.send-to-input, input#subject {
+		width: 95%;
+	}
+
+	.notice-content p {
+		margin-bottom: 10px;
+	}
+
+	.notice-date {
+		float: left;
+	}
+
+	.thread-date {
+		float: left;
+		padding-left: 30px;
+	}
+
+	.notice-action-button {
+		float: right;
+	}
+
+	.notice-action {
+		overflow: hidden;
+		font-size: @smallFontSizePx;
+		font-size: @smallFontSizeRem;
+	}
+
+	#message-thread {
+		float: left;
+		width: 100%;
+	}
+
+	#message-box > div {
+		margin-left: 20px;
+	}
+
+	#message-box > div:first-child {
+		margin-left: 0px;
+	}
+
+	h4#message-subject {
+		margin: 0;
+	}
+
+	.message-content p {
+		padding-left: 40px;
+		margin-bottom: 10px;
+	}
+
+	.avatar-box {
+		margin-bottom: 15px;
+	}
+
+	.message-box-reply {
+		padding-top: 15px;
+		border-top: 1px solid @themeCompatSubtleBorder;
+		margin-left: 20px;
+	}
+
+	#message-box img.avatar, .message-box-reply img.avatar{
+		float: left;
+		margin-right: 10px;
+	}
+
+	.message-metadata {
+		font-size: @smallFontSizePx;
+		font-size: @smallFontSizeRem;
+		margin-bottom: 5px;
+	}
+
+	p#message-recipients {
+		font-size: @smallFontSizePx;
+		font-size: @smallFontSizeRem;
+		margin-bottom: 10px;
+	}
+
+	.message-box {
+		padding-top: 10px 0;
+		border-top: 1px solid @themeCompatSubtleBorder;
+	}
+
+	form#send_message_form .message-content {
+		width: 95%;
+	}
+}
+
+/* =07. Sites Directory
 --------------------------------------------------------------- */
 .bp-archive-blogs {
 	.clearfix();
