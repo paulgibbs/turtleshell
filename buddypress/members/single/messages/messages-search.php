@@ -7,13 +7,7 @@
  */
 ?>
 
-<div id="message-search">
-
-	<?php if ( bp_is_messages_inbox() || bp_is_messages_sentbox() ) : ?>
-
-		<span class="message-search"><?php bp_message_search_form(); ?></span>
-
-	<?php endif; ?>
+<div id="message-header">
 	
 	<?php if ( bp_is_current_action( 'sentbox' ) ) : ?>
 		<h4 class="message-title"><?php _e( 'Sent', 'buddypress' ); ?></h4>
@@ -27,6 +21,12 @@
 	<?php else: ?>
 		<h4 class="message-title"><?php _e( 'Inbox', 'buddypress' ); ?></h4>
 		
+	<?php endif; ?>
+	
+	<?php if ( bp_is_messages_inbox() || bp_is_messages_sentbox() ) : ?>
+
+		<div class="message-search"><?php bp_message_search_form(); ?></div>
+
 	<?php endif; ?>
 
 </div><!-- #message-search -->

@@ -765,7 +765,7 @@
 
 /* message UI css */
 
-span.thread-avatar img {
+div.thread-avatar img {
 	width: 25px;
 	height: 25px;
 }
@@ -774,112 +774,138 @@ span.thread-info {
 }
 
 div.messages-options-nav {
-	font-size: 12px;
+	overflow: hidden;
 }
 
-span.options-nav {
+div.options-nav {
 	float: right;
 	margin-bottom: 10px;
 	margin-top: 10px;
+	font-size: 12px;
+  	font-size: 0.85rem;
 }
 
-span.thread-avatar {
+div.thread-avatar {
 	float: left;
 	margin-right: 6px;
 }
 
 span.delete-link {
-	font-size: 10px;
 	float: right;
 }
 
 ul#message-threads li {
-	border-bottom: 1px solid #e0e0e0;
+	border-bottom: 1px solid #dddddd;
 	padding: 10px;
 }
 ul#message-threads li:first-child {
-	border-top: 1px solid #e0e0e0;
+	border-top: 1px solid #dddddd;
 }
 
 ul#message-threads li.unread {
-	background-color: #fdfcfc;
+	background-color: #faf9fb;
 }
 
-span.thread-options {
-	display: inline-block;
-	float: right;
-	font-size: 10px;
-}
-
-span.thread-from {
-	display: block;
-}
-
-span.thread-link {
-	display: block;
+div.thread-options {
+	overflow: hidden;
 	font-size: 12px;
+  	font-size: 0.85rem;
+}
+
+div.thread-delete {
+	float: right;
+}
+
+div.thread-link {
+	padding-left: 30px;
+}
+
+div.thread-content {
+	margin-bottom: 10px;
 }
 
 #send_message_form label {
-	font-size: 13px;
+	font-size: 14px;
+  	font-size: 1rem;
 }
 
 #send_message_form ul li {
 	width: 100%;
 }
 
-div#message-search {
-	width: 100%;
-	display: inline-block;
+div#message-header{
 	margin-bottom: 10px;
+	overflow: hidden;
 }
 
-span.message-search {
-	width: 220px;
+div.message-search {
 	float: right;
 }
 
-#bp-member-content div#message-search h4.message-title {
+div#message-header h4.message-title {
 	padding: 0;
 	margin: 0;
-	display: inline-block;
+	float: left;
 }
 
-div#messages-dir-count.pag-count {
-	font-size: 10px;
-	margin-bottom: 5px;
-	margin-top: 5px;
-	clear: right;
+div#messages-dir-count {
+	float: left;
 }
 
-span.notice-action {
+div#messages-dir-pag {
 	float: right;
-	font-size: 11px;
-	margin-top: 5px;
 }
 
-span.message-subject, span.message-to {
+div#user-pag.pagination {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 12px;
+  	font-size: 0.85rem;
+}
+
+div#user-pag.pagination:after {
+    content: " ";
+	clear: right;
+	display: table; 
+}
+
+div.message-subject, div.message-to {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	display: block;
 }
 
-span.message-all-notice {
+div.message-all-notice {
 	font-size: 12px;
+  	font-size: 0.85rem;
 }
 
 input#send-to-input.send-to-input, input#subject {
 	width: 95%;
 }
 
-
-span.notice-content p {
-	margin-bottom: 5px;
-	font-size: 12px;
+div.notice-content p {
+	margin-bottom: 10px;
 }
 
-span.notice-date, span.thread-date {
-	font-size: 11px;
+div.notice-date {
+	float: left;
+}
+
+div.thread-date {
+	float: left;
+	padding-left: 30px;
+
+}
+
+div.notice-action-button {
+	float: right;
+}
+
+div.notice-action {
+	overflow: hidden;
+	font-size: 12px;
+  	font-size: 0.85rem;
 }
 
 div#message-thread {
@@ -896,12 +922,11 @@ div#message-box > div:first-child {
 }
 
 h4#message-subject {
-	margin: 0 0 10px;
+	margin: 0 0 0 0;
 }
 
-div#message-box div.message-box div.message-content p {
+div.message-content p {
 	padding-left: 40px;
-	font-size: 12px;
 	margin-bottom: 10px;
 }
 
@@ -911,7 +936,7 @@ div.avatar-box {
 
 div.message-box-reply {
 	padding-top: 15px;
-	border-top: 1px solid #cacaca;
+	border-top: 1px solid #dddddd;
 	margin-left: 20px;
 }
 
@@ -919,12 +944,22 @@ div.avatar-box strong {
 	line-height: 30px;
 }
 
-#message-box div.message-box div.message-metadata img.avatar, div.message-box-reply div.avatar-box img.avatar{
+#message-box img.avatar, div.message-box-reply img.avatar{
 	float: left;
 	margin-right: 10px;
 }
 
 div.message-metadata {
+	font-size: 12px;
+  	font-size: 0.85rem;
+  	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+span.notice-subject {
+	font-size: 15px;
+  	font-size: 1.0rem;
+  	font-weight: 700;
 }
 
 p#message-recipients {
@@ -935,19 +970,18 @@ p#message-recipients {
 div.message-box {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	border-top: 1px solid #d3d3d4;
+	border-top: 1px solid #dddddd;
 }
-
-
-div.messages {
-	position: relative;
-}
-
 
 textarea#message_content {
 	height: 80px;
 	width: 100%;
 }
+
+form#send_message_form div.message-content {
+	width: 95%;
+}
+
 
 div.submit {
 	float: right;

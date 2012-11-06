@@ -13,6 +13,8 @@
 
 <?php do_action( 'bp_template_before_member_messages_loop' ); ?>
 
+<div id="messages">
+
 <ul id="message-threads" class="messages-list">
 	<?php while ( bp_message_threads() ) : bp_message_thread(); ?>
 
@@ -20,18 +22,24 @@
 		
 		<?php do_action( 'bp_template_messages_inbox_before_list_item' ); ?>
 
-			<span class="thread-content">
-				<span class="thread-avatar"><?php bp_message_thread_avatar(); ?></span>
+			<div class="thread-content">
+				<div class="thread-avatar"><?php bp_message_thread_avatar(); ?></div>
 							
-				<span class="thread-link"><a href="<?php bp_message_thread_view_link(); ?>" title="<?php _e( "View Message", "buddypress" ); ?>"><?php bp_message_thread_subject(); ?></a></span>
+				<div class="thread-link"><a href="<?php bp_message_thread_view_link(); ?>" title="<?php _e( "View Message", "buddypress" ); ?>"><?php bp_message_thread_subject(); ?></a></div>
 												
-				<span class="thread-date"><?php bp_message_thread_last_post_date(); ?></span>
-			</span><!-- .thread-content -->
+			</div><!-- .thread-content -->
 			
-			<span class="thread-options">
+			<div class="thread-options">
+			
+				<div class="thread-date"><?php bp_message_thread_last_post_date(); ?></div>			
+			
+			
+				<div class="thread-delete">
 					<input type="checkbox" name="message_ids[]" value="<?php bp_message_thread_id(); ?>" />						
 					<a class="button confirm" href="<?php bp_the_thread_delete_link(); ?>" title="<?php _e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a>
-			</span><!-- .thread-options -->
+					
+				</div>
+			</div><!-- .thread-options -->
 			
 			<?php do_action( 'bp_template_messages_inbox_after_list_item' ); ?>
 
@@ -39,7 +47,7 @@
 
 	<?php endwhile; ?>
 </ul><!-- #message-threads -->
-
+</div>
 <?php bp_get_template_part( 'members/single/messages/messages-pagination', 'messages' ); ?>
 <?php bp_get_template_part( 'members/single/messages/messages-options', 'messages' ); ?>
 

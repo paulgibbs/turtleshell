@@ -8,5 +8,5 @@
 ?>
 
 <div class="messages-options-nav">
-	<span class="options-nav"><?php bp_messages_options(); ?></span>
+	<div class="options-nav"><?php bp_messages_options(); ?></div>
 </div><!-- .messages-options-nav -->

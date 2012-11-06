@@ -17,27 +17,29 @@
 			
 				<?php do_action( 'bp_template_notices_before_list_item' ); ?>			
 			
-				<span class="notice-content">
-					<strong><?php bp_message_notice_subject(); ?></strong>
+				<div class="notice-content">
+					<span class="notice-subject"><?php bp_message_notice_subject(); ?></span>
 					<?php bp_message_notice_text(); ?>
-				</span>
+				</div>
 				
-				<span class="notice-active">
+				<div class="notice-action">
 					<?php if ( bp_messages_is_active_notice() ) : ?>
 
-						<strong><?php bp_messages_is_active_notice(); ?></strong>
+						<?php bp_messages_is_active_notice(); ?>
 
 					<?php endif; ?>
 
-					<span class="notice-date"><?php _e( 'Sent:', 'buddypress' ); ?> <?php bp_message_notice_post_date(); ?></span>
-				</span>
+					<div class="notice-date"><?php _e( 'Sent:', 'buddypress' ); ?> <?php bp_message_notice_post_date(); ?></div>
+				
 
 				<?php do_action( 'bp_template_notices_list_item' ); ?>
 
-				<span class="notice-action">
+				<div class="notice-action-button">
 					<a class="button" href="<?php bp_message_activate_deactivate_link(); ?>" class="confirm"><?php bp_message_activate_deactivate_text(); ?></a>
 					<a class="button" href="<?php bp_message_notice_delete_link(); ?>" class="confirm" title="<?php _e( "Delete Message", "buddypress" ); ?>">Delete</a>
-				</span>
+				</div>
+				</div>
+				
 				
 				<?php do_action( 'bp_template_notices_after_list_item' ); ?>
 				
