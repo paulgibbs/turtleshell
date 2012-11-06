@@ -595,7 +595,10 @@
 
 /* =11. Menus
 --------------------------------------------------------------- */
-#buddypress #menu-bp .bp-show-menu { display: block; }
+#buddypress #menu-bp .bp-show-menu {
+	left: 0;  // @todo RTL
+	position: static;
+}
 
 #bp-menu {
 	float: left;  // @todo RTL
@@ -619,7 +622,10 @@
 	}
 
 	li {
-		&.current-menu-parent .sub-menu { display: block; }
+		&.current-menu-parent .sub-menu {
+			left: 0;  // @todo RTL
+			position: static;
+		}
 
 		span {
 			float: right;
@@ -629,8 +635,9 @@
 		}
 
 		> .sub-menu {
-			display: none;
+			left: -999em;  // @todo RTL
 			margin: 0;  // theme compat: twentyeleven
+			position: absolute;
 			overflow: hidden;
 
 			li {
@@ -657,4 +664,7 @@
 	.sub-menu { padding-bottom: @themeCompatMargin; }
 }
 
-.no-menu-js #menu-bp li:hover > .sub-menu { display: block; }
+.no-menu-js #menu-bp li:hover > .sub-menu {
+	left: 0;  // @todo RTL
+	position: static;
+}

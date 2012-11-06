@@ -16,24 +16,6 @@
 10. Notices
 11. Menus
 */
-/* =TABLE OF CONTENTS
-=======================================================
-01. Globals
-02. Members Directory
-03. Groups Directory
-04. Pagination
-05. Activity Directory
-05a. Activity Permalink
-07. Sites Directory
-08. Single member
-08a. Single member - menu
-08b. Single member - activity
-08c. Single member - groups
-08d. Single member - friends
-09. Core widgets
-10. Notices
-11. Menus
-*/
 .clearfix {
   *zoom: 1;
 }
@@ -47,7 +29,7 @@
   clear: both;
 }
 .hide-text {
-  font: 0/0 a;
+  font: a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -693,7 +675,8 @@
 /* =11. Menus
 --------------------------------------------------------------- */
 #buddypress #menu-bp .bp-show-menu {
-  display: block;
+  left: 0;
+  position: static;
 }
 #bp-menu {
   float: left;
@@ -718,7 +701,8 @@
   width: 100%;
 }
 #menu-bp li.current-menu-parent .sub-menu {
-  display: block;
+  left: 0;
+  position: static;
 }
 #menu-bp li span {
   float: right;
@@ -730,8 +714,9 @@
   content: "(";
 }
 #menu-bp li > .sub-menu {
-  display: none;
+  left: -999em;
   margin: 0;
+  position: absolute;
   overflow: hidden;
 }
 #menu-bp li > .sub-menu li {
@@ -758,5 +743,6 @@
   padding-bottom: 10px;
 }
 .no-menu-js #menu-bp li:hover > .sub-menu {
-  display: block;
+  left: 0;
+  position: static;
 }
