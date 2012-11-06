@@ -20,7 +20,7 @@
 	<div class="activity-content">
 
 		<div class="activity-header">
-			<?php ts_bp_activity_action( 'no_timestamp=1' ); ?>
+			<?php bp_activity_action( 'no_timestamp=1' ); ?>
 		</div>
 
 		<?php if ( 'activity_comment' == bp_get_activity_type() ) : ?>

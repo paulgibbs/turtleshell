@@ -150,55 +150,6 @@ new BP_TurtleShell();
 endif;
 
 /**
- * Output the activity action
- *
- * @since BuddyPress (1.2)
- *
- * @param arrays $args See bp_get_activity_action()
- * @uses bp_get_activity_action()
- */
-function ts_bp_activity_action( $args = array() ) {
-	echo ts_bp_get_activity_action( $args );
-}
-
-	/**
-	 * Return the activity action
-	 *
-	 * @since BuddyPress (1.2)
-	 *
-	 * @global object $activities_template {@link BP_Activity_Template}
-	 * @param arrays $args Only parameter is "no_timestamp". If true, timestamp is shown in output.
-	 * @uses apply_filters_ref_array() To call the 'bp_get_activity_action_pre_meta' hook
-	 * @uses bp_insert_activity_meta()
-	 * @uses apply_filters_ref_array() To call the 'bp_get_activity_action' hook
-	 *
-	 * @return string The activity action
-	 */
-	function ts_bp_get_activity_action( $args = array() ) {
-		global $activities_template;
-
-		$defaults = array(
-			'no_timestamp' => false,
-		);
-
-		$r = wp_parse_args( $args, $defaults );
-		extract( $r, EXTR_SKIP );
-
-		$action = $activities_template->activity->action;
-		$action = apply_filters_ref_array( 'bp_get_activity_action_pre_meta', array( $action, &$activities_template->activity ) );
-
-		if ( !empty( $action ) && ! $no_timestamp )
-			$action = bp_insert_activity_meta( $action );
-
-		return apply_filters_ref_array( 'bp_get_activity_action', array( $action, &$activities_template->activity ) );
-	}
-
-
-
-
-
-
-/**
  * Sort BuddyPress nav menu items by their position property.
  *
  * This is an internal convenience function and it will probably be removed in a later release. Do not use.
