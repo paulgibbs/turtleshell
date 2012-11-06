@@ -69,7 +69,7 @@ var buddypress = {
 
 $(document).ready( function() {
 	buddypress.menu();
-//	buddypress.menu_accessibility();
+	buddypress.menu_accessibility();
 });
 
 })(jQuery);
