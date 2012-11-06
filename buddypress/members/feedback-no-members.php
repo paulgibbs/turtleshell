@@ -7,8 +7,8 @@
  */
 ?>
 
-<div class="bp-template-notice members">
-	<?php if ( ! empty( $_GET['s'] ) ) : ?>
+<?php if ( ! empty( $_GET['s'] ) ) : ?>
+	<div class="bp-template-notice members">
 		<p><?php _e( "We couldn't find anyone who matched your request. Adjust your search terms and try again.", 'buddypress' ); ?></p>
-	<?php endif; ?>
-</div>
+	</div>
+<?php endif; ?>
