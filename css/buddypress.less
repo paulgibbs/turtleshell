@@ -215,15 +215,10 @@
 /* =05. Activity List
 --------------------------------------------------------------- */
 #buddypress .bp-archive-activity {
-	> li {
-		margin: 0 0 @themeCompatSearchSpacing 0;
-	}
-
+	> li { margin: 0 0 @themeCompatSearchSpacing 0; }
 	p { margin-bottom: 0; }
 
-	.activity-actions li {
-		margin: 0 0;
-	}
+	.activity-actions li { margin: 0 0; }
 }
 
 .bp-archive-activity {
@@ -231,6 +226,12 @@
 
 	> li {
 		overflow: hidden;
+
+		&.mini .activity-header {
+			border-bottom: 1px solid @themeCompatSubtleBorder;
+			border-top: 0;
+			padding-top: 0;
+		}
 	}
 
 	.activity-avatar {
@@ -246,19 +247,17 @@
 	}
 
 	.activity-header {
-		border-bottom: 1px solid @themeCompatSubtleBorder;
+		border-top: 1px solid @themeCompatSubtleBorder;
 		font-size: @smallFontSizePx;
 		font-size: @smallFontSizeRem;
 		font-weight: 700;
-		padding-bottom: @themeCompatMargin/2;
+		padding: @themeCompatMargin 0 @themeCompatMargin/2;
 
 		p { margin-bottom: 0; }
 	}
 
 	.activity-body {
-		border-bottom: 1px solid @themeCompatSubtleBorder;
-		padding: @themeCompatMargin/2 0;
-
+		padding-bottom: @themeCompatMargin/2;
 		p { margin: 0; }
 	}
 
