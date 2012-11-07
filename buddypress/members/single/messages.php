@@ -7,10 +7,6 @@
  */
 ?>
 
-<?php do_action( 'bp_template_before_member_messages_page' ); ?>
-
-<div id="buddypress">
-	
 	<?php do_action( 'bp_template_before_member_messages_content' ); ?>
 
 	<?php if ( bp_has_message_threads() ) : ?>
@@ -38,7 +34,3 @@
 	<?php endif;?>
 	
 	<?php do_action( 'bp_template_before_member_messages_content' ); ?>
-	
-</div><!-- #buddypress -->
-
-<?php do_action( 'bp_template_before_member_messages_page' ); ?>
