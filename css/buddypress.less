@@ -227,10 +227,13 @@
 	> li {
 		overflow: hidden;
 
-		&.mini .activity-header {
-			border-bottom: 1px solid @themeCompatSubtleBorder;
-			border-top: 0;
-			padding-top: 0;
+		&.mini {
+			.activity-header {
+				font-weight: normal;
+				padding-bottom: 0;
+			}
+
+			.activity-meta { margin-top: 0; }
 		}
 	}
 
