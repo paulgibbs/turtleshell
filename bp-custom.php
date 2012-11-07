@@ -24,36 +24,6 @@ function turtlepower_kill_legacy_js_and_css() {
 }
 add_action( 'wp', 'turtlepower_kill_legacy_js_and_css', 999 );
 
-// See turtlepower_bp_core_render_message()
-function turtlepower_bp_core_setup_message() {
-	if ( ! has_action( 'template_notices', 'bp_core_render_message' ) )
-		return;
-
-	remove_action( 'template_notices', 'bp_core_render_message' );
-	add_action( 'template_notices', 'turtlepower_bp_core_render_message' );
-}
-add_action( 'bp_actions', 'turtlepower_bp_core_setup_message', 6 );
-
-// Proposed BP core change: add "bp-template-notice" class to message ID
-function turtlepower_bp_core_render_message() {
-	global $bp;
-
-	if ( !empty( $bp->template_message ) ) :
-		$type    = ( 'success' == $bp->template_message_type ) ? 'updated' : 'error';
-		$content = apply_filters( 'bp_core_render_message_content', $bp->template_message, $type ); ?>
-
-		<div id="message" class="bp-template-notice <?php echo $type; ?>">
-
-			<?php echo $content; ?>
-
-		</div>
-
-	<?php
-
-		do_action( 'bp_core_render_message' );
-
-	endif;
-}
-
 if ( ! defined( 'BP_DEFAULT_COMPONENT' ) )
 	define( 'BP_DEFAULT_COMPONENT', 'profile' );
+
