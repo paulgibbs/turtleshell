@@ -106,7 +106,7 @@
 	<?php do_action( 'bp_template_after_activity_content' ); ?>
 
 
-	<?php if ( ( is_user_logged_in() && bp_activity_can_comment() ) || bp_activity_get_comment_count() ) : ?>
+	<?php if ( bp_activity_get_comment_count() ) : ?>
 		<?php do_action( 'bp_template_before_activity_comments' ); ?>
 
 		<div class="activity-comments">
