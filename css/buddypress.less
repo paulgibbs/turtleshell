@@ -6,6 +6,7 @@
 04. Pagination
 05. Activity Directory
 05a. Activity Permalink
+05b. Activity Comments
 06. Messages
 07. Sites Directory
 08. Single member
@@ -337,52 +338,6 @@
 	margin-left: @themeCompatMargin;  // @todo RTL
 }
 
-#buddypress .bp-archive-activity .activity-comments {
-	font-size: @smallFontSizePx;
-	font-size: @smallFontSizeRem;
-
-	li {
-		.clearfix();
-		border-top: 1px dotted @themeCompatSubtleBorder;
-		margin: @themeCompatMargin 0 @themeCompatMargin/2;
-		padding-top: @themeCompatMargin;
-
-		ul {
-			clear: both;
-			margin-left: @themeCompatMargin + 50px; // plus avatar width
-		}
-	}
-
-	.acomment-actions {
-		float: right; // @todo RTL
-		margin-left: 0;
-
-		li {
-			border-top: 0;
-			display: inline-block;
-			margin-bottom: 0;
-			padding: 0 @themeCompatMargin/2; // @todo RTL
-
-			&:first-child {
-				padding-left: 0; // @todo RTL ?
-			}
-
-			&:last-child {
-				padding-right: 0; // @todo RTL ?
-			}
-		}
-	}
-
-	.acomment-avatar {
-		float: left; // @todo RTL
-		margin-right: @themeCompatMargin; // @todo RTL
-		width: 9%;
-	}
-
-	.acomment-body p   { margin: 0; }
-	.acomment-header p { margin-bottom: 0; }
-}
-
 
 /* =05a. Activity Permalink
 --------------------------------------------------------------- */
@@ -391,6 +346,63 @@
 		margin: 0;
 	}
 }
+
+
+/* =05b. Activity Comments
+--------------------------------------------------------------- */
+#buddypress .bp-archive-activity .activity-comments {
+	font-size: @smallFontSizePx;
+	font-size: @smallFontSizeRem;
+
+	ul > li {
+		margin-bottom: @themeCompatMargin/2;
+		&:last-child { margin-bottom: 0; }
+	}
+
+	li ul {
+		margin: 0 0 @themeCompatMargin @themeCompatListSpacing;  // @todo RTL
+		> li { margin-top: @themeCompatMargin/2; }
+	}
+
+	.acomment-avatar-label {
+		float: left;  // @todo RTL
+		margin-top: @themeCompatListSpacing;
+	}
+
+	.acomment-avatars {
+		.clearfix();
+		margin-top: @themeCompatListSpacing;
+
+		li {
+			display: inline-block;
+			margin: 0 @themeCompatMargin 0 0;  // @todo RTL
+
+			img {
+				height: @themeCompatTinyAvatarSize;
+				width: @themeCompatTinyAvatarSize;
+			}
+		}
+	}
+
+	.acomment-actions-label,
+	.acomment-header-label {
+		left: -999em;  // @todo RTL
+		position: absolute;
+	}
+
+	.acomment-actions {
+		margin: 0;
+
+		li {
+			display: inline-block;
+			margin: 0 @themeCompatMargin 0 0;  // @todo RTL
+		}
+	}
+
+	.acomment-header p { margin-bottom: 0; }
+	.acomment-body p { margin: 0; }
+}
+
 
 /* =06. Messages
 -------------------------------------------------------------- */
@@ -729,14 +741,14 @@
 		float: left;  // @todo RTL
 
 		img {
-			height: 20px;
-			width: 20px;
+			height: @themeCompatTinyAvatarSize;
+			width: @themeCompatTinyAvatarSize;
 		}
 	}
 
 	.item {
 		.box-sizing(border-box);
-		padding-left: 20px + @themeCompatMargin;  // .item-avatar img width + global margin.  @todo RTL
+		padding-left: @themeCompatTinyAvatarSize + @themeCompatMargin;  // .item-avatar img width + global margin.  @todo RTL
 		width: 100%;
 	}
 }

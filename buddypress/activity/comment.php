@@ -11,20 +11,10 @@
 	<?php do_action( 'bp_template_in_activity_comment_loop_early' ); ?>
 
 
-	<?php do_action( 'bp_template_before_activity_comment_avatar' ); ?>
-
-	<div class="acomment-avatar">
-		<a href="<?php bp_activity_comment_user_link(); ?>">
-			<?php bp_activity_avatar( 'type=thumb&user_id=' . bp_get_activity_comment_user_id() ); ?>
-		</a>
-	</div>
-
-	<?php do_action( 'bp_template_after_activity_comment_avatar' ); ?>
-
-
 	<?php do_action( 'bp_template_before_activity_comment_header' ); ?>
 
 	<div class="acomment-header">
+		<p class="acomment-header-label"><?php printf( __( 'Comment written by %s', 'buddypress' ), bp_get_activity_comment_name() ); ?></p>
 		<?php printf( '<a href="%1$s">%2$s</a>', esc_url( bp_get_activity_comment_user_link() ), bp_get_activity_comment_name() ); ?>
 	</div>
 
@@ -38,8 +28,11 @@
 	<?php do_action( 'bp_template_after_activity_comment_content' ); ?>
 
 
-	<?php if ( is_user_logged_in() ) : ?>
+	<?php if ( is_user_logged_in() && ( bp_activity_can_comment_reply( bp_activity_current_comment() ) || bp_activity_user_can_delete() ) ) : ?>
+
 		<?php do_action( 'bp_template_before_activity_comment_actions' ); ?>
+
+		<p class="acomment-actions-label"><?php _e( 'Respond to this comment', 'buddypress' ); ?></p>
 
 		<ul class="acomment-actions">
 
@@ -52,13 +45,14 @@
 			<?php endif; ?>
 
 			<?php do_action( 'bp_template_in_activity_comment_actions' ); ?>
+
 		</ul>
 
 		<?php do_action( 'bp_template_after_activity_comment_actions' ); ?>
 	<?php endif; ?>
 
-	<?php bp_activity_recurse_comments( bp_activity_current_comment() ); ?>
 
+	<?php bp_activity_recurse_comments( bp_activity_current_comment() ); ?>
 
 	<?php do_action( 'bp_template_in_activity_comment_loop_late' ); ?>
 </li>

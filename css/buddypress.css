@@ -6,6 +6,7 @@
 04. Pagination
 05. Activity Directory
 05a. Activity Permalink
+05b. Activity Comments
 06. Messages
 07. Sites Directory
 08. Single member
@@ -25,6 +26,7 @@
 04. Pagination
 05. Activity Directory
 05a. Activity Permalink
+05b. Activity Comments
 06. Messages
 07. Sites Directory
 08. Single member
@@ -299,9 +301,11 @@
   overflow: hidden;
 }
 .bp-archive-activity > li.mini .activity-header {
-  border-bottom: 1px solid #dddddd;
-  border-top: 0;
-  padding-top: 0;
+  font-weight: normal;
+  padding-bottom: 0;
+}
+.bp-archive-activity > li.mini .activity-meta {
+  margin-top: 0;
 }
 .bp-archive-activity .activity-avatar {
   float: left;
@@ -410,59 +414,70 @@
   float: right;
   margin-left: 10px;
 }
+/* =05a. Activity Permalink
+--------------------------------------------------------------- */
+#buddypress .bp-single-activity > li {
+  margin: 0;
+}
+/* =05b. Activity Comments
+--------------------------------------------------------------- */
 #buddypress .bp-archive-activity .activity-comments {
   font-size: 12px;
   font-size: 0.85rem;
 }
-#buddypress .bp-archive-activity .activity-comments li {
-  *zoom: 1;
-  border-top: 1px dotted #dddddd;
-  margin: 10px 0 5px;
-  padding-top: 10px;
+#buddypress .bp-archive-activity .activity-comments ul > li {
+  margin-bottom: 5px;
 }
-#buddypress .bp-archive-activity .activity-comments li:before,
-#buddypress .bp-archive-activity .activity-comments li:after {
+#buddypress .bp-archive-activity .activity-comments ul > li:last-child {
+  margin-bottom: 0;
+}
+#buddypress .bp-archive-activity .activity-comments li ul {
+  margin: 0 0 10px 20px;
+}
+#buddypress .bp-archive-activity .activity-comments li ul > li {
+  margin-top: 5px;
+}
+#buddypress .bp-archive-activity .activity-comments .acomment-avatar-label {
+  float: left;
+  margin-top: 20px;
+}
+#buddypress .bp-archive-activity .activity-comments .acomment-avatars {
+  *zoom: 1;
+  margin-top: 20px;
+}
+#buddypress .bp-archive-activity .activity-comments .acomment-avatars:before,
+#buddypress .bp-archive-activity .activity-comments .acomment-avatars:after {
   display: table;
   content: "";
   line-height: 0;
 }
-#buddypress .bp-archive-activity .activity-comments li:after {
+#buddypress .bp-archive-activity .activity-comments .acomment-avatars:after {
   clear: both;
 }
-#buddypress .bp-archive-activity .activity-comments li ul {
-  clear: both;
-  margin-left: 60px;
+#buddypress .bp-archive-activity .activity-comments .acomment-avatars li {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+#buddypress .bp-archive-activity .activity-comments .acomment-avatars li img {
+  height: 20px;
+  width: 20px;
+}
+#buddypress .bp-archive-activity .activity-comments .acomment-actions-label,
+#buddypress .bp-archive-activity .activity-comments .acomment-header-label {
+  left: -999em;
+  position: absolute;
 }
 #buddypress .bp-archive-activity .activity-comments .acomment-actions {
-  float: right;
-  margin-left: 0;
+  margin: 0;
 }
 #buddypress .bp-archive-activity .activity-comments .acomment-actions li {
-  border-top: 0;
   display: inline-block;
-  margin-bottom: 0;
-  padding: 0 5px;
-}
-#buddypress .bp-archive-activity .activity-comments .acomment-actions li:first-child {
-  padding-left: 0;
-}
-#buddypress .bp-archive-activity .activity-comments .acomment-actions li:last-child {
-  padding-right: 0;
-}
-#buddypress .bp-archive-activity .activity-comments .acomment-avatar {
-  float: left;
-  margin-right: 10px;
-  width: 9%;
-}
-#buddypress .bp-archive-activity .activity-comments .acomment-body p {
-  margin: 0;
+  margin: 0 10px 0 0;
 }
 #buddypress .bp-archive-activity .activity-comments .acomment-header p {
   margin-bottom: 0;
 }
-/* =05a. Activity Permalink
---------------------------------------------------------------- */
-#buddypress .bp-single-activity > li {
+#buddypress .bp-archive-activity .activity-comments .acomment-body p {
   margin: 0;
 }
 /* =06. Messages

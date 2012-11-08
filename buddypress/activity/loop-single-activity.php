@@ -110,7 +110,17 @@
 		<?php do_action( 'bp_template_before_activity_comments' ); ?>
 
 		<div class="activity-comments">
+
+			<?php do_action( 'bp_template_before_activity_comments_avatars' ); ?>
+
+			<p class="acomment-avatar-label"><?php printf( _n( 'There is %s voice in this conversation &nbsp;', 'There are %s voices in this conversation &nbsp;', count( bp_activity_get_comments_user_ids() ), 'buddypress' ), number_format_i18n( count( bp_activity_get_comments_user_ids() ) ) ); ?></p>
+			<ul class="acomment-avatars">
+				<?php bp_activity_comments_user_avatars(); ?>
+			</ul>
+
+			<?php do_action( 'bp_template_after_activity_comments_avatars' ); ?>
 			<?php bp_activity_comments(); ?>
+
 		</div>
 
 		<?php do_action( 'bp_template_after_activity_comments' ); ?>
