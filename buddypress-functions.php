@@ -140,9 +140,9 @@ class BP_TurtleShell extends BP_Theme_Compat {
 	 */
 	public function widgets_init() {
 		register_sidebar( array(
-			'description' => __( 'Appears on member profiles below the navigation menu', 'buddypress' ),
+			'description' => __( 'Appears on member profiles pages', 'buddypress' ),
 			'id'          => 'bp-member-profile-widgets',
-			'name'        => __( '(BuddyPress) Member Profiles', 'buddypress' ),
+			'name'        => __( '(BuddyPress) Member Profile', 'buddypress' ),
 		) );
 	}
 }

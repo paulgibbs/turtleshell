@@ -703,8 +703,17 @@
 /* =09. Core widgets
 --------------------------------------------------------------- */
 #bp-member-profile-widgets {
+	font-size: @smallFontSizePx;
+	font-size: @smallFontSizeRem;
 	max-width: @menuWidth;
-	width: @menuWidth;
+
+	&:after { clear: left; }  // @todo RTL
+	h2 { margin-top: 0; }
+
+	> li {
+		float: left;  // @todo RTL
+		margin-bottom: @themeCompatListSpacing;
+	}
 }
 
 .widget_bp_core_whos_online_widget,
@@ -806,6 +815,7 @@
 
 #bp-menu {
 	float: left;  // @todo RTL
+	margin-bottom: @themeCompatListSpacing;
 
 	.bp-navigation {
 		.box-sizing(border-box);
