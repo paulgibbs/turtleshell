@@ -122,9 +122,7 @@
 	}
 
 	.group-meta {
-		ul {
-			margin: 0;
-		}
+		ul { margin: 0;	}
 
 		li {
 			margin: 0;
@@ -139,9 +137,7 @@
 		clear: left; // @todo RTL
 	}
 
-	.group-avatar {
-		float: left;  // @todo RTL
-	}
+	.group-avatar {	float: left; } // @todo RTL
 
 	.group-details {
 		.box-sizing(border-box);
@@ -161,7 +157,6 @@
 
 	.group-description {
 		float: left;  // @todo RTL
-
 		p { margin-bottom: 0; }
 	}
 }
@@ -195,13 +190,9 @@
 
 /* =04. Pagination
 -------------------------------------------------------------- */
-.bp-pagination-count {
-	float: left;  // @todo RTL
-}
+.bp-pagination-count { float: left; } // @todo RTL
 
-.bp-pagination-links {
-	float: right;  // @todo RTL
-}
+.bp-pagination-links { float: right; } // @todo RTL
 
 .bp-pagination {
 	float: right;  // @todo RTL
@@ -287,13 +278,8 @@
 			padding: 0 @themeCompatMargin/2; // @todo RTL
 			display: inline-block;
 
-			&:first-child {
-				padding-left: 0; // @todo RTL ?
-			}
-
-			&:last-child {
-				padding-right: 0; // @todo RTL ?
-			}
+			&:first-child { padding-left: 0; } // @todo RTL ?
+			&:last-child { padding-right: 0; } // @todo RTL ?
 
 			.has-count {
 				span:before { content: "("; }
@@ -343,9 +329,7 @@
 /* =05a. Activity Permalink
 --------------------------------------------------------------- */
 #buddypress .bp-single-activity {
-	> li {
-		margin: 0;
-	}
+	> li { margin: 0; }
 }
 
 
@@ -408,9 +392,7 @@
 /* =06. Messages
 -------------------------------------------------------------- */
 #buddypress {
-	.messages-options-nav {
-		overflow: hidden;
-	}
+	.messages-options-nav { overflow: hidden; }
 
 	.options-nav {
 		float: right;
@@ -424,21 +406,14 @@
 		margin-right: 10px;
 	}
 
-	span.delete-link {
-		float: right;
-	}
+	span.delete-link { float: right; }
 
 	ul#message-threads li {
 		border-bottom: 1px solid @themeCompatSubtleBorder;
 		padding: 10px;
 
-		&:first-child {
-			border-top: 1px solid @themeCompatSubtleBorder;
-		}	
-
-		li.unread {
-			background-color: #faf9fb;
-		}
+		&:first-child { border-top: 1px solid @themeCompatSubtleBorder; }	
+		li.unread { background-color: #faf9fb; }
 	}
 
 	.thread-options {
@@ -447,17 +422,9 @@
 		font-size: @smallFontSizeRem;
 	}
 
-	.thread-delete {
-		float: right;
-	}
-
-	.thread-link {
-		padding-left: 30px;
-	}
-
-	.thread-content {
-		margin-bottom: 10px;
-	}
+	.thread-delete { float: right; }
+	.thread-link { padding-left: 30px; }
+	.thread-content { margin-bottom: 10px; }
 
 	#send_message_form label {
 		font-size: @smallFontSizePx;
@@ -468,9 +435,7 @@
 		margin-bottom: 10px;
 		overflow: hidden;
 
-		.message-search {
-			float: right;
-		}
+		.message-search { float: right; }
 
 		h4.message-title {
 			padding: 0;
@@ -479,13 +444,9 @@
 		}
 	}
 
-	#messages-dir-count {
-		float: left;
-	}
+	#messages-dir-count { float: left; }
 
-	#messages-dir-pag {
-		float: right;
-	}
+	#messages-dir-pag { float: right; }
 
 	#user-pag.pagination {
 		padding-top: 5px 0;
@@ -493,7 +454,7 @@
 		font-size: @smallFontSizeRem;
 
 		&:after {
-    		content: " ";
+			content: " ";
 			clear: right;
 			display: table; 
 		}
@@ -513,22 +474,16 @@
 		width: 95%;
 	}
 
-	.notice-content p {
-		margin-bottom: 10px;
-	}
+	.notice-content p {	margin-bottom: 10px; }
 
-	.notice-date {
-		float: left;
-	}
+	.notice-date { float: left;	}
 
-	.thread-date {
+	.thread-date { 
 		float: left;
 		padding-left: 30px;
 	}
 
-	.notice-action-button {
-		float: right;
-	}
+	.notice-action-button { float: right; }
 
 	.notice-action {
 		overflow: hidden;
@@ -541,26 +496,16 @@
 		width: 100%;
 	}
 
-	#message-box > div {
-		margin-left: 20px;
-	}
-
-	#message-box > div:first-child {
-		margin-left: 0px;
-	}
-
-	h4#message-subject {
-		margin: 0;
-	}
+	#message-box > div { margin-left: 20px; }
+	#message-box > div:first-child { margin-left: 0px; }
+	h4#message-subject { margin: 0; }
 
 	.message-content p {
 		padding-left: 40px;
 		margin-bottom: 10px;
 	}
 
-	.avatar-box {
-		margin-bottom: 15px;
-	}
+	.avatar-box { margin-bottom: 15px; }
 
 	.message-box-reply {
 		padding-top: 15px;
@@ -590,10 +535,9 @@
 		border-top: 1px solid @themeCompatSubtleBorder;
 	}
 
-	form#send_message_form .message-content {
-		width: 95%;
-	}
+	form#send_message_form .message-content { width: 95%; }
 }
+
 
 /* =07. Sites Directory
 --------------------------------------------------------------- */
@@ -625,9 +569,7 @@
 		}
 
 		.blog-image,
-		.blog-excerpt {
-			margin-top: @themeCompatMargin;
-		}
+		.blog-excerpt { margin-top: @themeCompatMargin; }
 	}
 }
 
@@ -653,17 +595,9 @@
 /* =08b. Single member - activity
 --------------------------------------------------------------- */
 #buddypress #bp-member-content .bp-archive-activity {
-	> li {
-		overflow: hidden;
-	}
-
-	.activity-avatar {
-		display: none;
-	}
-
-	.activity-content {
-		margin-left: 0;  // @todo RTL
-	}
+	> li { overflow: hidden; }
+	.activity-avatar { display: none; }
+	.activity-content {	margin-left: 0; }  // @todo RTL
 }
 
 #bp-member-content #bp_activity_search_form {
@@ -696,22 +630,20 @@
 
 /* =08d. Single member - friends
 --------------------------------------------------------------- */
-#bp-member-content .bp-archive-members {
-	overflow: hidden;
-}
+#bp-member-content .bp-archive-members { overflow: hidden; }
 
 
 /* =08e. Single member - settings
 --------------------------------------------------------------- */
 #bp-member-content .bp-member-settings-general {
 	input[type="submit"] { margin-top: @themeCompatListSpacing; }
+	label {	display: block; }
 
 	fieldset {
 		margin-top: @themeCompatListSpacing;
 		input { margin-right: @themeCompatMargin; }  // @todo RTL
 	}
 
-	label {	display: block; }
 }
 
 #bp-member-content .bp-member-settings-deleteaccount {
@@ -722,10 +654,7 @@
 #bp-member-content .bp-member-settings-notifications {
 	table {
 		td:nth-child(1),
-		th:nth-child(1) {
-			display: none;
-		}
-
+		th:nth-child(1) {	display: none; }
 		td:nth-child(2) { width: 100%; }
 	}
 }
@@ -749,9 +678,7 @@
 
 .widget_bp_core_whos_online_widget,
 .widget_bp_core_recently_active_widget {
-	.avatar-block {
-		.clearfix();
-	}
+	.avatar-block { .clearfix(); }
 
 	.item-avatar {
 		float: left;  // @todo RTL
@@ -887,7 +814,6 @@
 
 			li {
 				padding-left: @themeCompatMargin;
-
 				a:before { content: "\2192  "; }  // @todo RTL -- :after, \2190
 			}
 		}

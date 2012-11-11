@@ -736,14 +736,14 @@
 #bp-member-content .bp-member-settings-general input[type="submit"] {
   margin-top: 20px;
 }
+#bp-member-content .bp-member-settings-general label {
+  display: block;
+}
 #bp-member-content .bp-member-settings-general fieldset {
   margin-top: 20px;
 }
 #bp-member-content .bp-member-settings-general fieldset input {
   margin-right: 10px;
-}
-#bp-member-content .bp-member-settings-general label {
-  display: block;
 }
 #bp-member-content .bp-member-settings-deleteaccount input[type="submit"] {
   margin-top: 20px;
