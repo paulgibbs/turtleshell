@@ -3,7 +3,7 @@
  * Single member settings template
  *
  * @package BuddyPress
- * @subpackage turtleshell
+ * @subpackage TurtleShell
  */
 ?>
 

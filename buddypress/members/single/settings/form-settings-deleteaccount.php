@@ -3,7 +3,7 @@
  * Single member settings/delete account template
  *
  * @package BuddyPress
- * @subpackage turtleshell
+ * @subpackage TurtleShell
  */
 ?>
 
