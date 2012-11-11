@@ -1,6 +1,6 @@
 <?php
 /**
- * Single member friends template
+ * Single member friend requests template
  *
  * @package BuddyPress
  * @subpackage TurtleShell
