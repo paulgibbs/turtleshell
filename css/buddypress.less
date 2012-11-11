@@ -14,6 +14,7 @@
 08b. Single member - activity
 08c. Single member - groups
 08d. Single member - friends
+08e. Single member - settings
 09. Core widgets
 10. Notices
 11. Menus
@@ -697,6 +698,36 @@
 --------------------------------------------------------------- */
 #bp-member-content .bp-archive-members {
 	overflow: hidden;
+}
+
+
+/* =08e. Single member - settings
+--------------------------------------------------------------- */
+#bp-member-content .bp-member-settings-general {
+	input[type="submit"] { margin-top: @themeCompatListSpacing; }
+
+	fieldset {
+		margin-top: @themeCompatListSpacing;
+		input { margin-right: @themeCompatMargin; }  // @todo RTL
+	}
+
+	label {	display: block; }
+}
+
+#bp-member-content .bp-member-settings-deleteaccount {
+	input[type="submit"] { margin-top: @themeCompatListSpacing; }
+	label {	display: block; }
+}
+
+#bp-member-content .bp-member-settings-notifications {
+	table {
+		td:nth-child(1),
+		th:nth-child(1) {
+			display: none;
+		}
+
+		td:nth-child(2) { width: 100%; }
+	}
 }
 
 
