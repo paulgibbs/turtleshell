@@ -11,13 +11,13 @@
 
 <?php
 if ( bp_is_current_action( 'notifications' ) ) :
-	bp_get_template_part( 'members/single/settings/form-settings-notifications' );
+	bp_get_template_part( 'members/single/settings/notifications' );
 
 elseif ( bp_is_current_action( 'delete-account' ) ) :
-	bp_get_template_part( 'members/single/settings/form-settings-deleteaccount' );
+	bp_get_template_part( 'members/single/settings/delete-account' );
 
 elseif ( bp_is_current_action( 'general' ) ) :
-	bp_get_template_part( 'members/single/settings/form-settings-general' );
+	bp_get_template_part( 'members/single/settings/general' );
 
 else :
 	bp_get_template_part( 'members/single/plugins' );
