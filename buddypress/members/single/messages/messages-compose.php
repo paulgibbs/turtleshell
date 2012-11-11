@@ -9,7 +9,7 @@
 
 <?php bp_get_template_part( 'members/single/messages/messages-search', 'messages' ); ?>
 
-<form action="<?php bp_messages_form_action('compose'); ?>" method="post" id="send_message_form" class="standard-form" role="main">
+<form action="<?php bp_messages_form_action('compose'); ?>" method="post" id="send_message_form" class="standard-form" role="main" enctype="multipart/form-data">
 
 	<?php do_action( 'bp_template_before_messages_compose_content' ); ?>
 

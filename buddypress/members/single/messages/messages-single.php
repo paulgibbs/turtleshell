@@ -81,7 +81,7 @@
 
 		<?php do_action( 'bp_template_before_message_thread_reply' ); ?>
 
-		<form id="send-reply" action="<?php bp_messages_form_action(); ?>" method="post" class="standard-form">
+		<form id="send-reply" action="<?php bp_messages_form_action(); ?>" method="post" class="standard-form" enctype="multipart/form-data">
 
 			<div class="message-box-reply">
 			

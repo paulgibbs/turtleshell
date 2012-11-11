@@ -9,7 +9,7 @@
 
 <?php do_action( 'bp_template_before_member_activity_search_form' ); ?>
 
-<form action="" id="bp_activity_search_form" method="get">
+<form action="" id="bp_activity_search_form" method="get" enctype="multipart/form-data">
 
 	<?php do_action( 'bp_template_member_activity_search_form_extras_top' ); ?>
 
