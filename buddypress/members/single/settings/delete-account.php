@@ -7,6 +7,8 @@
  */
 ?>
 
+<?php do_action( 'bp_template_before_member_settings_deleteaccount_content' ); ?>
+
 <div class="bp-member-settings-deleteaccount">
 
 	<div class="bp-template-notice important">
@@ -22,3 +24,5 @@
 	<?php bp_get_template_part( 'members/single/settings/form-settings-deleteaccount' ); ?>
 
 </div><!-- .bp-member-settings-deleteaccount -->
+
+<?php do_action( 'bp_template_after_member_settings_deleteaccount_content' ); ?>
