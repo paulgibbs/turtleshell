@@ -20,7 +20,7 @@
 			<?php bp_activity_types_list(); ?>
 		</select>
 
-		<input class="submit" type="submit" value="<?php esc_attr_e( 'Filter activity', 'buddypress' ); ?> />
+		<input class="submit" type="submit" value="<?php esc_attr_e( 'Filter activity', 'buddypress' ); ?>" />
 	</div>
 
 	<?php do_action( 'bp_template_member_activity_search_form_extras_bottom' ); ?>
