@@ -15,6 +15,7 @@
 08c. Single member - groups
 08d. Single member - friends
 08e. Single member - settings
+08f. Single member - profile
 09. Core widgets
 10. Notices
 11. Menus
@@ -656,6 +657,41 @@
 		td:nth-child(1),
 		th:nth-child(1) {	display: none; }
 		td:nth-child(2) { width: 100%; }
+	}
+}
+
+
+/* =08f. Single member - profile
+--------------------------------------------------------------- */
+#bp-member-content .bp-member-profile-view {
+	caption { margin: 0 0 @themeCompatMargin; }
+	tfoot,
+	thead {
+		left: -999em;  // @todo RTL
+		position: absolute;
+	}
+
+	td {
+		padding: @themeCompatMargin;
+		vertical-align: middle;
+	}
+
+	.data p { margin: 0; }
+	.label {
+		font-weight: bold;
+		width: 30%;
+	}
+}
+
+#bp-member-content .bp-member-profile-edit {
+	input[type="text"],
+	textarea { width: 100%; }
+	label { display: block; }
+
+	.description {
+		font-size: @smallFontSizePx;
+		font-size: @smallFontSizeRem;
+		font-style: italic;
 	}
 }
 

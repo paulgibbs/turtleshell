@@ -15,6 +15,7 @@
 08c. Single member - groups
 08d. Single member - friends
 08e. Single member - settings
+08f. Single member - profile
 09. Core widgets
 10. Notices
 11. Menus
@@ -36,6 +37,7 @@
 08c. Single member - groups
 08d. Single member - friends
 08e. Single member - settings
+08f. Single member - profile
 09. Core widgets
 10. Notices
 11. Menus
@@ -778,6 +780,39 @@
 }
 #bp-member-content .bp-member-settings-notifications table td:nth-child(2) {
   width: 100%;
+}
+/* =08f. Single member - profile
+--------------------------------------------------------------- */
+#bp-member-content .bp-member-profile-view caption {
+  margin: 0 0 10px;
+}
+#bp-member-content .bp-member-profile-view tfoot,
+#bp-member-content .bp-member-profile-view thead {
+  left: -999em;
+  position: absolute;
+}
+#bp-member-content .bp-member-profile-view td {
+  padding: 10px;
+  vertical-align: middle;
+}
+#bp-member-content .bp-member-profile-view .data p {
+  margin: 0;
+}
+#bp-member-content .bp-member-profile-view .label {
+  font-weight: bold;
+  width: 30%;
+}
+#bp-member-content .bp-member-profile-edit input[type="text"],
+#bp-member-content .bp-member-profile-edit textarea {
+  width: 100%;
+}
+#bp-member-content .bp-member-profile-edit label {
+  display: block;
+}
+#bp-member-content .bp-member-profile-edit .description {
+  font-size: 12px;
+  font-size: 0.85rem;
+  font-style: italic;
 }
 /* =09. Core widgets
 --------------------------------------------------------------- */

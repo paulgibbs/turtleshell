@@ -7,6 +7,8 @@
  */
 ?>
 
+<?php do_action( 'bp_template_before_member_profile_changeavatar_content' ); ?>
+
 <div class="bp-member-profile-changeavatar">
 
 	<p><?php printf( __( 'Your avatar will be used on your profile and throughout the site. If there is a <a href="%s">Gravatar</a> associated with your account email, we will use that, or you can upload an image from your computer.', 'buddypress' ), 'http://gravatar.com' ); ?></p>
@@ -22,3 +24,5 @@
 	?>
 
 </div><!-- .bp-member-profile-changeavatar -->
+
+<?php do_action( 'bp_template_after_member_profile_changeavatar_content' ); ?>

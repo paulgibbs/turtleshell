@@ -20,7 +20,7 @@ elseif ( bp_is_current_action( 'change-avatar' ) ) :
 	bp_get_template_part( 'members/single/profile/feedback-no-avatars' );
 
 elseif ( bp_is_active( 'xprofile' ) ) :
-	bp_get_template_part( 'members/single/profile/profile-loop' );
+	bp_get_template_part( 'members/single/profile/view' );
 
 endif;
 ?>
