@@ -22,7 +22,7 @@
 	</div>
 
 	<input type="submit" name="avatar-crop-submit" id="avatar-crop-submit" value="<?php esc_attr_e( 'Crop Image', 'buddypress' ); ?>" />
-	<input type="hidden" name="image_src" id="image_src" value="<?php echo esc_url( bp_get_avatar_to_crop_src() ); ?>" />
+	<input type="hidden" name="image_src" id="image_src" value="<?php echo bp_avatar_to_crop_src(); ?>" />
 	<input type="hidden" id="x" name="x" />
 	<input type="hidden" id="y" name="y" />
 	<input type="hidden" id="w" name="w" />
