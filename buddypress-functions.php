@@ -69,9 +69,11 @@ class BP_TurtleShell extends BP_Theme_Compat {
 	 * @since BuddyPress (1.7)
 	 */
 	private function setup_actions() {
-		add_action( 'bp_enqueue_scripts', array( $this, 'enqueue_styles'   ) ); // Enqueue theme CSS
-		add_action( 'bp_enqueue_scripts', array( $this, 'enqueue_scripts'  ) ); // Enqueue theme JS
-		add_action( 'widgets_init',       array( $this, 'widgets_init'     ) ); // Widgets          
+		add_action( 'bp_enqueue_scripts',    array( $this, 'enqueue_styles'                   ) ); // Enqueue theme CSS
+		add_action( 'bp_enqueue_scripts',    array( $this, 'enqueue_scripts'                  ) ); // Enqueue theme JS
+		add_action( 'widgets_init',          array( $this, 'widgets_init'                     ) ); // Widgets          
+		add_filter( 'bp_get_the_body_class', array( $this, 'bp_dtheme_add_nojs_body_class'    ) ); // JS helper
+		add_action( 'bp_before_header',      array( $this, 'bp_dtheme_remove_nojs_body_class' ) ); // JS helper
 
 		// Run an action for for third-party plugins to affect the template pack
 		do_action_ref_array( 'bp_theme_compat_actions', array( &$this ) );
@@ -144,6 +146,46 @@ class BP_TurtleShell extends BP_Theme_Compat {
 			'id'          => 'bp-member-profile-widgets',
 			'name'        => __( '(BuddyPress) Member Profile', 'buddypress' ),
 		) );
+	}
+
+
+	/**
+	 * Adds the no-js class to the body tag.
+	 *
+	 * This function ensures that the <body> element will have the 'no-js' class by default. If you're
+	 * using JavaScript for some visual functionality in your theme, and you want to provide noscript
+	 * support, apply those styles to body.no-js.
+	 *
+	 * The no-js class is removed by the JavaScript created in {@link BP_TurtleShell::remove_nojs_body_class()}.
+	 *
+	 * @since BuddyPress (1.7)
+	 */
+	public function add_nojs_body_class( $classes ) {
+		$classes[] = 'no-js';
+		return array_unique( $classes );
+	}
+
+	/**
+	 * Dynamically removes the no-js class from the <body> element.
+	 *
+	 * By default, the no-js class is added to the body (see {@link BP_TurtleShell::add_nojs_body_class()}). The
+	 * JavaScript in this function is loaded into the <body> element immediately after the <body> tag
+	 * (note that it's hooked to bp_before_header), and uses JavaScript to switch the 'no-js' body class
+	 * to 'js'. If your theme has styles that should only apply for JavaScript-enabled users, apply them
+	 * to body.js.
+	 *
+	 * This technique is borrowed from WordPress, wp-admin/admin-header.php.
+	 *
+	 * @since BuddyPress (1.7)
+	 */
+	public function remove_nojs_body_class() {
+	?>
+		<script type="text/javascript">
+		//<![CDATA[
+		(function(){var c=document.body.className;c=c.replace(/no-js/,'js');document.body.className=c;})();
+		//]]>
+		</script>
+	<?php
 	}
 }
 new BP_TurtleShell();
