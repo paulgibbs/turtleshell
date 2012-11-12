@@ -4,7 +4,8 @@
 // Options
 var bp_options = $.extend({
 	menu_accessibility: true,
-	menu_hoverIntent:   true
+	menu_hoverIntent:   true,
+	profile_visibility: true
 }, bp_options);
 
 // Functions
@@ -51,7 +52,7 @@ var buddypress = {
 			$(this).parent().find('> .sub-menu').addClass('bp-show-menu');
 
 			// If this is a nested menu, we need to show the parent menu
-			if ( $(this).parent().parent().hasClass('sub-menu') ) {
+			if ($(this).parent().parent().hasClass('sub-menu')) {
 				$(this).parent().parent().addClass('bp-show-menu');
 			}
 		});
@@ -60,16 +61,32 @@ var buddypress = {
 			$(this).parent().find('> .sub-menu').removeClass('bp-show-menu');
 
 			// If this is a nested menu, we need to show the parent menu
-			if ( $(this).parent().parent().hasClass('sub-menu') ) {
+			if ($(this).parent().parent().hasClass('sub-menu')) {
 				$(this).parent().parent().removeClass('bp-show-menu');
 			}
 		});
+	},
+
+	/**
+	 * Profile field visibility toggle
+	 *
+	 * @since BuddyPress (1.7)
+	 * @todo Make this only load on the profile edit apge
+	 */
+	profile_visibility: function() {
+		if (true !== bp_options.profile_visibility) {
+			return;
+		}
+
+		// @TODO: Ask Boone how this worked
 	}
 };
+
 
 $(document).ready( function() {
 	buddypress.menu();
 	buddypress.menu_accessibility();
+	buddypress.profile_visibility();
 });
 
 })(jQuery);
