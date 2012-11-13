@@ -749,11 +749,8 @@
   float: left;
   margin-right: 10px;
 }
-#bp-member-content .bp-archive-members li .member-avatar a {
-  display: block;
-  line-height: 0;
-}
 #bp-member-content .bp-archive-members li .member-avatar img {
+  display: block;
   width: 50px;
 }
 #bp-member-content .bp-archive-members > li {
