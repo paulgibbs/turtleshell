@@ -691,6 +691,11 @@
 	.editfield {
 		margin-top: @themeCompatMargin;
 		&:first-child { margin-top: 0; }
+
+		legend {
+			left: -999em;  // @todo RTL
+			position: absolute;
+		}
 	}
 
 	.group-edit-tabs li {

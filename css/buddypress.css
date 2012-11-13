@@ -815,6 +815,10 @@
 #bp-member-content .bp-member-profile-edit .editfield:first-child {
   margin-top: 0;
 }
+#bp-member-content .bp-member-profile-edit .editfield legend {
+  left: -999em;
+  position: absolute;
+}
 #bp-member-content .bp-member-profile-edit .group-edit-tabs li {
   display: inline-block;
   margin: 0 10px 20px 0;

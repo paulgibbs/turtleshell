@@ -40,33 +40,42 @@
 
 	<?php elseif ( 'radio' == bp_get_the_profile_field_type() ) : ?>
 		<div class="radio">
-			<span class="label"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></span>
-			<?php bp_the_profile_field_options(); ?>
-			<?php if ( !bp_get_the_profile_field_is_required() ) : ?>
-				<a class="clear-value" href="javascript:clear( '<?php bp_the_profile_field_input_name(); ?>' );"><?php _e( 'Clear', 'buddypress' ); ?></a>
-			<?php endif; ?>
+			<fieldset>
+				<span class="label"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></span>
+				<?php bp_the_profile_field_options(); ?>
+
+				<?php if ( !bp_get_the_profile_field_is_required() ) : ?>
+					<a class="clear-value" href="javascript:clear( '<?php bp_the_profile_field_input_name(); ?>' );"><?php _e( 'Clear', 'buddypress' ); ?></a>
+				<?php endif; ?>
+			</fieldset>
 		</div>
 
 	<?php elseif ( 'checkbox' == bp_get_the_profile_field_type() ) : ?>
 		<div class="checkbox">
-			<span class="label"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></span>
-			<?php bp_the_profile_field_options(); ?>
+			<fieldset>
+				<span class="label"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></span>
+				<?php bp_the_profile_field_options(); ?>
+			</fieldset>
 		</div>
 
 	<?php elseif ( 'datebox' == bp_get_the_profile_field_type() ) : ?>
 		<div class="datebox">
-			<label for="<?php bp_the_profile_field_input_name(); ?>_day"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
-			<select name="<?php bp_the_profile_field_input_name(); ?>_day" id="<?php bp_the_profile_field_input_name(); ?>_day" <?php if ( bp_get_the_profile_field_is_required() ) : ?>aria-required="true" required<?php endif; ?>>
-				<?php bp_the_profile_field_options( 'type=day' ); ?>
-			</select>
+			<fieldset>
+				<legend><?php _e( 'To pick a date, choose the day, month, and year.', 'buddypress' ); ?></legend>
 
-			<select name="<?php bp_the_profile_field_input_name(); ?>_month" id="<?php bp_the_profile_field_input_name(); ?>_month" <?php if ( bp_get_the_profile_field_is_required() ) : ?>aria-required="true" required<?php endif; ?>>
-				<?php bp_the_profile_field_options( 'type=month' ); ?>
-			</select>
+				<label for="<?php bp_the_profile_field_input_name(); ?>_day"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
+				<select name="<?php bp_the_profile_field_input_name(); ?>_day" id="<?php bp_the_profile_field_input_name(); ?>_day" <?php if ( bp_get_the_profile_field_is_required() ) : ?>aria-required="true" required<?php endif; ?>>
+					<?php bp_the_profile_field_options( 'type=day' ); ?>
+				</select>
 
-			<select name="<?php bp_the_profile_field_input_name(); ?>_year" id="<?php bp_the_profile_field_input_name(); ?>_year" <?php if ( bp_get_the_profile_field_is_required() ) : ?>aria-required="true" required<?php endif; ?>>
-				<?php bp_the_profile_field_options( 'type=year' ); ?>
-			</select>
+				<select name="<?php bp_the_profile_field_input_name(); ?>_month" id="<?php bp_the_profile_field_input_name(); ?>_month" <?php if ( bp_get_the_profile_field_is_required() ) : ?>aria-required="true" required<?php endif; ?>>
+					<?php bp_the_profile_field_options( 'type=month' ); ?>
+				</select>
+
+				<select name="<?php bp_the_profile_field_input_name(); ?>_year" id="<?php bp_the_profile_field_input_name(); ?>_year" <?php if ( bp_get_the_profile_field_is_required() ) : ?>aria-required="true" required<?php endif; ?>>
+					<?php bp_the_profile_field_options( 'type=year' ); ?>
+				</select>
+			</fieldset>
 		</div>
 	<?php endif; ?>
 
