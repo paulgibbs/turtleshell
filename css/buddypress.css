@@ -440,6 +440,7 @@
 }
 #buddypress .bp-archive-activity .activity-comments .acomment-avatar-label {
   float: left;
+  font-weight: bold;
   margin-top: 20px;
 }
 #buddypress .bp-archive-activity .activity-comments .acomment-avatars {
