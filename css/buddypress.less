@@ -700,8 +700,9 @@
 
 	.group-edit-tabs li {
 		display: inline-block;
-		margin: 0 @themeCompatMargin @themeCompatListSpacing 0;  // @todo RTL
+		margin: 0 @themeCompatMargin @themeCompatMargin 0;  // @todo RTL
 
+		&:last-child { margin-right: 0; }
 		&.current a {
 			color: inherit;
 			font-weight: bold;
