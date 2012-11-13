@@ -80,11 +80,17 @@
 	<?php do_action( 'bp_template_after_member_profile_field_edit_visibility' ); ?>
 
 
-	<?php do_action( 'bp_template_before_member_profile_field_edit_description' ); ?>
+	<?php if ( bp_get_the_profile_field_description() ) : ?>
 
-	<p class="description"><?php bp_the_profile_field_description(); ?></p>
+		<?php do_action( 'bp_template_before_member_profile_field_edit_description' ); ?>
 
-	<?php do_action( 'bp_template_after_member_profile_field_edit_description' ); ?>
+		<div class="bp-template-notice info profile-field-description">
+			<p><?php bp_the_profile_field_description(); ?></p>
+		</div>
+
+		<?php do_action( 'bp_template_after_member_profile_field_edit_description' ); ?>
+
+	<?php endif; ?>
 
 
 	<?php do_action( 'bp_template_in_member_profile_field_edit_loop_late' ); ?>

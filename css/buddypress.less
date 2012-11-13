@@ -688,10 +688,9 @@
 	textarea { width: 100%; }
 	label { display: block; }
 
-	.description {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
-		font-style: italic;
+	.editfield {
+		margin-top: @themeCompatMargin;
+		&:first-child { margin-top: 0; }
 	}
 
 	.group-edit-tabs li {
@@ -704,6 +703,9 @@
 			text-decoration: none;
 		}
 	}
+
+	.profile-field-description,
+	.submit { margin-top: @themeCompatMargin; }
 }
 
 

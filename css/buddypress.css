@@ -809,10 +809,11 @@
 #bp-member-content .bp-member-profile-edit label {
   display: block;
 }
-#bp-member-content .bp-member-profile-edit .description {
-  font-size: 12px;
-  font-size: 0.85rem;
-  font-style: italic;
+#bp-member-content .bp-member-profile-edit .editfield {
+  margin-top: 10px;
+}
+#bp-member-content .bp-member-profile-edit .editfield:first-child {
+  margin-top: 0;
 }
 #bp-member-content .bp-member-profile-edit .group-edit-tabs li {
   display: inline-block;
@@ -822,6 +823,10 @@
   color: inherit;
   font-weight: bold;
   text-decoration: none;
+}
+#bp-member-content .bp-member-profile-edit .profile-field-description,
+#bp-member-content .bp-member-profile-edit .submit {
+  margin-top: 10px;
 }
 /* =09. Core widgets
 --------------------------------------------------------------- */
