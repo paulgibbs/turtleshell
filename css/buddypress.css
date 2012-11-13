@@ -20,28 +20,6 @@
 10. Notices
 11. Menus
 */
-/* =TABLE OF CONTENTS
-=======================================================
-01. Globals
-02. Members Directory
-03. Groups Directory
-04. Pagination
-05. Activity Directory
-05a. Activity Permalink
-05b. Activity Comments
-06. Messages
-07. Sites Directory
-08. Single member
-08a. Single member - menu
-08b. Single member - activity
-08c. Single member - groups
-08d. Single member - friends
-08e. Single member - settings
-08f. Single member - profile
-09. Core widgets
-10. Notices
-11. Menus
-*/
 .clearfix {
   *zoom: 1;
 }
@@ -751,6 +729,35 @@
 --------------------------------------------------------------- */
 #bp-member-content .bp-archive-members {
   overflow: hidden;
+}
+#bp-member-content .bp-archive-members li {
+  *zoom: 1;
+  float: inherit;
+  margin: 0;
+  text-align: left;
+}
+#bp-member-content .bp-archive-members li:before,
+#bp-member-content .bp-archive-members li:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#bp-member-content .bp-archive-members li:after {
+  clear: both;
+}
+#bp-member-content .bp-archive-members li .member-avatar {
+  float: left;
+  margin-right: 10px;
+}
+#bp-member-content .bp-archive-members li .member-avatar a {
+  display: block;
+  line-height: 0;
+}
+#bp-member-content .bp-archive-members li .member-avatar img {
+  width: 50px;
+}
+#bp-member-content .bp-archive-members > li {
+  width: auto;
 }
 /* =08e. Single member - settings
 --------------------------------------------------------------- */

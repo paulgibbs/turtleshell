@@ -631,7 +631,29 @@
 
 /* =08d. Single member - friends
 --------------------------------------------------------------- */
-#bp-member-content .bp-archive-members { overflow: hidden; }
+#bp-member-content .bp-archive-members {
+	overflow: hidden;
+
+	li {
+		.clearfix();
+		float: inherit;
+		margin: 0;
+		text-align: left; // @todo RTL?
+
+		.member-avatar {
+			float: left;  // @todo RTL
+			margin-right: @themeCompatMargin;  // @todo RTL
+
+			a {
+				display: block;
+				line-height: 0;
+			}
+			img { width: 50px; }
+		}
+	}
+
+	> li { width: auto; }
+}
 
 
 /* =08e. Single member - settings
