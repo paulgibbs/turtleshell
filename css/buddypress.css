@@ -20,6 +20,28 @@
 10. Notices
 11. Menus
 */
+/* =TABLE OF CONTENTS
+=======================================================
+01. Globals
+02. Members Directory
+03. Groups Directory
+04. Pagination
+05. Activity Directory
+05a. Activity Permalink
+05b. Activity Comments
+06. Messages
+07. Sites Directory
+08. Single member
+08a. Single member - menu
+08b. Single member - activity
+08c. Single member - groups
+08d. Single member - friends
+08e. Single member - settings
+08f. Single member - profile
+09. Core widgets
+10. Notices
+11. Menus
+*/
 .clearfix {
   *zoom: 1;
 }
@@ -315,7 +337,7 @@
   border-top: 1px solid #dddddd;
   font-size: 12px;
   font-size: 0.85rem;
-  font-weight: 700;
+  font-weight: bold;
   padding: 10px 0 5px;
 }
 .bp-archive-activity .activity-header p {
@@ -791,6 +813,15 @@
   font-size: 12px;
   font-size: 0.85rem;
   font-style: italic;
+}
+#bp-member-content .bp-member-profile-edit .group-edit-tabs li {
+  display: inline-block;
+  margin: 0 10px 20px 0;
+}
+#bp-member-content .bp-member-profile-edit .group-edit-tabs li.current a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
 }
 /* =09. Core widgets
 --------------------------------------------------------------- */

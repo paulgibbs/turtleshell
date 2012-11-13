@@ -247,7 +247,7 @@
 		border-top: 1px solid @themeCompatSubtleBorder;
 		font-size: @smallFontSizePx;
 		font-size: @smallFontSizeRem;
-		font-weight: 700;
+		font-weight: bold;
 		padding: @themeCompatMargin 0 @themeCompatMargin/2;
 
 		p { margin-bottom: 0; }
@@ -692,6 +692,17 @@
 		font-size: @smallFontSizePx;
 		font-size: @smallFontSizeRem;
 		font-style: italic;
+	}
+
+	.group-edit-tabs li {
+		display: inline-block;
+		margin: 0 @themeCompatMargin @themeCompatListSpacing 0;  // @todo RTL
+
+		&.current a {
+			color: inherit;
+			font-weight: bold;
+			text-decoration: none;
+		}
 	}
 }
 

@@ -11,17 +11,9 @@
 	<?php do_action( 'bp_template_in_member_profile_group_edit_loop_early' ); ?>
 
 
-	<?php do_action( 'bp_template_before_member_profile_group_edit_name' ); ?>
-
-	<?php // translators: "Editing [Profile Group Name]:" ?>
-	<p><?php printf( __( 'Editing %s:', 'buddypress' ), bp_get_the_profile_group_name() ); ?></p>
-
-	<?php do_action( 'bp_template_after_member_profile_group_edit_name' ); ?>
-
-
 	<?php do_action( 'bp_template_before_member_profile_group_edit_tabs' ); ?>
 
-	<ul><?php bp_profile_group_tabs(); ?></ul>
+	<ul class="group-edit-tabs"><?php bp_profile_group_tabs(); ?></ul>
 
 	<?php do_action( 'bp_template_after_member_profile_group_edit_tabs' ); ?>
 
