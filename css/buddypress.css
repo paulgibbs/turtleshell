@@ -316,20 +316,19 @@
   margin-right: 10px;
   width: 9%;
 }
-.bp-archive-activity .activity-content,
+.bp-archive-activity .activity-content {
+  margin: 0 0 0 11%;
+}
 .bp-archive-activity .activity-comments {
   *zoom: 1;
   margin: 0 0 0 11%;
 }
-.bp-archive-activity .activity-content:before,
 .bp-archive-activity .activity-comments:before,
-.bp-archive-activity .activity-content:after,
 .bp-archive-activity .activity-comments:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.bp-archive-activity .activity-content:after,
 .bp-archive-activity .activity-comments:after {
   clear: both;
 }
@@ -422,6 +421,10 @@
 --------------------------------------------------------------- */
 #buddypress .bp-single-activity > li {
   margin: 0;
+}
+#buddypress .bp-single-activity .activity-header {
+  border-top: 0;
+  padding-top: 0;
 }
 /* =05b. Activity Comments
 --------------------------------------------------------------- */
