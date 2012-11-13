@@ -320,7 +320,7 @@
 }
 .bp-archive-activity .activity-comments {
   *zoom: 1;
-  margin: 0 0 0 11%;
+  margin: 0 0 0 60px;
 }
 .bp-archive-activity .activity-comments:before,
 .bp-archive-activity .activity-comments:after {
