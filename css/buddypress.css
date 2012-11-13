@@ -332,11 +332,10 @@
   clear: both;
 }
 .bp-archive-activity .activity-header {
-  border-top: 1px solid #dddddd;
   font-size: 12px;
   font-size: 0.85rem;
   font-weight: bold;
-  padding: 10px 0 5px;
+  padding-bottom: 5px;
 }
 .bp-archive-activity .activity-header p {
   margin-bottom: 0;
@@ -420,10 +419,6 @@
 --------------------------------------------------------------- */
 #buddypress .bp-single-activity > li {
   margin: 0;
-}
-#buddypress .bp-single-activity .activity-header {
-  border-top: 0;
-  padding-top: 0;
 }
 /* =05b. Activity Comments
 --------------------------------------------------------------- */
