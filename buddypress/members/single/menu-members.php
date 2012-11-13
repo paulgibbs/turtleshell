@@ -14,7 +14,7 @@
 
 		<?php do_action( 'bp_template_before_member_menu_avatar' ); ?>
 
-		<li class="member-menu-avatar">
+		<li class="member-menu-avatar" style="height: <?php echo bp_core_avatar_full_height(); ?>px">
 			<a href="<?php bp_displayed_user_link(); ?>"><?php bp_displayed_user_avatar( 'type=full' ); ?></a>
 		</li>
 
