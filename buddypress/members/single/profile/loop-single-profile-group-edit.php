@@ -31,8 +31,8 @@
 
 	<?php do_action( 'bp_template_before_member_profile_group_edit_submitbutton' ); ?>
 
-	<input type="submit" name="profile-group-edit-submit" id="profile-group-edit-submit" value="<?php esc_attr_e( 'Save Changes', 'buddypress' ); ?>" />
-	<input type="hidden" name="field_ids" id="field_ids" value="<?php bp_the_profile_group_field_ids(); ?>" />
+	<input type="submit" name="profile-group-edit-submit" class="submit" value="<?php esc_attr_e( 'Save Changes', 'buddypress' ); ?>" />
+	<input type="hidden" name="field_ids" value="<?php bp_the_profile_group_field_ids(); ?>" />
 
 	<?php do_action( 'bp_template_after_member_profile_group_edit_submitbutton' ); ?>
 
