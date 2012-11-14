@@ -35,7 +35,7 @@
 
 		<div class="group-meta">
 			<ul>
-				<li class="group-activity"><?php bp_group_last_active(); ?></li>
+				<li class="group-activity"><?php printf( __( 'active %s.', 'group last active [4 hours] ago.', 'buddypress' ), bp_get_group_last_active() ); ?></li>
 				<li class="group-member-count"><?php bp_group_member_count(); ?></li>
 				<li class="group-action"><?php bp_group_join_button(); ?></li>
 
