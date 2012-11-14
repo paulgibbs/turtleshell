@@ -49,6 +49,18 @@
 
 		<?php endif; ?>
 
+
+		<?php if ( bp_is_user_friends() && bp_get_member_latest_update() ) : ?>
+
+			<?php do_action( 'bp_template_before_member_update' ); ?>
+
+			<p class="member-update"><?php bp_member_latest_update( 'view_link=0' ); ?></p>
+
+			<?php do_action( 'bp_template_after_member_update' ); ?>
+
+		<?php endif; ?>
+
+
 		<?php do_action( 'bp_template_in_member_details' ); ?>
 
 	</div>

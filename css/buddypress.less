@@ -634,10 +634,11 @@
 #bp-member-content .bp-archive-members {
 	overflow: hidden;
 
+	.member-update { margin-bottom: 0; }
 	li {
 		.clearfix();
 		float: inherit;
-		margin: 0;
+		margin: 0 0 @themeCompatListSpacing 0;  // @todo RTL (margin-right is explicity cleared)
 		text-align: left; // @todo RTL?
 
 		.member-avatar {
@@ -646,6 +647,7 @@
 
 			img {
 				display: block;
+				height: 50px;
 				width: 50px;
 			}
 		}
