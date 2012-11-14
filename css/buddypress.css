@@ -743,9 +743,41 @@
 }
 /* =08c. Single member - groups
 --------------------------------------------------------------- */
+#bp-member-content .bp-archive-groups .group-avatar {
+  margin-right: 10px;
+}
+#bp-member-content .bp-archive-groups .group-avatar img {
+  display: block;
+  height: 50px;
+  width: 50px;
+}
 #bp-member-content .bp-archive-groups .group-details {
-  clear: left;
   padding-left: 0;
+}
+#bp-member-content .bp-archive-groups .group-activity,
+#bp-member-content .bp-archive-groups .group-member-count {
+  display: none;
+}
+#bp-member-content .bp-archive-groups li {
+  *zoom: 1;
+  float: inherit;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+#bp-member-content .bp-archive-groups li:before,
+#bp-member-content .bp-archive-groups li:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#bp-member-content .bp-archive-groups li:after {
+  clear: both;
+}
+#bp-member-content .bp-archive-groups > li {
+  width: auto;
+}
+#bp-member-content .bp-archive-groups > li:nth-child(2n+1) {
+  clear: none;
 }
 /* =08d. Single member - friends
 --------------------------------------------------------------- */

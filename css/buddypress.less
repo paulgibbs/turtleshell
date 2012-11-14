@@ -134,9 +134,7 @@
 }
 
 .bp-archive-groups {
-	> li:nth-child(2n+1) {
-		clear: left; // @todo RTL
-	}
+	> li:nth-child(2n+1) { clear: left; }  // @todo RTL
 
 	.group-avatar {	float: left; } // @todo RTL
 
@@ -622,9 +620,30 @@
 /* =08c. Single member - groups
 --------------------------------------------------------------- */
 #bp-member-content .bp-archive-groups {
-	.group-details {
-		clear: left;  // @todo RTL
-		padding-left: 0;
+	.group-avatar {
+		margin-right: @themeCompatMargin;  // @todo RTL
+
+		img {
+			display: block;
+			height: 50px;
+			width: 50px;
+		}
+	}
+
+	.group-details { padding-left: 0; }
+	.group-activity,
+	.group-member-count { display: none; }
+
+	li {
+		.clearfix();
+		float: inherit;
+		margin: 0 0 @themeCompatListSpacing 0;  // @todo RTL (margin-right is explicity cleared)
+		text-align: left; // @todo RTL?
+	}
+
+	> li {
+		width: auto;
+		&:nth-child(2n+1) { clear: none; }
 	}
 }
 
