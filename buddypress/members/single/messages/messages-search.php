@@ -7,7 +7,7 @@
  */
 ?>
 
-<div id="message-header">
+<div id="message-title-header">
 	
 	<?php if ( bp_is_current_action( 'sentbox' ) ) : ?>
 		<h4 class="message-title"><?php _e( 'Sent', 'buddypress' ); ?></h4>

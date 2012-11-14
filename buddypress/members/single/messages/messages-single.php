@@ -15,12 +15,12 @@
 
 	<?php if ( bp_thread_has_messages() ) : ?>
 
-		<div id="message-header">
-			<h4 id="message-subject"><?php bp_the_thread_subject(); ?></h4>
-		</div><!-- #message-header -->
+		<div class="message-header">
+			<h4 class="message-title"><?php bp_the_thread_subject(); ?></h4>
+		</div><!-- .message-header -->
 
-		<p id="message-recipients">
-			<span class="highlight">
+		<div id="message-recipients">
+			<span class="thread-highlight">
 
 				<?php if ( !bp_get_the_thread_recipients() ) : ?>
 
@@ -34,19 +34,19 @@
 
 			</span><!-- .highlight -->
 			
-			<span class="delete-link"><a class="button confirm" href="<?php bp_the_thread_delete_link(); ?>" title="<?php _e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a></span>
+			<span class="thread-delete"><a class="button confirm" href="<?php bp_the_thread_delete_link(); ?>" title="<?php _e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a></span>
 			
 			
 			
-		</p><!-- #message-recipients -->
+		</div><!-- #message-recipients -->
 
 		<?php do_action( 'bp_template_before_message_thread_list' ); ?>
 		
-		<div id="message-box">
+		<div id="messages-box">
 
 		<?php while ( bp_thread_messages() ) : bp_thread_the_message(); ?>
 
-			<div class="message-box <?php bp_the_thread_message_alt_class(); ?>">
+			<div class="message-body <?php bp_the_thread_message_alt_class(); ?>">
 
 				<div class="message-metadata">
 
@@ -68,8 +68,6 @@
 				</div><!-- .message-content -->
 
 				<?php do_action( 'bp_template_after_message_content' ); ?>
-
-				<div class="clear"></div>
 
 			</div><!-- .message-box -->
 

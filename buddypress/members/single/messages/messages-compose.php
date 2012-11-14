@@ -44,7 +44,7 @@
 
 	<?php do_action( 'bp_template_after_messages_compose_content' ); ?>
 
-	<div class="submit">
+	<div class="message-submit">
 		<input type="submit" value="<?php _e( "Send Message", 'buddypress' ); ?>" name="send" id="send" />
 	</div>
 

@@ -16,7 +16,10 @@
 			<li id="notice-<?php bp_message_notice_id(); ?>" class="<?php bp_message_css_class(); ?>">
 			
 				<?php do_action( 'bp_template_notices_before_list_item' ); ?>			
-			
+				<div class="notice-buttons">
+					<a class="button" href="<?php bp_message_activate_deactivate_link(); ?>" class="confirm"><?php bp_message_activate_deactivate_text(); ?></a>
+					<a class="button" href="<?php bp_message_notice_delete_link(); ?>" class="confirm" title="<?php _e( "Delete Message", "buddypress" ); ?>">Delete</a>
+				</div>
 				<div class="notice-content">
 					<span class="notice-subject"><?php bp_message_notice_subject(); ?></span>
 					<?php bp_message_notice_text(); ?>
@@ -33,11 +36,6 @@
 				
 
 				<?php do_action( 'bp_template_notices_list_item' ); ?>
-
-				<div class="notice-action-button">
-					<a class="button" href="<?php bp_message_activate_deactivate_link(); ?>" class="confirm"><?php bp_message_activate_deactivate_text(); ?></a>
-					<a class="button" href="<?php bp_message_notice_delete_link(); ?>" class="confirm" title="<?php _e( "Delete Message", "buddypress" ); ?>">Delete</a>
-				</div>
 				</div>
 				
 				

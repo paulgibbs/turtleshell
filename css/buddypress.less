@@ -194,11 +194,10 @@
 .bp-pagination-links { float: right; } // @todo RTL
 
 .bp-pagination {
-	float: right;  // @todo RTL
 	font-size: @smallFontSizePx;
 	font-size: @smallFontSizeRem;
 	margin-bottom: @themeCompatMargin;
-	width: 100%;
+	overflow: hidden;
 
 	a { text-decoration: none; }
 }
@@ -256,11 +255,11 @@
 	}
 
 	.activity-meta {
-		float: left; // @todo RTL
+		//float: left; // @todo RTL
 		font-size: @smallFontSizePx;
 		font-size: @smallFontSizeRem;
 		margin-top: @themeCompatMargin/2;
-		width: 100%;
+		//width: 100%;
 	}
 
 	.activity-timestamp {
@@ -395,51 +394,53 @@
 
 	.options-nav {
 		float: right;
-		margin-bottom: 10px 0;
 		font-size: @smallFontSizePx;
 		font-size: @smallFontSizeRem;
+		margin-bottom: @themeCompatMargin 0;
 	}
 	
 	.thread-avatar {
 		float: left;
-		margin-right: 10px;
+		margin-right: @themeCompatMargin;
 	}
-
-	span.delete-link { float: right; }
 
 	ul#message-threads li {
 		border-bottom: 1px solid @themeCompatSubtleBorder;
-		padding: 10px;
-
-		&:first-child { border-top: 1px solid @themeCompatSubtleBorder; }	
-		li.unread { background-color: #faf9fb; }
+		overflow: hidden;
+		padding: @themeCompatMargin 0;
+	
+		li.unread { 
+			background-color: @noticeBackground; 
+		}
 	}
 
 	.thread-options {
-		overflow: hidden;
 		font-size: @smallFontSizePx;
 		font-size: @smallFontSizeRem;
+		overflow: hidden;
 	}
 
 	.thread-delete { float: right; }
+
+	.thread-highlight { float: left; }
+	
 	.thread-link { padding-left: 30px; }
+	
 	.thread-content { margin-bottom: 10px; }
 
-	#send_message_form label {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
+	#message-recipients{
+		overflow: hidden;
 	}
 
-	#message-header{
-		margin-bottom: 10px;
+	.message-header, #message-title-header{
+		margin-bottom: @themeCompatMargin;
 		overflow: hidden;
 
 		.message-search { float: right; }
 
 		h4.message-title {
-			padding: 0;
-			margin: 0;
 			float: left;
+			margin: 0;
 		}
 	}
 
@@ -447,94 +448,45 @@
 
 	#messages-dir-pag { float: right; }
 
+	.message-submit { .clearfix; }
+
 	#user-pag.pagination {
-		padding-top: 5px 0;
 		font-size: @smallFontSizePx;
 		font-size: @smallFontSizeRem;
+		padding-top: 5px 0;
+		overflow: hidden;
 
 		&:after {
-			content: " ";
 			clear: right;
+			content: " ";
 			display: table; 
 		}
 	}
 
 	.message-subject, .message-to {
-		margin-top: 10px 0;
 		display: block;
+		margin-top: @themeCompatMargin 0;
 	}
-
-	.message-all-notice {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
-	}
-
-	input#send-to-input.send-to-input, input#subject {
-		width: 95%;
-	}
-
-	.notice-content p {	margin-bottom: 10px; }
 
 	.notice-date { float: left;	}
 
-	.thread-date { 
-		float: left;
-		padding-left: 30px;
-	}
-
-	.notice-action-button { float: right; }
+	.notice-buttons { float: right; }
 
 	.notice-action {
 		overflow: hidden;
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
 	}
-
-	#message-thread {
-		float: left;
-		width: 100%;
-	}
-
-	#message-box > div { margin-left: 20px; }
-	#message-box > div:first-child { margin-left: 0px; }
-	h4#message-subject { margin: 0; }
-
-	.message-content p {
-		padding-left: 40px;
-		margin-bottom: 10px;
-	}
-
-	.avatar-box { margin-bottom: 15px; }
 
 	.message-box-reply {
-		padding-top: 15px;
+		padding: @themeCompatMargin 0;
 		border-top: 1px solid @themeCompatSubtleBorder;
-		margin-left: 20px;
+		border-bottom: 1px solid @themeCompatSubtleBorder;
 	}
 
-	#message-box img.avatar, .message-box-reply img.avatar{
-		float: left;
-		margin-right: 10px;
-	}
-
-	.message-metadata {
+	.message-meta {
 		font-size: @smallFontSizePx;
 		font-size: @smallFontSizeRem;
-		margin-bottom: 5px;
+		margin-bottom: @themeCompatMargin;
 	}
-
-	p#message-recipients {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
-		margin-bottom: 10px;
-	}
-
-	.message-box {
-		padding-top: 10px 0;
-		border-top: 1px solid @themeCompatSubtleBorder;
-	}
-
-	form#send_message_form .message-content { width: 95%; }
 }
 
 
