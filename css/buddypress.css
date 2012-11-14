@@ -16,6 +16,7 @@
 08d. Single member - friends
 08e. Single member - settings
 08f. Single member - profile
+=08g. Single member - forum
 09. Core widgets
 10. Notices
 11. Menus
@@ -827,6 +828,11 @@
 #bp-member-content .bp-member-profile-edit .profile-field-description,
 #bp-member-content .bp-member-profile-edit .submit {
   margin-top: 10px;
+}
+/* =08g. Single member - forum
+--------------------------------------------------------------- */
+#bp-member-content #bbpress-forums {
+  clear: none;
 }
 /* =09. Core widgets
 --------------------------------------------------------------- */
