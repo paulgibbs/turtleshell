@@ -634,23 +634,23 @@
 #bp-member-content .bp-archive-members {
 	overflow: hidden;
 
+	.member-avatar {
+		float: left;  // @todo RTL
+		margin-right: @themeCompatMargin;  // @todo RTL
+
+		img {
+			display: block;
+			height: 50px;
+			width: 50px;
+		}
+	}
 	.member-update { margin-bottom: 0; }
+
 	li {
 		.clearfix();
 		float: inherit;
 		margin: 0 0 @themeCompatListSpacing 0;  // @todo RTL (margin-right is explicity cleared)
 		text-align: left; // @todo RTL?
-
-		.member-avatar {
-			float: left;  // @todo RTL
-			margin-right: @themeCompatMargin;  // @todo RTL
-
-			img {
-				display: block;
-				height: 50px;
-				width: 50px;
-			}
-		}
 	}
 
 	> li { width: auto; }

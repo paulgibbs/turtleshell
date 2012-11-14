@@ -752,6 +752,15 @@
 #bp-member-content .bp-archive-members {
   overflow: hidden;
 }
+#bp-member-content .bp-archive-members .member-avatar {
+  float: left;
+  margin-right: 10px;
+}
+#bp-member-content .bp-archive-members .member-avatar img {
+  display: block;
+  height: 50px;
+  width: 50px;
+}
 #bp-member-content .bp-archive-members .member-update {
   margin-bottom: 0;
 }
@@ -769,15 +778,6 @@
 }
 #bp-member-content .bp-archive-members li:after {
   clear: both;
-}
-#bp-member-content .bp-archive-members li .member-avatar {
-  float: left;
-  margin-right: 10px;
-}
-#bp-member-content .bp-archive-members li .member-avatar img {
-  display: block;
-  height: 50px;
-  width: 50px;
 }
 #bp-member-content .bp-archive-members > li {
   width: auto;
