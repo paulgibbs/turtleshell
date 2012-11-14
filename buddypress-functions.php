@@ -10,6 +10,12 @@
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+// Temporary: add a version number to footer so people can find out what release they're using
+function turtlepower_version_number() {
+	echo "\n\n<!-- turtleshell: alpha 1 -->\n\n";
+}
+add_action( 'wp_footer', 'turtlepower_version_number' );
+
 if ( ! class_exists( 'BP_TurtleShell' ) ) :
 
 /**
