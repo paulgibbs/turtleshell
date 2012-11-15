@@ -52,13 +52,6 @@
 	<?php endif; ?>
 
 
-	<?php do_action( 'bp_template_before_activity_reply_form' ); ?>
-
-	<?php// bp_get_template_part( 'activity/form-activity-reply' ); ?>
-
-	<?php do_action( 'bp_template_after_activity_reply_form' ); ?>
-
-
 	<?php bp_activity_recurse_comments( bp_activity_current_comment() ); ?>
 
 	<?php do_action( 'bp_template_in_activity_comment_loop_late' ); ?>
