@@ -196,33 +196,3 @@ class BP_TurtleShell extends BP_Theme_Compat {
 }
 new BP_TurtleShell();
 endif;
-
-
-/**
- * Output the parent activity's user ID
- *
- * @since BuddyPress (1.7)
- */
-function bp_activity_parent_user_id() {
-	echo bp_get_activity_parent_user_id();
-}
-
-	/**
-	 * Return the parent activity's user ID
-	 *
-	 * @global object $activities_template {@link BP_Activity_Template}
-	 * @return bool|int False if parent activity can't be found, otherwise returns the parent activity's user ID
-	 * @since BuddyPress (1.7)
-	 */
-	function bp_get_activity_parent_user_id() {
-		global $activities_template;
-
-		$retval = false;
-
-		// Get the user ID of the parent activity
-		$parent_id = $activities_template->activity->item_id;
-		if ( $parent_id && ! empty( $activities_template->activity_parents[$parent_id] ) )
-			$retval = $activities_template->activity_parents[$parent_id]->user_id;
-
-		return apply_filters( 'bp_get_activity_parent_user_id', $retval );
-	}
