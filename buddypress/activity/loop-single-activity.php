@@ -30,16 +30,13 @@
 
 		<div class="activity-header">
 			<?php bp_activity_action( 'no_timestamp=1' ); ?>
+
+			<?php if ( 'activity_comment' == bp_get_activity_type() ) : ?>
+				<a class="activity-inreply" href="<?php bp_activity_thread_permalink(); ?>"><?php printf( _x( ' in reply to %s:', 'Paul posted a new activity comment [in reply to John]:', 'buddypress' ), bp_members_get_user_nicename( bp_get_activity_parent_user_id() ) ); ?></a>
+			<?php endif; ?>
 		</div>
 
 		<?php do_action( 'bp_template_after_activity_header' ); ?>
-
-
-		<?php if ( 'activity_comment' == bp_get_activity_type() ) : ?>
-			<span class="activity-inreply">
-				<?php _e( 'In reply to: ', 'buddypress' ); ?></strong><?php bp_activity_parent_content(); ?> <a href="<?php bp_activity_thread_permalink(); ?>" title="<?php _e( 'View Thread / Permalink', 'buddypress' ); ?>"><?php _e( 'View', 'buddypress' ); ?></a>
-			</span>
-		<?php endif; ?>
 
 
 		<?php if ( bp_activity_has_content() ) : ?>

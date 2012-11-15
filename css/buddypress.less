@@ -247,7 +247,10 @@
 		font-weight: bold;
 		padding-bottom: @themeCompatMargin/2;
 
-		p { margin-bottom: 0; }
+		p {
+			display: inline;
+			margin-bottom: 0;
+		}
 	}
 
 	.activity-body {
@@ -256,6 +259,7 @@
 	}
 
 	.activity-meta {
+		.clearfix();
 		font-size: @smallFontSizePx;
 		font-size: @smallFontSizeRem;
 		margin-top: @themeCompatMargin/2;
