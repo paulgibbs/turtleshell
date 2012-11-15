@@ -211,6 +211,8 @@
 	p { margin-bottom: 0; }
 
 	.activity-actions li { margin: 0 0; }
+	.mini .activity-comments .acomment-avatar-label { margin-top: 0; }  // Specifity required
+	.mini .activity-comments .acomment-avatars { margin-top: 0; }  // Specifity required
 }
 
 .bp-archive-activity {
@@ -287,6 +289,23 @@
 				span:before { content: "("; }
 				span:after { content: ")"; }
 			}
+		}
+	}
+
+	.activity-reply-form {
+		border-bottom: 1px solid @themeCompatSubtleBorder;
+		border-top: 1px solid @themeCompatSubtleBorder;
+		display: none;
+		margin: 0 0 @themeCompatMargin (@themeCompatMargin + 50px);  // @todo RTL
+		padding: @themeCompatMargin 0;
+		position: relative;
+
+		label {	display: block; }
+		input[type="submit"] { display: block; }
+
+		textarea {
+			height: 50px;
+			width: 80%;
 		}
 	}
 }
@@ -366,6 +385,7 @@
 			margin: 0 @themeCompatMargin 0 0;  // @todo RTL
 
 			img {
+				display: block;
 				height: @themeCompatTinyAvatarSize;
 				width: @themeCompatTinyAvatarSize;
 			}
@@ -556,7 +576,7 @@
 	> li { overflow: hidden; }
 	.activity-avatar { display: none; }
 	.activity-content {	margin-left: 0; }  // @todo RTL
-	.activity-comments { margin-left: @themeCompatMargin*2; } // @todo RTL. Explicitly overrides margin-left.
+	.activity-comments { margin-left: @themeCompatMargin*2; } // @todo RTL
 }
 
 #bp-member-content #bp_activity_search_form {

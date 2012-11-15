@@ -103,6 +103,13 @@
 	<?php do_action( 'bp_template_after_activity_content' ); ?>
 
 
+	<?php do_action( 'bp_template_before_activity_reply_form' ); ?>
+
+	<?php bp_get_template_part( 'activity/form-activity-reply' ); ?>
+
+	<?php do_action( 'bp_template_after_activity_reply_form' ); ?>
+
+
 	<?php if ( bp_activity_get_comment_count() ) : ?>
 		<?php do_action( 'bp_template_before_activity_comments' ); ?>
 
