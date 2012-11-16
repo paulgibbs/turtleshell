@@ -17,8 +17,8 @@
 		<a href="<?php bp_group_permalink(); ?>"><?php bp_group_avatar(); ?></a>
 	</div>
 
-	<?php do_action( 'bp_template_after_group_avatar' ); ?>
 
+	<?php do_action( 'bp_template_before_group_details' ); ?>
 
 	<div class="group-details">
 
@@ -27,8 +27,6 @@
 		<div class="group-title">
 			<a href="<?php bp_group_permalink(); ?>"><?php bp_group_name(); ?></a>
 		</div>
-
-		<?php do_action( 'bp_template_after_group_title' ); ?>
 
 
 		<?php do_action( 'bp_template_before_group_meta' ); ?>
@@ -51,8 +49,6 @@
 	<?php do_action( 'bp_template_before_group_description' ); ?>
 
 	<div class="group-description"><?php bp_group_description_excerpt(); ?></div>
-
-	<?php do_action( 'bp_template_after_group_description' ); ?>
 
 
 	<?php do_action( 'bp_template_in_groups_loop_late' ); ?>
