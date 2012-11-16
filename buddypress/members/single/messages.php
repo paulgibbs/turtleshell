@@ -19,10 +19,10 @@
 		bp_get_template_part( 'members/single/messages/messages-single' );
 		
 	elseif ( bp_is_current_action( 'notices' ) ) :
-		bp_get_template_part( 'members/single/messages/notices-loop' );
+		bp_get_template_part( 'members/single/messages/loop-notices' );
 	
 	else :
-		bp_get_template_part( 'members/single/messages/messages-loop' );
+		bp_get_template_part( 'members/single/messages/loop-messages' );
 
 	endif; 
 	?>
