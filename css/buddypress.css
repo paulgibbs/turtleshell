@@ -354,6 +354,9 @@
 .bp-archive-activity .activity-body {
   padding-bottom: 5px;
 }
+.bp-archive-activity .activity-body iframe {
+  margin-bottom: 0;
+}
 .bp-archive-activity .activity-body p {
   margin: 0;
 }
