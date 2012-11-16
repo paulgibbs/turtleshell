@@ -7,8 +7,6 @@
  */
 ?>
 
-<?php bp_get_template_part( 'members/single/messages/messages-search', 'messages' ); ?>
-
 <div id="message-thread" role="main">
 
 	<?php do_action( 'bp_template_before_message_thread_content' ); ?>

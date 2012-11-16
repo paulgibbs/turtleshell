@@ -7,7 +7,7 @@
  */
 ?>
 
-<?php bp_get_template_part( 'members/single/messages/messages-search', 'messages' ); ?>
+<div class="message-search"><?php bp_message_search_form(); ?></div>
 <?php bp_get_template_part( 'members/single/messages/messages-options', 'messages' ); ?>
 <?php bp_get_template_part( 'members/single/messages/messages-pagination', 'messages' ); ?>
 
