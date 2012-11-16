@@ -23,12 +23,12 @@
 		<?php do_action( 'bp_template_messages_inbox_before_list_item' ); ?>
 			<div class="thread-delete">
 				<input type="checkbox" name="message_ids[]" value="<?php bp_message_thread_id(); ?>" />						
-				<a class="button confirm" href="<?php bp_the_thread_delete_link(); ?>" title="<?php _e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a>
+				<a class="button confirm" href="<?php bp_the_thread_delete_link(); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a>
 			</div>
 			<div class="thread-content">
 				<div class="thread-avatar"><?php bp_message_thread_avatar(); ?></div>
 							
-				<div class="thread-link"><a href="<?php bp_message_thread_view_link(); ?>" title="<?php _e( "View Message", "buddypress" ); ?>"><?php bp_message_thread_subject(); ?></a></div>
+				<div class="thread-link"><a href="<?php bp_message_thread_view_link(); ?>"><?php bp_message_thread_subject(); ?></a></div>
 												
 			</div><!-- .thread-content -->
 			

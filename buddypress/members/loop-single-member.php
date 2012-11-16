@@ -36,11 +36,11 @@
 		<?php if ( bp_is_user_friends() && bp_is_current_action( 'requests' ) ) : ?>
 
 			<div class="generic-button is_pending">
-				<a href="<?php bp_friend_reject_request_link(); ?>" title="Reject Friendship" class="button is_pending reject"><?php _e( 'Reject', 'buddypress' ); ?></a>
+				<a href="<?php bp_friend_reject_request_link(); ?>" class="button is_pending reject"><?php _e( 'Reject', 'buddypress' ); ?></a>
 			</div>
 
 			<div class="generic-button is_pending">
-				<a href="<?php bp_friend_accept_request_link(); ?>" title="Accept Friendship" class="button is_pending accept"><?php _e( 'Accept', 'buddypress' ); ?></a>
+				<a href="<?php bp_friend_accept_request_link(); ?>" class="button is_pending accept"><?php _e( 'Accept', 'buddypress' ); ?></a>
 			</div>
 
 		<?php elseif ( bp_is_user_friends() ) : ?>

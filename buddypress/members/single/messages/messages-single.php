@@ -34,7 +34,7 @@
 
 			</span><!-- .highlight -->
 			
-			<span class="thread-delete"><a class="button confirm" href="<?php bp_the_thread_delete_link(); ?>" title="<?php _e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a></span>
+			<span class="thread-delete"><a class="button confirm" href="<?php bp_the_thread_delete_link(); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a></span>
 			
 			
 			
@@ -53,7 +53,7 @@
 					<?php do_action( 'bp_before_message_meta' ); ?>
 
 					<?php bp_the_thread_message_sender_avatar( 'type=thumb&width=30&height=30' ); ?>
-					<a href="<?php bp_the_thread_message_sender_link(); ?>" title="<?php bp_the_thread_message_sender_name(); ?>"><?php bp_the_thread_message_sender_name(); ?></a> <span class="activity"><?php bp_the_thread_message_time_since(); ?></span>
+					<a href="<?php bp_the_thread_message_sender_link(); ?>"><?php bp_the_thread_message_sender_name(); ?></a> <span class="activity"><?php bp_the_thread_message_time_since(); ?></span>
 
 					<?php do_action( 'bp_after_message_meta' ); ?>
 
