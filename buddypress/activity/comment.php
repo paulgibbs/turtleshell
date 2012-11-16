@@ -18,8 +18,6 @@
 		<?php printf( '<a href="%1$s">%2$s</a>', esc_url( bp_get_activity_comment_user_link() ), bp_get_activity_comment_name() ); ?>
 	</div>
 
-	<?php do_action( 'bp_template_after_activity_comment_header' ); ?>
-
 
 	<?php do_action( 'bp_template_before_activity_comment_content' ); ?>
 
@@ -29,7 +27,6 @@
 
 
 	<?php if ( is_user_logged_in() && ( bp_activity_can_comment_reply( bp_activity_current_comment() ) || bp_activity_user_can_delete() ) ) : ?>
-
 		<?php do_action( 'bp_template_before_activity_comment_actions' ); ?>
 
 		<p class="acomment-actions-label"><?php _e( 'Respond to this comment', 'buddypress' ); ?></p>
@@ -52,7 +49,10 @@
 	<?php endif; ?>
 
 
+	<?php do_action( 'bp_template_before_activity_comments_recurse' ); ?>
+
 	<?php bp_activity_recurse_comments( bp_activity_current_comment() ); ?>
+
 
 	<?php do_action( 'bp_template_in_activity_comment_loop_late' ); ?>
 </li>

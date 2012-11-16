@@ -19,8 +19,6 @@
 		</a>
 	</div>
 
-	<?php do_action( 'bp_template_after_activity_avatar' ); ?>
-
 
 	<?php do_action( 'bp_template_before_activity_content' ); ?>
 
@@ -127,8 +125,6 @@
 	<?php do_action( 'bp_template_before_activity_reply_form' ); ?>
 
 	<?php bp_get_template_part( 'activity/form-activity-reply' ); ?>
-
-	<?php do_action( 'bp_template_after_activity_reply_form' ); ?>
 
 
 	<?php do_action( 'bp_template_in_activity_loop_late' ); ?>
