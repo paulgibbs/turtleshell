@@ -13,7 +13,7 @@
 	<div class="options-nav"><?php bp_messages_options(); ?></div>
 </div><!-- .messages-options-nav -->
 
-<?php bp_get_template_part( 'members/single/messages/messages-pagination' ); ?>
+<?php bp_get_template_part( 'members/single/messages/pagination-messages' ); ?>
 
 <?php do_action( 'bp_template_before_member_messages_loop' ); ?>
 

@@ -1,20 +1,26 @@
 <?php
 /**
- * Messages pagination content part
+ * Pagination for member messages
  *
  * @package BuddyPress
  * @subpackage TurtleShell
  */
 ?>
 
-<div class="pagination no-ajax" id="user-pag">
+<?php do_action( 'bp_template_before_member_messags_pagination_loop' ); ?>
 
-	<div class="pag-count" id="messages-dir-count">
+<div class="bp-pagination">
+	<div class="bp-pagination-count">
+
 		<?php bp_messages_pagination_count(); ?>
+
 	</div>
 
-	<div class="pagination-links" id="messages-dir-pag">
+	<div class="bp-pagination-links">
+
 		<?php bp_messages_pagination(); ?>
-	</div>
 
-</div><!-- .pagination -->
+	</div>
+</div>
+
+<?php do_action( 'bp_template_after_member_messags_pagination_loop' ); ?>
