@@ -13,10 +13,10 @@
 
 	<?php
 	if ( bp_is_current_action( 'compose' ) ) :
-		bp_get_template_part( 'members/single/messages/messages-compose' );
+		bp_get_template_part( 'members/single/messages/compose' );
 
 	elseif ( bp_is_current_action( 'view' ) ) :
-		bp_get_template_part( 'members/single/messages/messages-single' );
+		bp_get_template_part( 'members/single/messages/single' );
 		
 	elseif ( bp_is_current_action( 'notices' ) ) :
 		bp_get_template_part( 'members/single/messages/loop-notices' );
