@@ -17,8 +17,8 @@
 			
 				<?php do_action( 'bp_template_notices_before_list_item' ); ?>			
 				<div class="notice-buttons">
-					<a class="button" href="<?php bp_message_activate_deactivate_link(); ?>" class="confirm"><?php bp_message_activate_deactivate_text(); ?></a>
-					<a class="button" href="<?php bp_message_notice_delete_link(); ?>" class="confirm">Delete</a>
+					<a class="button confirm" href="<?php bp_message_activate_deactivate_link(); ?>"><?php bp_message_activate_deactivate_text(); ?></a>
+					<a class="button confirm" href="<?php bp_message_notice_delete_link(); ?>">Delete</a>
 				</div>
 				<div class="notice-content">
 					<span class="notice-subject"><?php bp_message_notice_subject(); ?></span>

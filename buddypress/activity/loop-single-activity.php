@@ -69,16 +69,16 @@
 				<ul class="activity-actions">
 
 					<?php if ( bp_activity_can_comment() ) : ?>
-						<li><a href="<?php bp_activity_comment_link(); ?>" class="has-count"><?php printf( __( 'Reply <span>%s</span>', 'buddypress' ), bp_activity_get_comment_count() ); ?></a></li>
+						<li><a href="<?php bp_activity_comment_link(); ?>" class="button has-count"><?php printf( __( 'Reply <span>%s</span>', 'buddypress' ), bp_activity_get_comment_count() ); ?></a></li>
 					<?php endif; ?>
 
 					<?php if ( bp_activity_can_favorite() ) : ?>
 						<li>
 
 							<?php if ( ! bp_get_activity_is_favorite() ) : ?>
-								<a href="<?php bp_activity_favorite_link(); ?>"><?php _e( 'Favorite', 'buddypress' ); ?></a>
+								<a href="<?php bp_activity_favorite_link(); ?>" class="button"><?php _e( 'Favorite', 'buddypress' ); ?></a>
 							<?php else : ?>
-								<a href="<?php bp_activity_unfavorite_link(); ?>"><?php _e( 'Remove Favorite', 'buddypress' ); ?></a>
+								<a href="<?php bp_activity_unfavorite_link(); ?>" class="button confirm"><?php _e( 'Remove Favorite', 'buddypress' ); ?></a>
 							<?php endif; ?>
 
 						</li>

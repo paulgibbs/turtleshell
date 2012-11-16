@@ -37,11 +37,11 @@
 		<ul class="acomment-actions">
 
 			<?php if ( bp_activity_can_comment_reply( bp_activity_current_comment() ) ) : ?>
-				<li><a href="#acomment-<?php bp_activity_comment_id(); ?>" class="reply"><?php _e( 'Reply', 'buddypress' ); ?></a></li>
+				<li><a href="#acomment-<?php bp_activity_comment_id(); ?>" class="button reply"><?php _e( 'Reply', 'buddypress' ); ?></a></li>
 			<?php endif; ?>
 
 			<?php if ( bp_activity_user_can_delete() ) : ?>
-				<li><a href="<?php bp_activity_comment_delete_link(); ?>" class="delete confirm" rel="nofollow"><?php _e( 'Delete', 'buddypress' ); ?></a></li>
+				<li><a href="<?php bp_activity_comment_delete_link(); ?>" class="button delete confirm" rel="nofollow"><?php _e( 'Delete', 'buddypress' ); ?></a></li>
 			<?php endif; ?>
 
 			<?php do_action( 'bp_template_in_activity_comment_actions' ); ?>
