@@ -421,9 +421,9 @@
   margin-bottom: 20px;
 }
 #bp_activity_search_form .bp_filter_label {
-  float: right;
   font-size: 12px;
   font-size: 0.85rem;
+  float: right;
   margin-left: 10px;
 }
 #bp_activity_search_form .searchwrapper {
@@ -529,9 +529,9 @@
   overflow: hidden;
 }
 #buddypress .options-nav {
-  float: right;
   font-size: 12px;
   font-size: 0.85rem;
+  float: right;
   margin-bottom: 10px 0;
 }
 #buddypress .thread-avatar {
@@ -675,9 +675,9 @@
   padding: 0;
 }
 .bp-archive-blogs .blog-content .blog-title span a {
-  color: inherit;
   font-size: 12px;
   font-size: 0.85rem;
+  color: inherit;
   text-decoration: none;
 }
 .bp-archive-blogs .blog-content .blog-image,
@@ -1053,9 +1053,9 @@
   border-bottom: 0;
 }
 #menu-bp a {
-  display: inline-block;
   font-size: 12px;
   font-size: 0.85rem;
+  display: inline-block;
   text-decoration: none;
   width: 100%;
 }

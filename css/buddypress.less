@@ -73,10 +73,7 @@
 		&:nth-child(4n+5) { clear: left; }  // @todo RTL
 	}
 
-	.member-details .generic-button {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
-	}
+	.member-details .generic-button { .small-font(); }
 }
 
 #bp_member_search_form {
@@ -146,8 +143,7 @@
 	}
 
 	.group-meta {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
+		.small-font();
 
 		ul {
 			.clearfix();
@@ -195,8 +191,7 @@
 .bp-pagination-links { float: right; } // @todo RTL
 
 .bp-pagination {
-	font-size: @smallFontSizePx;
-	font-size: @smallFontSizeRem;
+	.small-font();
 	margin-bottom: @themeCompatMargin;
 	overflow: hidden;
 
@@ -246,8 +241,7 @@
 	}
 
 	.activity-header {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
+		.small-font();
 		font-weight: bold;
 		padding-bottom: @themeCompatMargin/2;
 
@@ -266,15 +260,13 @@
 
 	.activity-meta {
 		.clearfix();
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
+		.small-font();
 		margin-top: @themeCompatMargin/2;
 	}
 
 	.activity-timestamp {
 		float: left; // @todo RTL
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
+		.small-font();
 	}
 
 	.activity-actions {
@@ -316,9 +308,8 @@
 	margin-bottom: @themeCompatSearchSpacing;
 
 	.bp_filter_label {
+		.small-font();
 		float: right;  // @todo RTL
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
 		margin-left: @themeCompatMargin;  // @todo RTL
 	}
 
@@ -359,8 +350,7 @@
 /* =05b. Activity Comments
 --------------------------------------------------------------- */
 #buddypress .bp-archive-activity .activity-comments {
-	font-size: @smallFontSizePx;
-	font-size: @smallFontSizeRem;
+	.small-font();
 
 	ul > li {
 		margin-bottom: @themeCompatMargin/2;
@@ -420,9 +410,8 @@
 	.messages-options-nav { overflow: hidden; }
 
 	.options-nav {
+		.small-font();
 		float: right;
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
 		margin-bottom: @themeCompatMargin 0;
 	}
 	
@@ -444,8 +433,7 @@
 	}
 
 	.thread-options {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
+		.small-font();
 		overflow: hidden;
 	}
 
@@ -480,8 +468,7 @@
 	.message-submit { .clearfix; }
 
 	#user-pag.pagination {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
+		.small-font();
 		padding-top: 5px 0;
 		overflow: hidden;
 
@@ -512,8 +499,7 @@
 	}
 
 	.message-meta {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
+		.small-font();
 		margin-bottom: @themeCompatMargin;
 	}
 }
@@ -541,9 +527,8 @@
 			padding: 0;
 
 			span a {
+				.small-font();
 				color: inherit;
-				font-size: @smallFontSizePx;
-				font-size: @smallFontSizeRem;
 				text-decoration: none;
 			}
 		}
@@ -747,8 +732,7 @@
 /* =09. Core widgets
 --------------------------------------------------------------- */
 #bp-member-profile-widgets {
-	font-size: @smallFontSizePx;
-	font-size: @smallFontSizeRem;
+	.small-font();
 	max-width: @menuWidth;
 
 	&:after { clear: left; }  // @todo RTL
@@ -820,10 +804,7 @@
 	padding: 0 @themeCompatMargin;
 
 	a { text-decoration: none; }
-	p {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;		
-	}
+	p { .small-font(); }
 
 	&.info,
 	&.updated {
@@ -871,9 +852,8 @@
 
 #menu-bp {
 	a {
+		.small-font();
 		display: inline-block;
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
 		text-decoration: none;
 		width: 100%;
 	}
