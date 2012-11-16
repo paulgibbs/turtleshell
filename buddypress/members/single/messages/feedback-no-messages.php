@@ -7,6 +7,6 @@
  */
 ?>
 
-<div id="bp-template-notice info message" class="info">
+<div class="bp-template-notice info message">
 		<p><?php _e( 'Inbox at zero? Hip hip hooray!', 'buddypress' ); ?></p>
 </div>
