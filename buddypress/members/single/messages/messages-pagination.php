@@ -14,7 +14,7 @@
 	</div>
 
 	<div class="pagination-links" id="messages-dir-pag">
-		<?php bp_messages_pagination(); ?>123
+		<?php bp_messages_pagination(); ?>
 	</div>
 
 </div><!-- .pagination -->
