@@ -122,7 +122,7 @@
 .bp-archive-members > li:nth-child(4n+5) {
   clear: left;
 }
-.bp-archive-members .member-details {
+.bp-archive-members .member-details .generic-button {
   font-size: 12px;
   font-size: 0.85rem;
 }
