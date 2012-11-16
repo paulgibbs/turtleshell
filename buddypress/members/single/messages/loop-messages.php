@@ -8,8 +8,8 @@
 ?>
 
 <div class="message-search"><?php bp_message_search_form(); ?></div>
-<?php bp_get_template_part( 'members/single/messages/messages-options', 'messages' ); ?>
-<?php bp_get_template_part( 'members/single/messages/messages-pagination', 'messages' ); ?>
+<?php bp_get_template_part( 'members/single/messages/messages-options' ); ?>
+<?php bp_get_template_part( 'members/single/messages/messages-pagination' ); ?>
 
 <?php do_action( 'bp_template_before_member_messages_loop' ); ?>
 
@@ -45,7 +45,7 @@
 	<?php endwhile; ?>
 </ul><!-- #message-threads -->
 </div>
-<?php bp_get_template_part( 'members/single/messages/messages-pagination', 'messages' ); ?>
-<?php bp_get_template_part( 'members/single/messages/messages-options', 'messages' ); ?>
+<?php bp_get_template_part( 'members/single/messages/messages-pagination' ); ?>
+<?php bp_get_template_part( 'members/single/messages/messages-options' ); ?>
 <?php do_action( 'bp_template_after_member_messages_options' ); ?>		
 <?php do_action( 'bp_template_after_member_messages_loop' ); ?>
