@@ -17,16 +17,12 @@
 		<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar( 'type=full' ); ?></a>
 	</div>
 
-	<?php do_action( 'bp_template_after_member_avatar' ); ?>
-
 
 	<?php do_action( 'bp_template_before_member_title' ); ?>
 
 	<div class="member-title">
 		<a href="<?php bp_member_permalink(); ?>"><?php bp_member_name(); ?></a>
 	</div>
-
-	<?php do_action( 'bp_template_after_member_title' ); ?>
 
 
 	<?php do_action( 'bp_template_before_member_details' ); ?>
@@ -64,8 +60,6 @@
 		<?php do_action( 'bp_template_in_member_details' ); ?>
 
 	</div>
-
-	<?php do_action( 'bp_template_after_member_details' ); ?>
 
 
 	<?php do_action( 'bp_template_in_members_loop_late' ); ?>

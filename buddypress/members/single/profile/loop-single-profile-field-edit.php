@@ -79,8 +79,6 @@
 		</div>
 	<?php endif; ?>
 
-	<?php do_action( 'bp_template_after_member_profile_field_edit_control' ); ?>
-
 
 	<?php do_action( 'bp_template_before_member_profile_field_edit_visibility' ); ?>
 

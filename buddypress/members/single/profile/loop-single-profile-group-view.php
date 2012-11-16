@@ -10,7 +10,6 @@
 <div class="<?php echo esc_attr( sanitize_html_class( bp_get_the_profile_group_slug() ) ); ?>">
 	<?php do_action( 'bp_template_in_member_profile_group_view_loop_early' ); ?>
 
-
 	<table summary="<?php echo esc_attr( sprintf( __( 'Profile data for %s. The first column of each row is a description of the type of data that is recorded (e.g. "gender"), and the second column is the data value (e.g. "female").', 'buddypress' ), bp_get_displayed_user_fullname() ) ); ?>">
 		<caption><?php bp_the_profile_group_name(); ?></caption>
 
@@ -47,7 +46,6 @@
 		<?php do_action( 'bp_template_after_member_profile_field_loop' ); ?>
 
 	</table>
-
 
 	<?php do_action( 'bp_template_in_member_profile_group_view_loop_late' ); ?>
 </div>
