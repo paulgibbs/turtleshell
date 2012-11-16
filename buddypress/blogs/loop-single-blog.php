@@ -17,8 +17,6 @@
 		<?php bp_blog_avatar( 'type=thumb' ); ?>
 	</div>
 
-	<?php do_action( 'bp_template_after_blog_avatar' ); ?>
-
 
 	<?php do_action( 'bp_template_before_blog_content' ); ?>
 
@@ -31,8 +29,6 @@
 			<span class="blog-name"><a href="<?php echo esc_url( bp_get_blog_permalink() ); ?>"><?php bp_blog_name(); ?></a></span>
 		</h3>
 
-		<?php do_action( 'bp_template_after_blog_title' ); ?>
-
 
 		<?php do_action( 'bp_template_before_blog_featured_image' ); ?>
 
@@ -41,8 +37,6 @@
 				<img class="blog-image" src="<?php echo esc_url( bp_get_blog_latest_post_featured_image( 'post-thumbnail' ) ); ?>" alt="<?php echo esc_attr( bp_get_blog_latest_post_title() ); ?>" ?>
 			</a>
 		<?php endif; ?>
-
-		<?php do_action( 'bp_template_after_blog_featured_image' ); ?>
 
 
 		<?php do_action( 'bp_template_before_blog_excerpt' ); ?>
@@ -54,8 +48,6 @@
 		<?php do_action( 'bp_template_after_blog_excerpt' ); ?>
 
 	</div>
-
-	<?php do_action( 'bp_template_after_blog_content' ); ?>
 
 
 	<?php do_action( 'bp_template_in_blogs_loop_late' ); ?>
