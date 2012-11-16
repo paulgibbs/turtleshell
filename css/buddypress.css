@@ -839,6 +839,10 @@
 #bp-member-content .bp-member-settings-deleteaccount label {
   display: block;
 }
+#bp-member-content .bp-member-settings-capabilities input[type="submit"] {
+  display: block;
+  margin-top: 20px;
+}
 #bp-member-content .bp-member-settings-notifications table td:nth-child(1),
 #bp-member-content .bp-member-settings-notifications table th:nth-child(1) {
   display: none;

@@ -19,6 +19,9 @@ elseif ( bp_is_current_action( 'delete-account' ) ) :
 elseif ( bp_is_current_action( 'general' ) ) :
 	bp_get_template_part( 'members/single/settings/general' );
 
+elseif ( bp_is_current_action( 'capabilities' ) ) :
+	bp_get_template_part( 'members/single/settings/capabilities' );
+
 else :
 	bp_get_template_part( 'members/single/plugins' );
 
