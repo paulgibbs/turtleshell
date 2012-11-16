@@ -17,7 +17,7 @@
 		<ul class="first acfb-holder">
 		<li>
 			<?php bp_message_get_recipient_tabs(); ?>
-			<input type="text" name="send-to-input" class="send-to-input" id="send-to-input" />
+			<input type="text" name="send-to-input" class="send-to-input" id="send-to-input" autofocus />
 		</li>
 		</ul>
 	</div><!-- .message-to -->
@@ -48,7 +48,3 @@
 
 	<?php wp_nonce_field( 'messages_send_message' ); ?>
 </form><!-- #send-message-form -->
-
-<script type="text/javascript">
-	document.getElementById("send-to-input").focus();
-</script>
