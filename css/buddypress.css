@@ -525,9 +525,6 @@
 }
 /* =06. Messages
 -------------------------------------------------------------- */
-#buddypress .messages-options-nav {
-  overflow: hidden;
-}
 #buddypress .options-nav {
   font-size: 12px;
   font-size: 0.85rem;
@@ -554,6 +551,9 @@
   font-size: 0.85rem;
   overflow: hidden;
 }
+#buddypress .messages-options-nav {
+  overflow: hidden;
+}
 #buddypress .thread-delete {
   float: right;
 }
@@ -566,7 +566,25 @@
 #buddypress .thread-content {
   margin-bottom: 10px;
 }
-#buddypress #message-recipients {
+#buddypress .message-submit {
+  *zoom: 1;
+}
+#buddypress .message-submit:before,
+#buddypress .message-submit:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#buddypress .message-submit:after {
+  clear: both;
+}
+#buddypress .notice-date {
+  float: left;
+}
+#buddypress .notice-buttons {
+  float: right;
+}
+#buddypress .notice-action {
   overflow: hidden;
 }
 #buddypress .message-header,
@@ -583,23 +601,14 @@
   float: left;
   margin: 0;
 }
+#buddypress #message-recipients {
+  overflow: hidden;
+}
 #buddypress #messages-dir-count {
   float: left;
 }
 #buddypress #messages-dir-pag {
   float: right;
-}
-#buddypress .message-submit {
-  *zoom: 1;
-}
-#buddypress .message-submit:before,
-#buddypress .message-submit:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-#buddypress .message-submit:after {
-  clear: both;
 }
 #buddypress #user-pag.pagination {
   font-size: 12px;
@@ -616,15 +625,6 @@
 #buddypress .message-to {
   display: block;
   margin-top: 10px 0;
-}
-#buddypress .notice-date {
-  float: left;
-}
-#buddypress .notice-buttons {
-  float: right;
-}
-#buddypress .notice-action {
-  overflow: hidden;
 }
 #buddypress .message-box-reply {
   padding: 10px 0;

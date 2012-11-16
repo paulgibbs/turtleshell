@@ -407,8 +407,6 @@
 /* =06. Messages
 -------------------------------------------------------------- */
 #buddypress {
-	.messages-options-nav { overflow: hidden; }
-
 	.options-nav {
 		.small-font();
 		float: right;
@@ -427,9 +425,7 @@
 		overflow: hidden;
 		padding: @themeCompatMargin 0;
 	
-		li.unread { 
-			background-color: @noticeBackground; 
-		}
+		li.unread {  background-color: @noticeBackground; }
 	}
 
 	.thread-options {
@@ -437,17 +433,15 @@
 		overflow: hidden;
 	}
 
+	.messages-options-nav { overflow: hidden; }
 	.thread-delete { float: right; }
-
 	.thread-highlight { float: left; }
-	
 	.thread-link { padding-left: 30px; }
-	
 	.thread-content { margin-bottom: 10px; }
-
-	#message-recipients{
-		overflow: hidden;
-	}
+	.message-submit { .clearfix; }
+	.notice-date { float: left;	}
+	.notice-buttons { float: right; }
+	.notice-action { overflow: hidden; }
 
 	.message-header, #message-title-header{
 		margin-bottom: @themeCompatMargin;
@@ -461,11 +455,9 @@
 		}
 	}
 
+	#message-recipients{ overflow: hidden; }
 	#messages-dir-count { float: left; }
-
 	#messages-dir-pag { float: right; }
-
-	.message-submit { .clearfix; }
 
 	#user-pag.pagination {
 		.small-font();
@@ -482,14 +474,6 @@
 	.message-subject, .message-to {
 		display: block;
 		margin-top: @themeCompatMargin 0;
-	}
-
-	.notice-date { float: left;	}
-
-	.notice-buttons { float: right; }
-
-	.notice-action {
-		overflow: hidden;
 	}
 
 	.message-box-reply {
