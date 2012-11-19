@@ -22,30 +22,6 @@
 10. Notices
 11. Menus
 */
-/* =TABLE OF CONTENTS
-=======================================================
-01. Globals
-02. Members Directory
-03. Groups Directory
-04. Pagination
-05. Activity Directory
-05a. Activity Permalink
-05b. Activity Comments
-06. Messages
-07. Sites Directory
-08. Single member
-08a. Single member - menu
-08b. Single member - activity
-08c. Single member - groups
-08d. Single member - friends
-08e. Single member - settings
-08f. Single member - profile
-08g. Single member - forum
-08h. Single member - messages
-09. Core widgets
-10. Notices
-11. Menus
-*/
 .clearfix {
   *zoom: 1;
 }
@@ -201,12 +177,13 @@
 }
 .bp-archive-groups .group-avatar {
   float: left;
+  width: 25%;
 }
 .bp-archive-groups .group-details {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 160px;
+  padding-left: 90px;
   width: 100%;
 }
 .bp-archive-groups .group-meta {
@@ -691,6 +668,9 @@
 #bp-member-content .bp-archive-groups .group-member-count {
   display: none;
 }
+#bp-member-content .bp-archive-groups .group-description {
+  display: none;
+}
 #bp-member-content .bp-archive-groups li {
   *zoom: 1;
   float: inherit;
@@ -707,7 +687,9 @@
   clear: both;
 }
 #bp-member-content .bp-archive-groups > li {
-  width: auto;
+  float: left;
+  margin: 0 2% 10px 0;
+  width: 48%;
 }
 #bp-member-content .bp-archive-groups > li:nth-child(2n+1) {
   clear: none;

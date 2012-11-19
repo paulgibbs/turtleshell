@@ -135,11 +135,14 @@
 .bp-archive-groups {
 	> li:nth-child(2n+1) { clear: left; }  // @todo RTL
 
-	.group-avatar {	float: left; } // @todo RTL
+	.group-avatar {	
+		float: left; 
+		width: 25%;
+	} // @todo RTL
 
 	.group-details {
 		.box-sizing(border-box);
-		padding-left: 150px + @themeCompatMargin;  // group avatar width plus margin.  @todo RTL
+		padding-left: 90px;  // group avatar width plus margin.  @todo RTL
 		width: 100%;
 	}
 
@@ -540,6 +543,7 @@
 	.group-details { padding-left: 0; }
 	.group-activity,
 	.group-member-count { display: none; }
+	.group-description{ display: none; }
 
 	li {
 		.clearfix();
@@ -549,7 +553,9 @@
 	}
 
 	> li {
-		width: auto;
+		float: left;
+		margin: 0 2% 10px 0;
+		width: 48%;
 		&:nth-child(2n+1) { clear: none; }
 	}
 }
