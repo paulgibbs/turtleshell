@@ -17,6 +17,7 @@
 08e. Single member - settings
 08f. Single member - profile
 08g. Single member - forum
+08h. Single member - messages
 09. Core widgets
 10. Notices
 11. Menus
@@ -406,7 +407,7 @@
 
 /* =06. Messages
 -------------------------------------------------------------- */
-#buddypress {
+#zombies_buddypress {
 	.options-nav {
 		.small-font();
 		float: right;
@@ -720,6 +721,23 @@
 #bp-member-content #bbpress-forums { clear: none; }
 
 
+/* = 08h. Single member - messages
+--------------------------------------------------------------- */
+#bp-member-content  .bp-member-messages-compose {
+	input[type="text"],
+	textarea { width: 100%; }
+	label { display: block; }
+
+	legend {
+		left: -999em;  // @todo RTL
+		position: absolute;
+	}
+
+	#bp-send-notice { margin-bottom: @themeCompatListSpacing; }
+	.submit { margin-top: @themeCompatMargin; }
+}
+
+
 /* =09. Core widgets
 --------------------------------------------------------------- */
 #bp-member-profile-widgets {
@@ -782,9 +800,7 @@
 
 /* =10. Notices
 --------------------------------------------------------------- */
-#buddypress .bp-template-notice p {
-	margin: @themeCompatMargin/2 0;
-}
+#buddypress .bp-template-notice p {	margin: @themeCompatMargin/2 0; }
 
 .bp-template-notice {
 	.border-radius(3px);
@@ -816,9 +832,7 @@
 	}
 }
 
-.bp-user .bp-template-notice {
-	margin-bottom: @themeCompatListSpacing;
-}
+.bp-user .bp-template-notice { margin-bottom: @themeCompatListSpacing; }
 
 
 /* =11. Menus

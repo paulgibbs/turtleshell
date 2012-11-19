@@ -16,7 +16,8 @@
 08d. Single member - friends
 08e. Single member - settings
 08f. Single member - profile
-=08g. Single member - forum
+08g. Single member - forum
+08h. Single member - messages
 09. Core widgets
 10. Notices
 11. Menus
@@ -39,7 +40,8 @@
 08d. Single member - friends
 08e. Single member - settings
 08f. Single member - profile
-=08g. Single member - forum
+08g. Single member - forum
+08h. Single member - messages
 09. Core widgets
 10. Notices
 11. Menus
@@ -525,113 +527,113 @@
 }
 /* =06. Messages
 -------------------------------------------------------------- */
-#buddypress .options-nav {
+#zombies_buddypress .options-nav {
   font-size: 12px;
   font-size: 0.85rem;
   float: right;
   margin-bottom: 10px 0;
 }
-#buddypress .thread-avatar {
+#zombies_buddypress .thread-avatar {
   float: left;
   margin-right: 10px;
 }
-#buddypress .thread-avatar img {
+#zombies_buddypress .thread-avatar img {
   display: block;
 }
-#buddypress ul#message-threads li {
+#zombies_buddypress ul#message-threads li {
   border-bottom: 1px solid #dddddd;
   overflow: hidden;
   padding: 10px 0;
 }
-#buddypress ul#message-threads li li.unread {
+#zombies_buddypress ul#message-threads li li.unread {
   background-color: #ffffe0;
 }
-#buddypress .thread-options {
+#zombies_buddypress .thread-options {
   font-size: 12px;
   font-size: 0.85rem;
   overflow: hidden;
 }
-#buddypress .messages-options-nav {
+#zombies_buddypress .messages-options-nav {
   overflow: hidden;
 }
-#buddypress .thread-delete {
+#zombies_buddypress .thread-delete {
   float: right;
 }
-#buddypress .thread-highlight {
+#zombies_buddypress .thread-highlight {
   float: left;
 }
-#buddypress .thread-link {
+#zombies_buddypress .thread-link {
   padding-left: 30px;
 }
-#buddypress .thread-content {
+#zombies_buddypress .thread-content {
   margin-bottom: 10px;
 }
-#buddypress .message-submit {
+#zombies_buddypress .message-submit {
   *zoom: 1;
 }
-#buddypress .message-submit:before,
-#buddypress .message-submit:after {
+#zombies_buddypress .message-submit:before,
+#zombies_buddypress .message-submit:after {
   display: table;
   content: "";
   line-height: 0;
 }
-#buddypress .message-submit:after {
+#zombies_buddypress .message-submit:after {
   clear: both;
 }
-#buddypress .notice-date {
+#zombies_buddypress .notice-date {
   float: left;
 }
-#buddypress .notice-buttons {
+#zombies_buddypress .notice-buttons {
   float: right;
 }
-#buddypress .notice-action {
+#zombies_buddypress .notice-action {
   overflow: hidden;
 }
-#buddypress .message-header,
-#buddypress #message-title-header {
+#zombies_buddypress .message-header,
+#zombies_buddypress #message-title-header {
   margin-bottom: 10px;
   overflow: hidden;
 }
-#buddypress .message-header .message-search,
-#buddypress #message-title-header .message-search {
+#zombies_buddypress .message-header .message-search,
+#zombies_buddypress #message-title-header .message-search {
   float: right;
 }
-#buddypress .message-header h4.message-title,
-#buddypress #message-title-header h4.message-title {
+#zombies_buddypress .message-header h4.message-title,
+#zombies_buddypress #message-title-header h4.message-title {
   float: left;
   margin: 0;
 }
-#buddypress #message-recipients {
+#zombies_buddypress #message-recipients {
   overflow: hidden;
 }
-#buddypress #messages-dir-count {
+#zombies_buddypress #messages-dir-count {
   float: left;
 }
-#buddypress #messages-dir-pag {
+#zombies_buddypress #messages-dir-pag {
   float: right;
 }
-#buddypress #user-pag.pagination {
+#zombies_buddypress #user-pag.pagination {
   font-size: 12px;
   font-size: 0.85rem;
   padding-top: 5px 0;
   overflow: hidden;
 }
-#buddypress #user-pag.pagination:after {
+#zombies_buddypress #user-pag.pagination:after {
   clear: right;
   content: " ";
   display: table;
 }
-#buddypress .message-subject,
-#buddypress .message-to {
+#zombies_buddypress .message-subject,
+#zombies_buddypress .message-to {
   display: block;
   margin-top: 10px 0;
 }
-#buddypress .message-box-reply {
+#zombies_buddypress .message-box-reply {
   padding: 10px 0;
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
 }
-#buddypress .message-meta {
+#zombies_buddypress .message-meta {
   font-size: 12px;
   font-size: 0.85rem;
   margin-bottom: 10px;
@@ -908,6 +910,25 @@
 --------------------------------------------------------------- */
 #bp-member-content #bbpress-forums {
   clear: none;
+}
+/* = 08h. Single member - messages
+--------------------------------------------------------------- */
+#bp-member-content .bp-member-messages-compose input[type="text"],
+#bp-member-content .bp-member-messages-compose textarea {
+  width: 100%;
+}
+#bp-member-content .bp-member-messages-compose label {
+  display: block;
+}
+#bp-member-content .bp-member-messages-compose legend {
+  left: -999em;
+  position: absolute;
+}
+#bp-member-content .bp-member-messages-compose #bp-send-notice {
+  margin-bottom: 20px;
+}
+#bp-member-content .bp-member-messages-compose .submit {
+  margin-top: 10px;
 }
 /* =09. Core widgets
 --------------------------------------------------------------- */
