@@ -9,28 +9,20 @@
 
 <?php do_action( 'bp_template_before_member_messages_content' ); ?>
 
-<?php if ( bp_has_message_threads() ) : ?>
+<?php
+if ( bp_is_current_action( 'compose' ) ) :
+	bp_get_template_part( 'members/single/messages/compose' );
 
-	<?php
-	if ( bp_is_current_action( 'compose' ) ) :
-		bp_get_template_part( 'members/single/messages/compose' );
-
-	elseif ( bp_is_current_action( 'view' ) ) :
-		bp_get_template_part( 'members/single/messages/single' );
-		
-	elseif ( bp_is_current_action( 'notices' ) ) :
-		bp_get_template_part( 'members/single/messages/loop-notices' );
+elseif ( bp_is_current_action( 'view' ) ) :
+	bp_get_template_part( 'members/single/messages/single' );
 	
-	else :
-		bp_get_template_part( 'members/single/messages/loop-messages' );
+elseif ( bp_is_current_action( 'notices' ) ) :
+	bp_get_template_part( 'members/single/messages/loop-notices' );
 
-	endif; 
-	?>
+else :
+	bp_get_template_part( 'members/single/messages/loop-messages' );
 
-<?php else: ?>
-
-	<?php bp_get_template_part( 'members/single/messages/feedback-no-messages' ); ?>
-
-<?php endif;?>
+endif; 
+?>
 
 <?php do_action( 'bp_template_before_member_messages_content' ); ?>
