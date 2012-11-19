@@ -1,6 +1,6 @@
 <?php
 /**
- * Single member settings/delete account template
+ * Single member settings/delete account form
  *
  * @package BuddyPress
  * @subpackage TurtleShell

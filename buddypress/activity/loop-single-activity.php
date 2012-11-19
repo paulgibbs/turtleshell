@@ -19,8 +19,6 @@
 		</a>
 	</div>
 
-	<?php do_action( 'bp_template_after_activity_avatar' ); ?>
-
 
 	<?php do_action( 'bp_template_before_activity_content' ); ?>
 
@@ -30,16 +28,13 @@
 
 		<div class="activity-header">
 			<?php bp_activity_action( 'no_timestamp=1' ); ?>
+
+			<?php if ( 'activity_comment' == bp_get_activity_type() ) : ?>
+				<a class="activity-inreply" href="<?php bp_activity_thread_permalink(); ?>"><?php printf( _x( ' in reply to %s:', 'Paul posted a new activity comment [in reply to John]:', 'buddypress' ), bp_members_get_user_nicename( bp_get_activity_parent_user_id() ) ); ?></a>
+			<?php endif; ?>
 		</div>
 
 		<?php do_action( 'bp_template_after_activity_header' ); ?>
-
-
-		<?php if ( 'activity_comment' == bp_get_activity_type() ) : ?>
-			<span class="activity-inreply">
-				<?php _e( 'In reply to: ', 'buddypress' ); ?></strong><?php bp_activity_parent_content(); ?> <a href="<?php bp_activity_thread_permalink(); ?>" title="<?php _e( 'View Thread / Permalink', 'buddypress' ); ?>"><?php _e( 'View', 'buddypress' ); ?></a>
-			</span>
-		<?php endif; ?>
 
 
 		<?php if ( bp_activity_has_content() ) : ?>
@@ -72,16 +67,16 @@
 				<ul class="activity-actions">
 
 					<?php if ( bp_activity_can_comment() ) : ?>
-						<li><a href="<?php bp_get_activity_comment_link(); ?>" class="has-count"><?php printf( __( 'Comment <span>%s</span>', 'buddypress' ), bp_activity_get_comment_count() ); ?></a></li>
+						<li><a href="<?php bp_activity_comment_link(); ?>" class="button has-count"><?php printf( __( 'Reply <span>%s</span>', 'buddypress' ), bp_activity_get_comment_count() ); ?></a></li>
 					<?php endif; ?>
 
 					<?php if ( bp_activity_can_favorite() ) : ?>
 						<li>
 
 							<?php if ( ! bp_get_activity_is_favorite() ) : ?>
-								<a href="<?php bp_activity_favorite_link(); ?>" title="<?php esc_attr_e( 'Mark as Favorite', 'buddypress' ); ?>"><?php _e( 'Favorite', 'buddypress' ); ?></a>
+								<a href="<?php bp_activity_favorite_link(); ?>" class="button"><?php _e( 'Favorite', 'buddypress' ); ?></a>
 							<?php else : ?>
-								<a href="<?php bp_activity_unfavorite_link(); ?>" title="<?php esc_attr_e( 'Remove Favorite', 'buddypress' ); ?>"><?php _e( 'Remove Favorite', 'buddypress' ); ?></a>
+								<a href="<?php bp_activity_unfavorite_link(); ?>" class="button confirm"><?php _e( 'Remove Favorite', 'buddypress' ); ?></a>
 							<?php endif; ?>
 
 						</li>
@@ -125,6 +120,11 @@
 
 		<?php do_action( 'bp_template_after_activity_comments' ); ?>
 	<?php endif; ?>
+
+
+	<?php do_action( 'bp_template_before_activity_reply_form' ); ?>
+
+	<?php bp_get_template_part( 'activity/form-activity-reply' ); ?>
 
 
 	<?php do_action( 'bp_template_in_activity_loop_late' ); ?>

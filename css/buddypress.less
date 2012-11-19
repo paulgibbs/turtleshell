@@ -16,6 +16,8 @@
 08d. Single member - friends
 08e. Single member - settings
 08f. Single member - profile
+08g. Single member - forum
+08h. Single member - messages
 09. Core widgets
 10. Notices
 11. Menus
@@ -72,10 +74,7 @@
 		&:nth-child(4n+5) { clear: left; }  // @todo RTL
 	}
 
-	.member-details {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
-	}
+	.member-details .generic-button { .small-font(); }
 }
 
 #bp_member_search_form {
@@ -145,8 +144,7 @@
 	}
 
 	.group-meta {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
+		.small-font();
 
 		ul {
 			.clearfix();
@@ -194,8 +192,7 @@
 .bp-pagination-links { float: right; } // @todo RTL
 
 .bp-pagination {
-	font-size: @smallFontSizePx;
-	font-size: @smallFontSizeRem;
+	.small-font();
 	margin-bottom: @themeCompatMargin;
 	overflow: hidden;
 
@@ -210,6 +207,8 @@
 	p { margin-bottom: 0; }
 
 	.activity-actions li { margin: 0 0; }
+	.mini .activity-comments .acomment-avatar-label { margin-top: 0; }  // Specifity required
+	.mini .activity-comments .acomment-avatars { margin-top: 0; }  // Specifity required
 }
 
 .bp-archive-activity {
@@ -231,6 +230,8 @@
 	.activity-avatar {
 		float: left; // @todo RTL
 		margin-right: @themeCompatMargin; // @todo RTL
+
+		img { display: block; }
 	}
 
 	.activity-content { margin: 0 0 0 (@themeCompatMargin + 50px); } // @todo RTL
@@ -241,29 +242,32 @@
 	}
 
 	.activity-header {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
+		.small-font();
 		font-weight: bold;
 		padding-bottom: @themeCompatMargin/2;
 
-		p { margin-bottom: 0; }
+		p {
+			display: inline;
+			margin-bottom: 0;
+		}
 	}
 
 	.activity-body {
 		padding-bottom: @themeCompatMargin/2;
+
+		iframe { margin-bottom: 0; }  // theme compat: twentytwelve
 		p { margin: 0; }
 	}
 
 	.activity-meta {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
+		.clearfix();
+		.small-font();
 		margin-top: @themeCompatMargin/2;
 	}
 
 	.activity-timestamp {
 		float: left; // @todo RTL
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
+		.small-font();
 	}
 
 	.activity-actions {
@@ -282,15 +286,31 @@
 			}
 		}
 	}
+
+	.activity-reply-form {
+		border-bottom: 1px solid @themeCompatSubtleBorder;
+		border-top: 1px solid @themeCompatSubtleBorder;
+		display: none;
+		margin: @themeCompatMargin 0 0 (@themeCompatMargin + 50px);  // @todo RTL
+		padding: @themeCompatMargin 0;
+		position: relative;
+
+		label {	display: block; }
+		input[type="submit"] { display: block; }
+
+		textarea {
+			height: 50px;
+			width: 80%;
+		}
+	}
 }
 
 #bp_activity_search_form {
 	margin-bottom: @themeCompatSearchSpacing;
 
 	.bp_filter_label {
+		.small-font();
 		float: right;  // @todo RTL
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
 		margin-left: @themeCompatMargin;  // @todo RTL
 	}
 
@@ -331,8 +351,7 @@
 /* =05b. Activity Comments
 --------------------------------------------------------------- */
 #buddypress .bp-archive-activity .activity-comments {
-	font-size: @smallFontSizePx;
-	font-size: @smallFontSizeRem;
+	.small-font();
 
 	ul > li {
 		margin-bottom: @themeCompatMargin/2;
@@ -359,6 +378,7 @@
 			margin: 0 @themeCompatMargin 0 0;  // @todo RTL
 
 			img {
+				display: block;
 				height: @themeCompatTinyAvatarSize;
 				width: @themeCompatTinyAvatarSize;
 			}
@@ -387,19 +407,12 @@
 
 /* =06. Messages
 -------------------------------------------------------------- */
-#buddypress {
-	.messages-options-nav { overflow: hidden; }
-
-	.options-nav {
-		float: right;
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
-		margin-bottom: @themeCompatMargin 0;
-	}
-	
+#zombies_buddypress {
 	.thread-avatar {
 		float: left;
 		margin-right: @themeCompatMargin;
+
+		img { display: block; }
 	}
 
 	ul#message-threads li {
@@ -407,27 +420,7 @@
 		overflow: hidden;
 		padding: @themeCompatMargin 0;
 	
-		li.unread { 
-			background-color: @noticeBackground; 
-		}
-	}
-
-	.thread-options {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
-		overflow: hidden;
-	}
-
-	.thread-delete { float: right; }
-
-	.thread-highlight { float: left; }
-	
-	.thread-link { padding-left: 30px; }
-	
-	.thread-content { margin-bottom: 10px; }
-
-	#message-recipients{
-		overflow: hidden;
+		li.unread {  background-color: @noticeBackground; }
 	}
 
 	.message-header, #message-title-header{
@@ -442,48 +435,12 @@
 		}
 	}
 
-	#messages-dir-count { float: left; }
-
-	#messages-dir-pag { float: right; }
-
-	.message-submit { .clearfix; }
-
-	#user-pag.pagination {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
-		padding-top: 5px 0;
-		overflow: hidden;
-
-		&:after {
-			clear: right;
-			content: " ";
-			display: table; 
-		}
-	}
-
-	.message-subject, .message-to {
-		display: block;
-		margin-top: @themeCompatMargin 0;
-	}
-
-	.notice-date { float: left;	}
-
-	.notice-buttons { float: right; }
-
-	.notice-action {
-		overflow: hidden;
-	}
+	#message-recipients{ overflow: hidden; }
 
 	.message-box-reply {
 		padding: @themeCompatMargin 0;
 		border-top: 1px solid @themeCompatSubtleBorder;
 		border-bottom: 1px solid @themeCompatSubtleBorder;
-	}
-
-	.message-meta {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
-		margin-bottom: @themeCompatMargin;
 	}
 }
 
@@ -510,9 +467,8 @@
 			padding: 0;
 
 			span a {
+				.small-font();
 				color: inherit;
-				font-size: @smallFontSizePx;
-				font-size: @smallFontSizeRem;
 				text-decoration: none;
 			}
 		}
@@ -547,6 +503,7 @@
 	> li { overflow: hidden; }
 	.activity-avatar { display: none; }
 	.activity-content {	margin-left: 0; }  // @todo RTL
+	.activity-comments { margin-left: @themeCompatMargin*2; } // @todo RTL
 }
 
 #bp-member-content #bp_activity_search_form {
@@ -644,6 +601,13 @@
 	label {	display: block; }
 }
 
+#bp-member-content  .bp-member-settings-capabilities {
+	input[type="submit"] {
+		display: block;
+		margin-top: @themeCompatListSpacing;
+	}
+}
+
 #bp-member-content .bp-member-settings-notifications {
 	table {
 		td:nth-child(1),
@@ -707,11 +671,59 @@
 }
 
 
+/* =08g. Single member - forum
+--------------------------------------------------------------- */
+#bp-member-content #bbpress-forums { clear: none; }
+
+
+/* = 08h. Single member - messages
+--------------------------------------------------------------- */
+#bp-member-content .bp-member-messages-compose {
+	legend {
+		left: -999em;  // @todo RTL
+		position: absolute;
+	}
+
+	label { display: block; }
+	textarea {
+		height: 8rem;
+		width: 100%;
+	}
+
+	#bp-send-notice { margin-bottom: @themeCompatListSpacing; }
+	.message-submit { margin-top: @themeCompatMargin; }
+}
+
+#bp-member-content .bp-member-messages-single {
+	overflow: hidden;
+
+	label { display: block; }
+	textarea {
+		height: 8rem;
+		width: 80%;
+	}
+
+	.message-body {
+		.clearfix();
+		margin-bottom: @themeCompatListSpacing;
+
+		p { margin-bottom: 0; }
+	}
+
+	.message-meta { .small-font(); }
+	.message-submit { margin-top: @themeCompatMargin; }
+	.message-subject { margin-bottom: 0; }
+	.message-timestamp {
+		.small-font();
+		float: right;  // @todo RTL
+	}
+}
+
+
 /* =09. Core widgets
 --------------------------------------------------------------- */
 #bp-member-profile-widgets {
-	font-size: @smallFontSizePx;
-	font-size: @smallFontSizeRem;
+	.small-font();
 	max-width: @menuWidth;
 
 	&:after { clear: left; }  // @todo RTL
@@ -770,9 +782,7 @@
 
 /* =10. Notices
 --------------------------------------------------------------- */
-#buddypress .bp-template-notice p {
-	margin: @themeCompatMargin/2 0;
-}
+#buddypress .bp-template-notice p {	margin: @themeCompatMargin/2 0; }
 
 .bp-template-notice {
 	.border-radius(3px);
@@ -783,10 +793,7 @@
 	padding: 0 @themeCompatMargin;
 
 	a { text-decoration: none; }
-	p {
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;		
-	}
+	p { .small-font(); }
 
 	&.info,
 	&.updated {
@@ -807,9 +814,7 @@
 	}
 }
 
-.bp-user .bp-template-notice {
-	margin-bottom: @themeCompatListSpacing;
-}
+.bp-user .bp-template-notice { margin-bottom: @themeCompatListSpacing; }
 
 
 /* =11. Menus
@@ -834,9 +839,8 @@
 
 #menu-bp {
 	a {
+		.small-font();
 		display: inline-block;
-		font-size: @smallFontSizePx;
-		font-size: @smallFontSizeRem;
 		text-decoration: none;
 		width: 100%;
 	}

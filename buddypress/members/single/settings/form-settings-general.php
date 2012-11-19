@@ -1,6 +1,6 @@
 <?php
 /**
- * Single member settings/general template
+ * Single member settings/general form
  *
  * @package BuddyPress
  * @subpackage TurtleShell

@@ -7,9 +7,13 @@
  */
 ?>
 
-<?php bp_get_template_part( 'members/single/messages/messages-search', 'messages' ); ?>
-<?php bp_get_template_part( 'members/single/messages/messages-options', 'messages' ); ?>
-<?php bp_get_template_part( 'members/single/messages/messages-pagination', 'messages' ); ?>
+<div class="message-search"><?php bp_message_search_form(); ?></div>
+
+<div class="messages-options-nav">
+	<div class="options-nav"><?php bp_messages_options(); ?></div>
+</div><!-- .messages-options-nav -->
+
+<?php bp_get_template_part( 'members/single/messages/pagination-messages' ); ?>
 
 <?php do_action( 'bp_template_before_member_messages_loop' ); ?>
 
@@ -23,12 +27,12 @@
 		<?php do_action( 'bp_template_messages_inbox_before_list_item' ); ?>
 			<div class="thread-delete">
 				<input type="checkbox" name="message_ids[]" value="<?php bp_message_thread_id(); ?>" />						
-				<a class="button confirm" href="<?php bp_the_thread_delete_link(); ?>" title="<?php _e( "Delete Message", "buddypress" ); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a>
+				<a class="button confirm" href="<?php bp_the_thread_delete_link(); ?>"><?php _e( 'Delete', 'buddypress' ); ?></a>
 			</div>
 			<div class="thread-content">
 				<div class="thread-avatar"><?php bp_message_thread_avatar(); ?></div>
 							
-				<div class="thread-link"><a href="<?php bp_message_thread_view_link(); ?>" title="<?php _e( "View Message", "buddypress" ); ?>"><?php bp_message_thread_subject(); ?></a></div>
+				<div class="thread-link"><a href="<?php bp_message_thread_view_link(); ?>"><?php bp_message_thread_subject(); ?></a></div>
 												
 			</div><!-- .thread-content -->
 			
@@ -45,7 +49,11 @@
 	<?php endwhile; ?>
 </ul><!-- #message-threads -->
 </div>
-<?php bp_get_template_part( 'members/single/messages/messages-pagination', 'messages' ); ?>
-<?php bp_get_template_part( 'members/single/messages/messages-options', 'messages' ); ?>
+
+<?php bp_get_template_part( 'members/single/messages/pagination-messages' ); ?>
+<div class="messages-options-nav">
+	<div class="options-nav"><?php bp_messages_options(); ?></div>
+</div><!-- .messages-options-nav -->
+
 <?php do_action( 'bp_template_after_member_messages_options' ); ?>		
 <?php do_action( 'bp_template_after_member_messages_loop' ); ?>

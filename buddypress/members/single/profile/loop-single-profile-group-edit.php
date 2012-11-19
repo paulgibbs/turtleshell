@@ -15,8 +15,6 @@
 
 	<ul class="group-edit-tabs"><?php bp_profile_group_tabs(); ?></ul>
 
-	<?php do_action( 'bp_template_after_member_profile_group_edit_tabs' ); ?>
-
 
 	<?php do_action( 'bp_template_before_member_profile_field_loop' ); ?>
 
@@ -26,15 +24,11 @@
 
 	<?php endwhile; ?>
 
-	<?php do_action( 'bp_template_after_member_profile_field_loop' ); ?>
-
 
 	<?php do_action( 'bp_template_before_member_profile_group_edit_submitbutton' ); ?>
 
 	<input type="submit" name="profile-group-edit-submit" class="submit" value="<?php esc_attr_e( 'Save Changes', 'buddypress' ); ?>" />
 	<input type="hidden" name="field_ids" value="<?php bp_the_profile_group_field_ids(); ?>" />
-
-	<?php do_action( 'bp_template_after_member_profile_group_edit_submitbutton' ); ?>
 
 
 	<?php wp_nonce_field( 'bp_xprofile_edit' ); ?>

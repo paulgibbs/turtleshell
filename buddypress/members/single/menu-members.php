@@ -31,8 +31,6 @@
 			<?php do_action( 'bp_template_after_member_menu_friend' ); ?>
 		<?php endif; ?>
 
-		<?php do_action( 'bp_template_member_menu_buttons' ); ?>
-
 
 		<?php do_action( 'bp_template_before_member_menu_user_nav' ); ?>
 

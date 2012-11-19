@@ -1,6 +1,6 @@
 <?php
 /**
- * Single member settings/notifications template
+ * Single member settings/notifications form
  *
  * @package BuddyPress
  * @subpackage TurtleShell
