@@ -408,12 +408,6 @@
 /* =06. Messages
 -------------------------------------------------------------- */
 #zombies_buddypress {
-	.options-nav {
-		.small-font();
-		float: right;
-		margin-bottom: @themeCompatMargin 0;
-	}
-	
 	.thread-avatar {
 		float: left;
 		margin-right: @themeCompatMargin;
@@ -429,21 +423,6 @@
 		li.unread {  background-color: @noticeBackground; }
 	}
 
-	.thread-options {
-		.small-font();
-		overflow: hidden;
-	}
-
-	.messages-options-nav { overflow: hidden; }
-	.thread-delete { float: right; }
-	.thread-highlight { float: left; }
-	.thread-link { padding-left: 30px; }
-	.thread-content { margin-bottom: 10px; }
-	.message-submit { .clearfix; }
-	.notice-date { float: left;	}
-	.notice-buttons { float: right; }
-	.notice-action { overflow: hidden; }
-
 	.message-header, #message-title-header{
 		margin-bottom: @themeCompatMargin;
 		overflow: hidden;
@@ -457,35 +436,11 @@
 	}
 
 	#message-recipients{ overflow: hidden; }
-	#messages-dir-count { float: left; }
-	#messages-dir-pag { float: right; }
-
-	#user-pag.pagination {
-		.small-font();
-		padding-top: 5px 0;
-		overflow: hidden;
-
-		&:after {
-			clear: right;
-			content: " ";
-			display: table; 
-		}
-	}
-
-	.message-subject, .message-to {
-		display: block;
-		margin-top: @themeCompatMargin 0;
-	}
 
 	.message-box-reply {
 		padding: @themeCompatMargin 0;
 		border-top: 1px solid @themeCompatSubtleBorder;
 		border-bottom: 1px solid @themeCompatSubtleBorder;
-	}
-
-	.message-meta {
-		.small-font();
-		margin-bottom: @themeCompatMargin;
 	}
 }
 
@@ -723,22 +678,45 @@
 
 /* = 08h. Single member - messages
 --------------------------------------------------------------- */
-#bp-member-content  .bp-member-messages-compose {
-	input[type="text"],
-	label { display: block; }
-
+#bp-member-content .bp-member-messages-compose {
 	legend {
 		left: -999em;  // @todo RTL
 		position: absolute;
 	}
 
+	label { display: block; }
 	textarea {
-		height: 10rem;
+		height: 8rem;
 		width: 100%;
 	}
 
 	#bp-send-notice { margin-bottom: @themeCompatListSpacing; }
-	.submit { margin-top: @themeCompatMargin; }
+	.message-submit { margin-top: @themeCompatMargin; }
+}
+
+#bp-member-content .bp-member-messages-single {
+	overflow: hidden;
+
+	label { display: block; }
+	textarea {
+		height: 8rem;
+		width: 80%;
+	}
+
+	.message-body {
+		.clearfix();
+		margin-bottom: @themeCompatListSpacing;
+
+		p { margin-bottom: 0; }
+	}
+
+	.message-meta { .small-font(); }
+	.message-submit { margin-top: @themeCompatMargin; }
+	.message-subject { margin-bottom: 0; }
+	.message-timestamp {
+		.small-font();
+		float: right;  // @todo RTL
+	}
 }
 
 

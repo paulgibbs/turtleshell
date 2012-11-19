@@ -40,7 +40,7 @@
 	</fieldset>
 
 	<input type="hidden" name="send_to_usernames" value="<?php echo esc_attr( bp_get_message_get_recipient_usernames() ); ?>" />
-	<input type="submit" value="<?php esc_attr_e( 'Send Message', 'buddypress' ); ?>" class="submit" />
+	<input type="submit" value="<?php esc_attr_e( 'Send Message', 'buddypress' ); ?>" class="message-submit" />
 
 	<?php wp_nonce_field( 'messages_send_message' ); ?>
 

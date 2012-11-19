@@ -527,12 +527,6 @@
 }
 /* =06. Messages
 -------------------------------------------------------------- */
-#zombies_buddypress .options-nav {
-  font-size: 12px;
-  font-size: 0.85rem;
-  float: right;
-  margin-bottom: 10px 0;
-}
 #zombies_buddypress .thread-avatar {
   float: left;
   margin-right: 10px;
@@ -547,47 +541,6 @@
 }
 #zombies_buddypress ul#message-threads li li.unread {
   background-color: #ffffe0;
-}
-#zombies_buddypress .thread-options {
-  font-size: 12px;
-  font-size: 0.85rem;
-  overflow: hidden;
-}
-#zombies_buddypress .messages-options-nav {
-  overflow: hidden;
-}
-#zombies_buddypress .thread-delete {
-  float: right;
-}
-#zombies_buddypress .thread-highlight {
-  float: left;
-}
-#zombies_buddypress .thread-link {
-  padding-left: 30px;
-}
-#zombies_buddypress .thread-content {
-  margin-bottom: 10px;
-}
-#zombies_buddypress .message-submit {
-  *zoom: 1;
-}
-#zombies_buddypress .message-submit:before,
-#zombies_buddypress .message-submit:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-#zombies_buddypress .message-submit:after {
-  clear: both;
-}
-#zombies_buddypress .notice-date {
-  float: left;
-}
-#zombies_buddypress .notice-buttons {
-  float: right;
-}
-#zombies_buddypress .notice-action {
-  overflow: hidden;
 }
 #zombies_buddypress .message-header,
 #zombies_buddypress #message-title-header {
@@ -606,37 +559,10 @@
 #zombies_buddypress #message-recipients {
   overflow: hidden;
 }
-#zombies_buddypress #messages-dir-count {
-  float: left;
-}
-#zombies_buddypress #messages-dir-pag {
-  float: right;
-}
-#zombies_buddypress #user-pag.pagination {
-  font-size: 12px;
-  font-size: 0.85rem;
-  padding-top: 5px 0;
-  overflow: hidden;
-}
-#zombies_buddypress #user-pag.pagination:after {
-  clear: right;
-  content: " ";
-  display: table;
-}
-#zombies_buddypress .message-subject,
-#zombies_buddypress .message-to {
-  display: block;
-  margin-top: 10px 0;
-}
 #zombies_buddypress .message-box-reply {
   padding: 10px 0;
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
-}
-#zombies_buddypress .message-meta {
-  font-size: 12px;
-  font-size: 0.85rem;
-  margin-bottom: 10px;
 }
 /* =07. Sites Directory
 --------------------------------------------------------------- */
@@ -913,23 +839,63 @@
 }
 /* = 08h. Single member - messages
 --------------------------------------------------------------- */
-#bp-member-content .bp-member-messages-compose input[type="text"],
-#bp-member-content .bp-member-messages-compose label {
-  display: block;
-}
 #bp-member-content .bp-member-messages-compose legend {
   left: -999em;
   position: absolute;
 }
+#bp-member-content .bp-member-messages-compose label {
+  display: block;
+}
 #bp-member-content .bp-member-messages-compose textarea {
-  height: 10rem;
+  height: 8rem;
   width: 100%;
 }
 #bp-member-content .bp-member-messages-compose #bp-send-notice {
   margin-bottom: 20px;
 }
-#bp-member-content .bp-member-messages-compose .submit {
+#bp-member-content .bp-member-messages-compose .message-submit {
   margin-top: 10px;
+}
+#bp-member-content .bp-member-messages-single {
+  overflow: hidden;
+}
+#bp-member-content .bp-member-messages-single label {
+  display: block;
+}
+#bp-member-content .bp-member-messages-single textarea {
+  height: 8rem;
+  width: 80%;
+}
+#bp-member-content .bp-member-messages-single .message-body {
+  *zoom: 1;
+  margin-bottom: 20px;
+}
+#bp-member-content .bp-member-messages-single .message-body:before,
+#bp-member-content .bp-member-messages-single .message-body:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#bp-member-content .bp-member-messages-single .message-body:after {
+  clear: both;
+}
+#bp-member-content .bp-member-messages-single .message-body p {
+  margin-bottom: 0;
+}
+#bp-member-content .bp-member-messages-single .message-meta {
+  font-size: 12px;
+  font-size: 0.85rem;
+}
+#bp-member-content .bp-member-messages-single .message-submit {
+  margin-top: 10px;
+}
+#bp-member-content .bp-member-messages-single .message-subject {
+  margin-bottom: 0;
+}
+#bp-member-content .bp-member-messages-single .message-timestamp {
+  font-size: 12px;
+  font-size: 0.85rem;
+  float: right;
 }
 /* =09. Core widgets
 --------------------------------------------------------------- */
