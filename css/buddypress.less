@@ -725,12 +725,16 @@
 --------------------------------------------------------------- */
 #bp-member-content  .bp-member-messages-compose {
 	input[type="text"],
-	textarea { width: 100%; }
 	label { display: block; }
 
 	legend {
 		left: -999em;  // @todo RTL
 		position: absolute;
+	}
+
+	textarea {
+		height: 10rem;
+		width: 100%;
 	}
 
 	#bp-send-notice { margin-bottom: @themeCompatListSpacing; }

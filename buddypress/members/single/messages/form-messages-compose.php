@@ -16,7 +16,7 @@
 	<fieldset>
 		<legend><?php _e( 'Message recipients', 'buddypress' ); ?></legend>
 
-		<label for="send-to-input"><?php _e( "Send To (Username or Friend's Name)", 'buddypress' ); ?></label>	
+		<label for="send-to-input"><?php _e( 'Send a message to a friend:', 'buddypress' ); ?></label>	
 		<ul>
 			<li>
 				<?php bp_message_get_recipient_tabs(); ?>
@@ -25,7 +25,7 @@
 		</ul>
 
 		<?php if ( bp_current_user_can( 'bp_moderate' ) ) : ?>
-			<input type="checkbox" id="bp-send-notice" name="send-notice" value="1" /><?php _e( 'This is a notice to all users.', 'buddypress' ); ?>
+			<input type="checkbox" id="bp-send-notice" name="send-notice" value="1" /><?php _e( 'This is a notice that needs to be sent to all users.', 'buddypress' ); ?>
 		<?php endif; ?>
 	</fieldset>
 
@@ -35,7 +35,7 @@
 		<label for="subject"><?php _e( 'Subject', 'buddypress'); ?></label>
 		<input type="text" name="subject" id="subject" value="<?php bp_messages_subject_value(); ?>" />
 
-		<label for="content"><?php _e( 'Message', 'buddypress'); ?></label>
+		<label for="message_content"><?php _e( 'Message', 'buddypress'); ?></label>
 		<textarea name="content" id="message_content"><?php bp_messages_content_value(); ?></textarea>
 	</fieldset>
 

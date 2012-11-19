@@ -914,15 +914,16 @@
 /* = 08h. Single member - messages
 --------------------------------------------------------------- */
 #bp-member-content .bp-member-messages-compose input[type="text"],
-#bp-member-content .bp-member-messages-compose textarea {
-  width: 100%;
-}
 #bp-member-content .bp-member-messages-compose label {
   display: block;
 }
 #bp-member-content .bp-member-messages-compose legend {
   left: -999em;
   position: absolute;
+}
+#bp-member-content .bp-member-messages-compose textarea {
+  height: 10rem;
+  width: 100%;
 }
 #bp-member-content .bp-member-messages-compose #bp-send-notice {
   margin-bottom: 20px;
