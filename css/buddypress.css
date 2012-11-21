@@ -177,13 +177,13 @@
 }
 .bp-archive-groups .group-avatar {
   float: left;
-  width: 25%;
+  width: 50px;
 }
 .bp-archive-groups .group-details {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 90px;
+  padding-left: 60px;
   width: 100%;
 }
 .bp-archive-groups .group-meta {
@@ -688,8 +688,8 @@
 }
 #bp-member-content .bp-archive-groups > li {
   float: left;
-  margin: 0 2% 10px 0;
-  width: 48%;
+  margin: 0 0 10px 0;
+  width: 50%;
 }
 #bp-member-content .bp-archive-groups > li:nth-child(2n+1) {
   clear: none;

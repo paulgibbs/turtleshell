@@ -137,12 +137,12 @@
 
 	.group-avatar {	
 		float: left; 
-		width: 25%;
+		width: 50px;
 	} // @todo RTL
 
 	.group-details {
 		.box-sizing(border-box);
-		padding-left: 90px;  // group avatar width plus margin.  @todo RTL
+		padding-left: 50px + @themeCompatMargin;  // group avatar width plus margin.  @todo RTL
 		width: 100%;
 	}
 
@@ -554,8 +554,8 @@
 
 	> li {
 		float: left;
-		margin: 0 2% 10px 0;
-		width: 48%;
+		margin: 0 0 10px 0;
+		width: 50%;
 		&:nth-child(2n+1) { clear: none; }
 	}
 }
