@@ -60,7 +60,7 @@ class BP_TurtleShell extends BP_Theme_Compat {
 	 *
 	 * @since BuddyPress (1.7)
 	 */
-	private function setup_globals() {
+	protected function setup_globals() {
 		$bp            = buddypress();
 		$this->id      = 'turtleshell';
 		$this->name    = __( 'BuddyPress Turtle Shell', 'buddypress' );
@@ -74,7 +74,7 @@ class BP_TurtleShell extends BP_Theme_Compat {
 	 *
 	 * @since BuddyPress (1.7)
 	 */
-	private function setup_actions() {
+	protected function setup_actions() {
 		add_action( 'bp_enqueue_scripts',    array( $this, 'enqueue_styles'         ) ); // Enqueue theme CSS
 		add_action( 'bp_enqueue_scripts',    array( $this, 'enqueue_scripts'        ) ); // Enqueue theme JS
 		add_action( 'widgets_init',          array( $this, 'widgets_init'           ) ); // Widgets          
